@@ -6,7 +6,7 @@ namespace WebIntegrator.Models
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
-        [Display(Name = "Адрес электронной почты")]
+        [Display(Name = "Логин администратора")]
         public string Email { get; set; }
     }
 
@@ -42,14 +42,14 @@ namespace WebIntegrator.Models
     public class ForgotViewModel
     {
         [Required]
-        [Display(Name = "Адрес электронной почты")]
+        [Display(Name = "Логин администратора")]
         public string Email { get; set; }
     }
 
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Адрес электронной почты")]
+        [Display(Name = "Логин администратора")]
         [EmailAddress]
         public string Email { get; set; }
 
@@ -66,7 +66,7 @@ namespace WebIntegrator.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Адрес электронной почты")]
+        [Display(Name = "Логин администратора")]
         public string Email { get; set; }
 
         [Required]
@@ -85,7 +85,7 @@ namespace WebIntegrator.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Адрес электронной почты")]
+        [Display(Name = "Логин администратора")]
         public string Email { get; set; }
 
         [Required]
@@ -100,13 +100,5 @@ namespace WebIntegrator.Models
         public string ConfirmPassword { get; set; }
 
         public string Code { get; set; }
-    }
-
-    public class ForgotPasswordViewModel
-    {
-        [Required]
-        [EmailAddress]
-        [Display(Name = "Почта")]
-        public string Email { get; set; }
     }
 }

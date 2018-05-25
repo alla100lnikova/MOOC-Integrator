@@ -9,8 +9,6 @@ namespace WebIntegrator.Models
     {
         public bool HasPassword { get; set; }
         public IList<UserLoginInfo> Logins { get; set; }
-        public string PhoneNumber { get; set; }
-        public bool TwoFactor { get; set; }
         public bool BrowserRemembered { get; set; }
     }
 
@@ -56,31 +54,5 @@ namespace WebIntegrator.Models
         [Display(Name = "Подтверждение нового пароля")]
         [Compare("NewPassword", ErrorMessage = "Новый пароль и его подтверждение не совпадают.")]
         public string ConfirmPassword { get; set; }
-    }
-
-    public class AddPhoneNumberViewModel
-    {
-        [Required]
-        [Phone]
-        [Display(Name = "Номер телефона")]
-        public string Number { get; set; }
-    }
-
-    public class VerifyPhoneNumberViewModel
-    {
-        [Required]
-        [Display(Name = "Код")]
-        public string Code { get; set; }
-
-        [Required]
-        [Phone]
-        [Display(Name = "Номер телефона")]
-        public string PhoneNumber { get; set; }
-    }
-
-    public class ConfigureTwoFactorViewModel
-    {
-        public string SelectedProvider { get; set; }
-        public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
     }
 }
