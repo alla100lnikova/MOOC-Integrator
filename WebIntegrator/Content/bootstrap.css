@@ -1317,9 +1317,9 @@ pre code {
   }
   .col-lg-6 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 53%;
-            flex: 0 0 53%;
-    max-width: 53%;
+        -ms-flex: 0 0 54%;
+            flex: 0 0 54%;
+    max-width: 54%;
   }
   .col-lg-7 {
     -webkit-box-flex: 0;
@@ -2453,7 +2453,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   }
   .form-inline .form-control {
     display: inline-block;
-    width: 73%;
+    width: 71%;
     vertical-align: middle;
     align-items: center;
   }
@@ -4665,6 +4665,12 @@ input[type="button"].btn-block {
 
 .card-title {
   margin-bottom: 0.75rem;
+}
+
+.lable-title-new {
+  margin-bottom: 0.75rem;
+  margin-left:2%;
+  font-size:x-large;
 }
 
 .card-subtitle {
