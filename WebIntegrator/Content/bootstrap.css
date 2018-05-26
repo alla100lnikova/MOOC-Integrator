@@ -3487,7 +3487,7 @@ input[type="button"].btn-block {
 
 .btn-group > .btn:first-child {
   margin-left: 0;
-  font-size:small;
+  font-size: 0.87rem;
 }
 
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
@@ -3500,6 +3500,7 @@ input[type="button"].btn-block {
 .btn-group > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  font-size: 0.87rem;
 }
 
 .dropdown-toggle-split {
@@ -4704,6 +4705,7 @@ input[type="button"].btn-block {
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  font-size: 1.15rem;
 }
 
 .card-header:first-child {

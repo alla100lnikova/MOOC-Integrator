@@ -23,15 +23,6 @@ namespace WebIntegrator
         }
     }
 
-    public class SmsService : IIdentityMessageService
-    {
-        public Task SendAsync(IdentityMessage message)
-        {
-            // Подключите здесь службу SMS, чтобы отправить текстовое сообщение.
-            return Task.FromResult(0);
-        }
-    }
-
     // Настройка диспетчера пользователей приложения. UserManager определяется в ASP.NET Identity и используется приложением.
     public class ApplicationUserManager : UserManager<ApplicationUser>
     {
@@ -77,7 +68,6 @@ namespace WebIntegrator
                 BodyFormat = "Ваш код безопасности: {0}"
             });
             manager.EmailService = new EmailService();
-            manager.SmsService = new SmsService();
             var dataProtectionProvider = options.DataProtectionProvider;
             if (dataProtectionProvider != null)
             {
