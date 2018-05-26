@@ -2846,6 +2846,7 @@ fieldset:disabled a.btn {
   background-color: transparent;
   background-image: none;
   border-color: #78C2AD;
+  font-size:small;
 }
 
 .btn-outline-primary:hover {
@@ -3156,7 +3157,14 @@ fieldset:disabled a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border-radius: 0.6rem;
+}
+
+.btn-lgmy, .btn-group-lg > .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   border-radius: 0.6rem;
 }
@@ -3479,6 +3487,7 @@ input[type="button"].btn-block {
 
 .btn-group > .btn:first-child {
   margin-left: 0;
+  font-size:small;
 }
 
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
