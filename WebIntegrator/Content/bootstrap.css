@@ -3487,7 +3487,7 @@ input[type="button"].btn-block {
 
 .btn-group > .btn:first-child {
   margin-left: 0;
-  font-size: 0.87rem;
+  font-size: 0.8rem;
 }
 
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
@@ -3500,7 +3500,7 @@ input[type="button"].btn-block {
 .btn-group > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  font-size: 0.87rem;
+  font-size: 0.8rem;
 }
 
 .dropdown-toggle-split {

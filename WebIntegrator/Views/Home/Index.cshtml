@@ -3,353 +3,179 @@
 @{
     ViewBag.Title = "Интегратор русскоязычных курсов";
 }
-
- <form class="form-inline my-1 my-lg-5">
-     @Html.TextBoxFor(m => m.NameText, new { @class = "form-control mr-md-2", placeholder = "Название..." })
-     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Поиск</button>
- </form>
-
- <div class="row">
-     <div class="col-xl-3">
-         <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                 <label class="btn btn-primary btn-lg btn-block">
-                     <input type="checkbox" autocomplete="off" name="IsSertificate" id="IsSertificate" value="@Model.IsSertificate"> С сертификатом
-                 </label>
-             </div>
-         </div>
-         <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                 <label class="btn btn-primary">
-                     <input type="checkbox" checked="" autocomplete="off" name="IsSchool" id="IsSchool"> Школа
-                 </label>
-                 <label class="btn btn-primary">
-                     <input type="checkbox" autocomplete="off" name="IsUniversity" id="IsUniversity">
-                     Высшее <br>
-                     образование
-                 </label>
-                 <label class="btn btn-primary">
-                     <input type="checkbox" autocomplete="off" name="IsQulification" id="IsQulification">
-                     Повышение <br>
-                     квалификации
-                 </label>
-             </div>
-         </div>
-
-         <div class="card border-secondary mb-3" style="max-width: 20rem;">
-             <div class="card-header">Предметная область</div>
-             <div class="card-body" id="CardBodySubject">
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Astronomy" autocomplete="off"> Астрономия
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Biology" autocomplete="off"> Биология
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Geography" autocomplete="off"> География
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Geology" autocomplete="off"> Геология
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Informatics" autocomplete="off"> Информатика
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Art" autocomplete="off"> Искусство
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Culture" autocomplete="off"> Культурология
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Mathem" autocomplete="off"> Математика
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Medical" autocomplete="off"> Медицина
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Management" autocomplete="off"> Менеджмент
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Education" autocomplete="off"> Педагогика
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Political" autocomplete="off"> Политология
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Psihology" autocomplete="off"> Психология
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Sociology" autocomplete="off"> Социология
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Physics" autocomplete="off"> Физика
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Philology" autocomplete="off"> Филология
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Philosophy" autocomplete="off"> Философия
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Chemistry" autocomplete="off"> Химия
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Economics" autocomplete="off"> Экономика
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Jurisprudence" autocomplete="off"> Юриспруденция
-                     </label>
-                 </div>
-                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-outline-primary btn-lg btn-block">
-                         <input type="checkbox" checked="" id="Other" autocomplete="off"> Другое
-                     </label>
-                 </div>
-             </div>
-         </div>
-
-         <div class="card border-primary mb-3" style="max-width: 20rem;">
-             <div class="card-header">Институт</div>
-             <div class="card-body">
-                 <div class="card-body" id="CardBodyUniversity">
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="MSU" autocomplete="off"> МГУ
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="MPhysics" autocomplete="off"> МФТИ
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="SPbSU" autocomplete="off"> СПбГУ
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="SPPolitec" autocomplete="off"> СПбГПУ
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="Ural" autocomplete="off"> УрФУ
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="HSE" autocomplete="off"> НИУ ВШЭ
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="NSU" autocomplete="off"> НГУ
-                         </label>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         <div class="card border-secondary mb-3" style="max-width: 20rem;">
-             <div class="card-header">Провайдер</div>
-             <div class="card-body">
-                 <div class="card-body" id="CardBodyProvider">
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-primary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="Intuit" autocomplete="off"> Интуит
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-primary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="Lectorium" autocomplete="off"> Лекториум
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-primary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="Universarium" autocomplete="off"> Универсариум
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-primary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="DistantMSU" autocomplete="off"> Distant.msu
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-primary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="Stepik" autocomplete="off"> Stepik
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-primary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="Arzamas" autocomplete="off"> Arzamas Academy
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-primary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="UniverTV" autocomplete="off"> УниверТВ
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-primary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="PostNauka" autocomplete="off"> ПостНаука
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-primary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="OpenUniversity" autocomplete="off"> Университет без границ
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-primary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="NationalPlatform" autocomplete="off"> Национальная платформа
-                         </label>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         <div class="card border-primary mb-3" style="max-width: 20rem;">
-             <div class="card-header">Время начала</div>
-             <div class="card-body">
-                 <div class="card-body" id="CardBodyStartTime">
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="SoonStart" autocomplete="off"> Скоро старт
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="Run" autocomplete="off"> Идёт
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="CanRegister" autocomplete="off"> Можно записаться
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="Closed" autocomplete="off"> Завершён
-                         </label>
-                     </div>
-                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                         <label class="btn btn-outline-secondary btn-lg btn-block">
-                             <input type="checkbox" checked="" id="Open" autocomplete="off"> Всегда открыт
-                         </label>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
-
-     <div class="col-lg-6">
-         <label class="lable-title-new">Курсы, найденные по запросу: </label>
-         <table class="table table-hover">
-             <thead>
-                 <tr>
-                     <th scope="col">Название</th>
-                     <th scope="col">Предметная <br> область</th>
-                     <th scope="col">Время <br> начала</th>
-                 </tr>
-             </thead>
-             <tbody>
-                 @{
-                     int i = 0;
-                     Model.Search();
-                 }
-                 @foreach (var course in Model.SearchingCourses)
-                 {
-                     <tr class="@(i % 2 == 0 ? "table-primary" : "table-secondary")">
-                         <th scope="row">
-                             <a href="@course.URL"> @course.Name </a>
-                         </th>
-                         <td>@course.Subject</td>
-                         <td>@course.StartTime</td>
-                     </tr>
-                     i++;
-                 }
-             </tbody>
-         </table>
-     </div>
-     <div class="col-xl-3">
-         <label class="lable-title-new">Может быть интересно:</label>
-         @{
-             i = 0;
-         }
-         @if (Model.RecommendedCourses.Count != 0)
-         {
-             foreach (var course in Model.RecommendedCourses)
-             {
-                 <div class="card @(i % 2 == 0 ? "border-primary" : "border-secondary") mb-3" style="max-width: 20rem;">
-                     <div class="card-header">
-                         <a href="@course.URL">@course.Name</a>
-                     </div>
-                     <div class="card-body">
-                         <p class="card-title">@course.Subject</p>
-                         <p class="card-text">Время начала: @course.StartTime <br> 
-                         Провайдер: @course.Provider <br> 
-                         Институт (автор): @course.University
-                         </p>
-                     </div>
-                 </div>
-                 i++;
-             }
-         }
-         else
-         {
-            <div class="card border-primary mb-3" style="max-width: 20rem;">
-                <div class="card-header">
-                    Здесь будут курсы, которые могут Вас заинтересовать
-                </div>
-                <div class="card-body">
-                    <p class="card-title">А пока здесь котик:</p>
-                    <p class="card-img">
-                        <img style="height: 200px; width: 100%; display: block;" src="https://pp.userapi.com/c837225/v837225706/4ba1c/CzNwzvhNK1c.jpg" alt="Card image">
-                    </p>
+<form method="post">
+    <div class="form-inline my-1 my-lg-5">
+        @Html.TextBoxFor(m => m.NameText, new { @class = "form-control mr-md-2", placeholder = "Название..." })
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Поиск</button>
+    </div>
+    <div class="row">
+        <div class="col-xl-3">
+            <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary btn-lg btn-block @(Model.IsSertificate ? "active" : "")">
+                        <input type="checkbox" autocomplete="@(Model.IsSertificate ? "on" : "off")" name="IsSertificate" id="IsSertificate"> С сертификатом
+                    </label>
                 </div>
             </div>
-         }
-     </div>
- </div>
+            <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary @(Model.IsSchool ? "active" : "")">
+                        <input type="checkbox" autocomplete="@(Model.IsSchool ? "on" : "off")" name="IsSchool" id="IsSchool"> Школа
+                    </label>
+                    <label class="btn btn-primary @(Model.IsUniversity ? "active" : "")">
+                        <input type="checkbox" autocomplete="@(Model.IsUniversity ? "on" : "off")" name="IsUniversity" id="IsUniversity">
+                        Высшее <br>
+                        образование
+                    </label>
+                    <label class="btn btn-primary @(Model.IsQulification ? "active" : "")">
+                        <input type="checkbox" autocomplete="@(Model.IsQulification ? "on" : "off")" name="IsQulification" id="IsQulification">
+                        Повышение <br>
+                        квалификации
+                    </label>
+                </div>
+            </div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+            <div class="card border-secondary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Предметная область</div>
+                <div class="card-body" id="CardBodySubject">
+                    @{
+                        int i = 0;
+                    }
+                    @foreach (var sub in Model.Subjects)
+                    {
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-primary btn-lg btn-block @(sub.Value ? "active" : "")">
+                                <input type="checkbox" autocomplete="@(sub.Value ? "on" : "off")" name="@sub.Key" id="@sub.Key">
+                                      @sub.Key
+                            </label>
+                        </div>
+                        i++;
+                    }
+                </div>
+            </div>
+
+            <div class="card border-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Институт</div>
+                <div class="card-body">
+                    <div class="card-body" id="CardBodyUniversity">
+                        @foreach (var univer in Model.University)
+                        {
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-lg btn-block @(univer.Value ? "active" : "")">
+                                    <input type="checkbox" autocomplete="@(univer.Value ? "on" : "off")" name="@univer.Key" id="@univer.Key">
+                                        @univer.Key
+                                </label>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="card border-secondary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Провайдер</div>
+                <div class="card-body">
+                    <div class="card-body" id="CardBodyProvider">
+                        @foreach (var prov in Model.Provider)
+                        {
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-primary btn-lg btn-block @(prov.Value ? "active" : "")">
+                                    <input type="checkbox" name="@prov.Key" id="@prov.Key" autocomplete="@(prov.Value ? "on" : "off")"> @prov.Key
+                                </label>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Время начала</div>
+                <div class="card-body">
+                    <div class="card-body" id="CardBodyStartTime">
+                        @{ i = 0; }
+                        @foreach (var time in Model.StartTime)
+                        {
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-lg btn-block @(time.Value ? "active" : "")">
+                                    <input type="checkbox" name="@time.Key" id="@time.Key" autocomplete="@(time.Value ? "on" : "off")"> @time.Key
+                                </label>
+                            </div>
+                            i++;
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <label class="lable-title-new">Курсы, найденные по запросу: </label>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Название</th>
+                        <th scope="col">Предметная <br> область</th>
+                        <th scope="col">Время <br> начала</th>
+                        <th scope="col">Провайдер</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        i = 0;
+                    }
+                    @foreach (var course in Model.SearchingCourses)
+                    {
+                        <tr class="@(i % 2 == 0 ? "table-primary" : "table-secondary")">
+                            <th scope="row">
+                                <a href="@course.URL"> @course.Name </a>
+                            </th>
+                            <td>@course.Subject</td>
+                            <td>@course.StartTime</td>
+                            <td>@course.Provider</td>
+                        </tr>
+                        i++;
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-xl-3">
+            <label class="lable-title-new">Может быть интересно:</label>
+            @{
+                i = 0;
+            }
+            @if (Model.RecommendedCourses.Count != 0)
+            {
+                foreach (var course in Model.RecommendedCourses)
+                {
+                    <div class="card @(i % 2 == 0 ? "border-primary" : "border-secondary") mb-3" style="max-width: 20rem;">
+                        <div class="card-header">
+                            <a href="@course.URL">@course.Name</a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title">@course.Subject</p>
+                            <p class="card-text">
+                                Время начала: @course.StartTime <br>
+                                Провайдер: @course.Provider <br>
+                                Институт (автор): @course.University
+                            </p>
+                        </div>
+                    </div>
+                    i++;
+                }
+            }
+            else
+            {
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">
+                        Здесь будут курсы, которые могут Вас заинтересовать
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">А пока здесь котик:</p>
+                        <p class="card-img">
+                            <img style="height: 200px; width: 100%; display: block;" src="https://pp.userapi.com/c837225/v837225706/4ba1c/CzNwzvhNK1c.jpg" alt="Card image">
+                        </p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</form>
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

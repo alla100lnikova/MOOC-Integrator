@@ -9,33 +9,54 @@ namespace WebIntegrator.Controllers
 {
     public class HomeController : Controller
     {
-        private SearcherViewModel Model;
+        static SearcherViewModel Model = new SearcherViewModel();
+        [HttpGet]
         public ActionResult Index()
         {
-            Model = new SearcherViewModel();
             return View(Model);
         }
 
-        public ActionResult Search(string name,
-            List<string> subjects, 
-            List<string> times,
-            List<string> univers,
-            List<string> providers,
-            bool isSert,
-            bool isSchool,
-            bool isUniver,
-            bool isQual)
+        [HttpPost]
+        public ActionResult Index(SearcherViewModel model)
         {
-            Model.Subjects = subjects;
-            Model.StartTime = times;
-            Model.Provider = providers;
-            Model.University = univers;
-            Model.IsQulification = isQual;
-            Model.IsSchool = isSchool;
-            Model.IsSertificate = isSert;
-            Model.IsUniversity = isUniver;
-            Model.NameText = name;
-            Model.Search();
+            Model.IsSertificate = Request.Form["IsSertificate"] ==  "on";
+            Model.IsSchool = Request.Form["IsSchool"] == "on";
+            Model.IsUniversity = Request.Form["IsUniversity"] == "on";
+            Model.IsQulification = Request.Form["IsQulification"] == "on";
+
+            Model.SelectedSubjects = new List<string>();
+            var Keys = Model.Subjects.Keys;
+            for (int i = 0, icount = Model.Subjects.Count; i < icount; i++)
+            {
+                bool IsVal = Model.Subjects[Keys[i]] = Request.Form[Keys[i]] == "on";
+                if (IsVal) Model.SelectedSubjects.Add(Keys[i]);
+            }
+
+            Model.SelectedProvider = new List<string>();
+            Keys = Model.Provider.Keys;
+            for (int i = 0, icount = Model.Provider.Count; i < icount; i++)
+            {
+                bool IsVal = Model.Provider[Keys[i]] = Request.Form[Keys[i]] == "on";
+                if (IsVal) Model.SelectedProvider.Add(Keys[i]);
+            }
+
+            Model.SelectedStartTime = new List<string>();
+            Keys = Model.StartTime.Keys;
+            for (int i = 0, icount = Model.StartTime.Count; i < icount; i++)
+            {
+                bool IsVal = Model.StartTime[Keys[i]] = Request.Form[Keys[i]] == "on";
+                if (IsVal) Model.SelectedStartTime.Add(Keys[i]);
+            }
+
+            Model.SelectedUniversity = new List<string>();
+            Keys = Model.University.Keys;
+            for (int i = 0, icount = Model.University.Count; i < icount; i++)
+            {
+                bool IsVal = Model.University[Keys[i]] = Request.Form[Keys[i]] == "on";
+                if (IsVal) Model.SelectedUniversity.Add(Keys[i]);
+            }
+
+            Model.NameText = model.NameText;
 
             return View(Model);
         }
