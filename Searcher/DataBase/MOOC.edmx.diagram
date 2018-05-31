@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="210e6846f1bf46d3952f7491fb6df1b7" Name="Diagram1">
+        <EntityTypeShape EntityType="MOOCModel.Admin" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MOOCModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MOOCModel.ВремяНачала" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MOOCModel.Группа_ВремяНачала" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="MOOCModel.Группа_ПредметнаяОбласть" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MOOCModel.Описание_MOOC" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MOOCModel.ПредметнаяОбласть" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MOOCModel.Провайдер" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <AssociationConnector Association="MOOCModel.FK_ВремяНачала_Группа_ВремяНачала" ManuallyRouted="false" />
+        <AssociationConnector Association="MOOCModel.FK_Описание_MOOC_ВремяНачала" ManuallyRouted="false" />
+        <AssociationConnector Association="MOOCModel.FK_ПредметнаяОбласть_Группа_ПредметнаяОбласть" ManuallyRouted="false" />
+        <AssociationConnector Association="MOOCModel.FK_Описание_MOOC_ПредметнаяОбласть" ManuallyRouted="false" />
+        <AssociationConnector Association="MOOCModel.FK_Описание_MOOC_Провайдер" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

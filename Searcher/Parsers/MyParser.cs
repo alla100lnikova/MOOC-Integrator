@@ -46,7 +46,7 @@ namespace Searcher
         public int IsCourseInDB(string URL)
         {
             int IsCourse = -1;
-            using (var ctx = new MOOC())
+            using (var ctx = new MOOCEntities())
             {
                 foreach (var course in ctx.Описание_MOOC)
                 {
@@ -67,7 +67,7 @@ namespace Searcher
         /// <param name="course">Объект для изменения</param>
         protected void Save(Course NewCourse, Описание_MOOC course)
         {
-            using (var ctx = new MOOC())
+            using (var ctx = new MOOCEntities())
             {
                 ctx.Описание_MOOC.Attach(course);
                 course.URL = NewCourse.URL;
@@ -121,7 +121,7 @@ namespace Searcher
         public void SaveCourse(Course NewCourse, int CourseUpdate)
         {
             Описание_MOOC course = new Описание_MOOC();
-            using (var ctx = new MOOC())
+            using (var ctx = new MOOCEntities())
             {
                 if (CourseUpdate != -1)
                 {

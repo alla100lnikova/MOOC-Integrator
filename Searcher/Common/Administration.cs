@@ -11,7 +11,7 @@ namespace Searcher
         public static void DeleteRecord(int courseID)
         {
             Описание_MOOC course = new Описание_MOOC();
-            using (var ctx = new MOOC())
+            using (var ctx = new MOOCEntities())
             {
                 foreach (var mycourse in ctx.Описание_MOOC)
                 {

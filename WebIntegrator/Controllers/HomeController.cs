@@ -57,7 +57,7 @@ namespace WebIntegrator.Controllers
             }
 
             Model.NameText = model.NameText;
-
+            Model.Search();
             return View(Model);
         }
 

@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище MOOCModel" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Login" Type="nvarchar" MaxLength="50" />
+          <Property Name="PassHash" Type="char" MaxLength="40" />
+          <Property Name="Salt" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="ВремяНачала">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="20" />
+          <Property Name="Группа" Type="int" />
+        </EntityType>
+        <EntityType Name="Группа_ВремяНачала">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="50" />
+          <Property Name="Значение" Type="int" />
+        </EntityType>
+        <EntityType Name="Группа_ПредметнаяОбласть">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="50" />
+          <Property Name="Значение" Type="int" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6013: Первичный ключ в таблице или представлении "MOOC.dbo.Институт" не определен, его не удалось вывести. Эта таблица или представление исключены. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+        <EntityType Name="Институт">
+          <Property Name="Аббревиатура" Type="nvarchar" MaxLength="10" />
+          <Property Name="ПолноеНазвание" Type="nvarchar(max)" />
+        </EntityType>-->
+        <EntityType Name="Описание_MOOC">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="URL" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="НазваниеКурса" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Провайдер" Type="int" Nullable="false" />
+          <Property Name="Институт" Type="nvarchar(max)" />
+          <Property Name="ПредметнаяОбласть" Type="int" />
+          <Property Name="ВремяНачала" Type="int" />
+          <Property Name="НаличиеСертификата" Type="bit" />
+          <Property Name="Школа" Type="bit" />
+          <Property Name="ВысшееОбразование" Type="bit" />
+          <Property Name="ПовышениеКвалификации" Type="bit" />
+        </EntityType>
+        <EntityType Name="ПредметнаяОбласть">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="50" />
+          <Property Name="Группа" Type="int" />
+        </EntityType>
+        <EntityType Name="Провайдер">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <Association Name="FK_ВремяНачала_Группа_ВремяНачала">
+          <End Role="Группа_ВремяНачала" Type="Self.Группа_ВремяНачала" Multiplicity="0..1" />
+          <End Role="ВремяНачала" Type="Self.ВремяНачала" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Группа_ВремяНачала">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ВремяНачала">
+              <PropertyRef Name="Группа" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Описание_MOOC_ВремяНачала">
+          <End Role="ВремяНачала" Type="Self.ВремяНачала" Multiplicity="0..1" />
+          <End Role="Описание_MOOC" Type="Self.Описание_MOOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ВремяНачала">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Описание_MOOC">
+              <PropertyRef Name="ВремяНачала" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Описание_MOOC_ПредметнаяОбласть">
+          <End Role="ПредметнаяОбласть" Type="Self.ПредметнаяОбласть" Multiplicity="0..1" />
+          <End Role="Описание_MOOC" Type="Self.Описание_MOOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ПредметнаяОбласть">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Описание_MOOC">
+              <PropertyRef Name="ПредметнаяОбласть" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Описание_MOOC_Провайдер">
+          <End Role="Провайдер" Type="Self.Провайдер" Multiplicity="1" />
+          <End Role="Описание_MOOC" Type="Self.Описание_MOOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Провайдер">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Описание_MOOC">
+              <PropertyRef Name="Провайдер" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ПредметнаяОбласть_Группа_ПредметнаяОбласть">
+          <End Role="Группа_ПредметнаяОбласть" Type="Self.Группа_ПредметнаяОбласть" Multiplicity="0..1" />
+          <End Role="ПредметнаяОбласть" Type="Self.ПредметнаяОбласть" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Группа_ПредметнаяОбласть">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ПредметнаяОбласть">
+              <PropertyRef Name="Группа" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище MOOCModelContainer">
+          <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ВремяНачала" EntityType="Self.ВремяНачала" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Группа_ВремяНачала" EntityType="Self.Группа_ВремяНачала" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Группа_ПредметнаяОбласть" EntityType="Self.Группа_ПредметнаяОбласть" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Описание_MOOC" EntityType="Self.Описание_MOOC" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ПредметнаяОбласть" EntityType="Self.ПредметнаяОбласть" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Провайдер" EntityType="Self.Провайдер" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ВремяНачала_Группа_ВремяНачала" Association="Self.FK_ВремяНачала_Группа_ВремяНачала">
+            <End Role="Группа_ВремяНачала" EntitySet="Группа_ВремяНачала" />
+            <End Role="ВремяНачала" EntitySet="ВремяНачала" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Описание_MOOC_ВремяНачала" Association="Self.FK_Описание_MOOC_ВремяНачала">
+            <End Role="ВремяНачала" EntitySet="ВремяНачала" />
+            <End Role="Описание_MOOC" EntitySet="Описание_MOOC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Описание_MOOC_ПредметнаяОбласть" Association="Self.FK_Описание_MOOC_ПредметнаяОбласть">
+            <End Role="ПредметнаяОбласть" EntitySet="ПредметнаяОбласть" />
+            <End Role="Описание_MOOC" EntitySet="Описание_MOOC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Описание_MOOC_Провайдер" Association="Self.FK_Описание_MOOC_Провайдер">
+            <End Role="Провайдер" EntitySet="Провайдер" />
+            <End Role="Описание_MOOC" EntitySet="Описание_MOOC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ПредметнаяОбласть_Группа_ПредметнаяОбласть" Association="Self.FK_ПредметнаяОбласть_Группа_ПредметнаяОбласть">
+            <End Role="Группа_ПредметнаяОбласть" EntitySet="Группа_ПредметнаяОбласть" />
+            <End Role="ПредметнаяОбласть" EntitySet="ПредметнаяОбласть" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MOOCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PassHash" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+          <Property Name="Salt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ВремяНачала">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Группа" Type="Int32" />
+          <NavigationProperty Name="Группа_ВремяНачала" Relationship="Self.FK_ВремяНачала_Группа_ВремяНачала" FromRole="ВремяНачала" ToRole="Группа_ВремяНачала" />
+          <NavigationProperty Name="Описание_MOOC" Relationship="Self.FK_Описание_MOOC_ВремяНачала" FromRole="ВремяНачала" ToRole="Описание_MOOC" />
+        </EntityType>
+        <EntityType Name="Группа_ВремяНачала">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Значение" Type="Int32" />
+          <NavigationProperty Name="ВремяНачала" Relationship="Self.FK_ВремяНачала_Группа_ВремяНачала" FromRole="Группа_ВремяНачала" ToRole="ВремяНачала" />
+        </EntityType>
+        <EntityType Name="Группа_ПредметнаяОбласть">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Значение" Type="Int32" />
+          <NavigationProperty Name="ПредметнаяОбласть" Relationship="Self.FK_ПредметнаяОбласть_Группа_ПредметнаяОбласть" FromRole="Группа_ПредметнаяОбласть" ToRole="ПредметнаяОбласть" />
+        </EntityType>
+        <EntityType Name="Описание_MOOC">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="URL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="НазваниеКурса" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Провайдер" Type="Int32" Nullable="false" />
+          <Property Name="Институт" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ПредметнаяОбласть" Type="Int32" />
+          <Property Name="ВремяНачала" Type="Int32" />
+          <Property Name="НаличиеСертификата" Type="Boolean" />
+          <Property Name="Школа" Type="Boolean" />
+          <Property Name="ВысшееОбразование" Type="Boolean" />
+          <Property Name="ПовышениеКвалификации" Type="Boolean" />
+          <NavigationProperty Name="ВремяНачала1" Relationship="Self.FK_Описание_MOOC_ВремяНачала" FromRole="Описание_MOOC" ToRole="ВремяНачала" />
+          <NavigationProperty Name="ПредметнаяОбласть1" Relationship="Self.FK_Описание_MOOC_ПредметнаяОбласть" FromRole="Описание_MOOC" ToRole="ПредметнаяОбласть" />
+          <NavigationProperty Name="Провайдер1" Relationship="Self.FK_Описание_MOOC_Провайдер" FromRole="Описание_MOOC" ToRole="Провайдер" />
+        </EntityType>
+        <EntityType Name="ПредметнаяОбласть">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Группа" Type="Int32" />
+          <NavigationProperty Name="Группа_ПредметнаяОбласть" Relationship="Self.FK_ПредметнаяОбласть_Группа_ПредметнаяОбласть" FromRole="ПредметнаяОбласть" ToRole="Группа_ПредметнаяОбласть" />
+          <NavigationProperty Name="Описание_MOOC" Relationship="Self.FK_Описание_MOOC_ПредметнаяОбласть" FromRole="ПредметнаяОбласть" ToRole="Описание_MOOC" />
+        </EntityType>
+        <EntityType Name="Провайдер">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Описание_MOOC" Relationship="Self.FK_Описание_MOOC_Провайдер" FromRole="Провайдер" ToRole="Описание_MOOC" />
+        </EntityType>
+        <Association Name="FK_ВремяНачала_Группа_ВремяНачала">
+          <End Role="Группа_ВремяНачала" Type="Self.Группа_ВремяНачала" Multiplicity="0..1" />
+          <End Role="ВремяНачала" Type="Self.ВремяНачала" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Группа_ВремяНачала">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ВремяНачала">
+              <PropertyRef Name="Группа" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Описание_MOOC_ВремяНачала">
+          <End Role="ВремяНачала" Type="Self.ВремяНачала" Multiplicity="0..1" />
+          <End Role="Описание_MOOC" Type="Self.Описание_MOOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ВремяНачала">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Описание_MOOC">
+              <PropertyRef Name="ВремяНачала" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ПредметнаяОбласть_Группа_ПредметнаяОбласть">
+          <End Role="Группа_ПредметнаяОбласть" Type="Self.Группа_ПредметнаяОбласть" Multiplicity="0..1" />
+          <End Role="ПредметнаяОбласть" Type="Self.ПредметнаяОбласть" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Группа_ПредметнаяОбласть">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ПредметнаяОбласть">
+              <PropertyRef Name="Группа" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Описание_MOOC_ПредметнаяОбласть">
+          <End Role="ПредметнаяОбласть" Type="Self.ПредметнаяОбласть" Multiplicity="0..1" />
+          <End Role="Описание_MOOC" Type="Self.Описание_MOOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ПредметнаяОбласть">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Описание_MOOC">
+              <PropertyRef Name="ПредметнаяОбласть" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Описание_MOOC_Провайдер">
+          <End Role="Провайдер" Type="Self.Провайдер" Multiplicity="1" />
+          <End Role="Описание_MOOC" Type="Self.Описание_MOOC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Провайдер">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Описание_MOOC">
+              <PropertyRef Name="Провайдер" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MOOCEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Admin" EntityType="Self.Admin" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="ВремяНачала" EntityType="Self.ВремяНачала" />
+          <EntitySet Name="Группа_ВремяНачала" EntityType="Self.Группа_ВремяНачала" />
+          <EntitySet Name="Группа_ПредметнаяОбласть" EntityType="Self.Группа_ПредметнаяОбласть" />
+          <EntitySet Name="Описание_MOOC" EntityType="Self.Описание_MOOC" />
+          <EntitySet Name="ПредметнаяОбласть" EntityType="Self.ПредметнаяОбласть" />
+          <EntitySet Name="Провайдер" EntityType="Self.Провайдер" />
+          <AssociationSet Name="FK_ВремяНачала_Группа_ВремяНачала" Association="Self.FK_ВремяНачала_Группа_ВремяНачала">
+            <End Role="Группа_ВремяНачала" EntitySet="Группа_ВремяНачала" />
+            <End Role="ВремяНачала" EntitySet="ВремяНачала" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Описание_MOOC_ВремяНачала" Association="Self.FK_Описание_MOOC_ВремяНачала">
+            <End Role="ВремяНачала" EntitySet="ВремяНачала" />
+            <End Role="Описание_MOOC" EntitySet="Описание_MOOC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ПредметнаяОбласть_Группа_ПредметнаяОбласть" Association="Self.FK_ПредметнаяОбласть_Группа_ПредметнаяОбласть">
+            <End Role="Группа_ПредметнаяОбласть" EntitySet="Группа_ПредметнаяОбласть" />
+            <End Role="ПредметнаяОбласть" EntitySet="ПредметнаяОбласть" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Описание_MOOC_ПредметнаяОбласть" Association="Self.FK_Описание_MOOC_ПредметнаяОбласть">
+            <End Role="ПредметнаяОбласть" EntitySet="ПредметнаяОбласть" />
+            <End Role="Описание_MOOC" EntitySet="Описание_MOOC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Описание_MOOC_Провайдер" Association="Self.FK_Описание_MOOC_Провайдер">
+            <End Role="Провайдер" EntitySet="Провайдер" />
+            <End Role="Описание_MOOC" EntitySet="Описание_MOOC" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище MOOCModelContainer" CdmEntityContainer="MOOCEntities">
+          <EntitySetMapping Name="Admin">
+            <EntityTypeMapping TypeName="MOOCModel.Admin">
+              <MappingFragment StoreEntitySet="Admin">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="PassHash" ColumnName="PassHash" />
+                <ScalarProperty Name="Salt" ColumnName="Salt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="MOOCModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ВремяНачала">
+            <EntityTypeMapping TypeName="MOOCModel.ВремяНачала">
+              <MappingFragment StoreEntitySet="ВремяНачала">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+                <ScalarProperty Name="Группа" ColumnName="Группа" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Группа_ВремяНачала">
+            <EntityTypeMapping TypeName="MOOCModel.Группа_ВремяНачала">
+              <MappingFragment StoreEntitySet="Группа_ВремяНачала">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+                <ScalarProperty Name="Значение" ColumnName="Значение" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Группа_ПредметнаяОбласть">
+            <EntityTypeMapping TypeName="MOOCModel.Группа_ПредметнаяОбласть">
+              <MappingFragment StoreEntitySet="Группа_ПредметнаяОбласть">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+                <ScalarProperty Name="Значение" ColumnName="Значение" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Описание_MOOC">
+            <EntityTypeMapping TypeName="MOOCModel.Описание_MOOC">
+              <MappingFragment StoreEntitySet="Описание_MOOC">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="НазваниеКурса" ColumnName="НазваниеКурса" />
+                <ScalarProperty Name="Провайдер" ColumnName="Провайдер" />
+                <ScalarProperty Name="Институт" ColumnName="Институт" />
+                <ScalarProperty Name="ПредметнаяОбласть" ColumnName="ПредметнаяОбласть" />
+                <ScalarProperty Name="ВремяНачала" ColumnName="ВремяНачала" />
+                <ScalarProperty Name="НаличиеСертификата" ColumnName="НаличиеСертификата" />
+                <ScalarProperty Name="Школа" ColumnName="Школа" />
+                <ScalarProperty Name="ВысшееОбразование" ColumnName="ВысшееОбразование" />
+                <ScalarProperty Name="ПовышениеКвалификации" ColumnName="ПовышениеКвалификации" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ПредметнаяОбласть">
+            <EntityTypeMapping TypeName="MOOCModel.ПредметнаяОбласть">
+              <MappingFragment StoreEntitySet="ПредметнаяОбласть">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+                <ScalarProperty Name="Группа" ColumnName="Группа" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Провайдер">
+            <EntityTypeMapping TypeName="MOOCModel.Провайдер">
+              <MappingFragment StoreEntitySet="Провайдер">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

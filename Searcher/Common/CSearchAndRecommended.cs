@@ -127,7 +127,7 @@ namespace Searcher
         {
             SubjectsVal = new List<int>();
             TimesVal = new List<int>();
-            using (var ctx = new MOOC())
+            using (var ctx = new MOOCEntities())
             {
                 var Subs = ctx.Группа_ПредметнаяОбласть.ToList();
                 for (int i = 0; i < Subjects.Count; i++)
@@ -147,7 +147,7 @@ namespace Searcher
 
         private string GetUniversityAbbreviation(string Name)
         {
-            using (var ctx = new MOOC())
+            using (var ctx = new MOOCEntities())
             {
                 foreach(var Abb in ctx.Институт)
                 {
@@ -175,7 +175,7 @@ namespace Searcher
             GetSynonims(Name);
             CharactersToValue(Subjects, Times);
 
-            using (var ctx = new MOOC())
+            using (var ctx = new MOOCEntities())
             {
                 foreach (var course in ctx.Описание_MOOC)
                 {

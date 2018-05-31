@@ -98,9 +98,9 @@ namespace WebIntegrator.Models
         {
             CSearchAndRecommended Searcher = new CSearchAndRecommended();
 
-            //SearchingCourses = Searcher.SearchCourse(NameText, SelectedSubjects, SelectedStartTime,
-            //    SelectedProvider, SelectedUniversity, IsSertificate, IsSchool, IsUniversity, IsQulification);
-            //RecommendedCourses = Searcher.GetReccomend();
+            SearchingCourses = Searcher.SearchCourse(NameText, SelectedSubjects, SelectedStartTime,
+                SelectedProvider, SelectedUniversity, IsSertificate, IsSchool, IsUniversity, IsQulification);
+            RecommendedCourses = Searcher.GetReccomend();
         }
     }
 }
