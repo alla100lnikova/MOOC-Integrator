@@ -30,7 +30,7 @@
                     <label class="btn btn-primary @(Model.IsQulification ? "active" : "")">
                         <input type="checkbox" autocomplete="@(Model.IsQulification ? "on" : "off")" name="IsQulification" id="IsQulification">
                         Повышение <br>
-                        квалификации
+                        квалиф-ции
                     </label>
                 </div>
             </div>
@@ -43,14 +43,23 @@
                     }
                     @foreach (var sub in Model.Subjects)
                     {
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-outline-primary btn-lg btn-block @(sub.Value ? "active" : "")">
-                                <input type="checkbox" autocomplete="@(sub.Value ? "on" : "off")" name="@sub.Key" id="@sub.Key">
-                                      @sub.Key
-                            </label>
-                        </div>
+                        if (sub.Key != "Другое")
+                        {
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-primary btn-lg btn-block @(sub.Value ? "active" : "")">
+                                    <input type="checkbox" autocomplete="@(sub.Value ? "on" : "off")" name="@sub.Key" id="@sub.Key">
+                                          @sub.Key
+                                </label>
+                            </div>
+                        }
                         i++;
                     }
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-primary btn-lg btn-block @(Model.Subjects["Другое"] ? "active" : "")">
+                            <input type="checkbox" autocomplete="@(Model.Subjects["Другое"] ? "on" : "off")" name="Другое" id="Другое">
+                            Другое
+                        </label>
+                    </div>
                 </div>
             </div>
 

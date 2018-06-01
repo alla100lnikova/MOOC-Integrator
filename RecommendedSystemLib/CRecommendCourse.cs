@@ -32,5 +32,11 @@ namespace RecommendedSystemLib
         {
             get { return m_CourseCharacters; }
         }
+
+
+        public void RecalcD1()
+        {
+            CourseCharacters.RecalcD1(m_SubjectValue, m_StartTimeValue);
+        }
     }
 }

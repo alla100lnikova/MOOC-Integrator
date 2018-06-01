@@ -93,7 +93,7 @@ namespace RecommendedSystemLib
             string[] Words = Name.Split(Separators);
             foreach (string word in Words)
             {
-                string Word = GetWord(word);
+                string Word = GetWord(word).ToLower();
                 WordList.Add(Word);
             }
 
@@ -104,7 +104,7 @@ namespace RecommendedSystemLib
         {
             int CountWord = 0;
 
-            StrWord = GetWord(StrWord);
+            StrWord = GetWord(StrWord).ToLower();
             CountWord = CRecommendationsCalculation.WordCounter(StrWord);
 
             return new CWord(CountWord, StrWord);

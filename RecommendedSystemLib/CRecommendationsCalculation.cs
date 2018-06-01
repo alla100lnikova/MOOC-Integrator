@@ -8,6 +8,7 @@ namespace RecommendedSystemLib
     {
         SortedList<double, CRecommendCourse> RecCoursesListByName;
         SortedList<double, CRecommendCourse> RecCoursesListByChar;
+        static List<Course> m_NamesCourseList;
         static List<CRecommendCourse> m_NamesList;
         static SortedList<string, int> m_CountWordMap;
 
@@ -21,9 +22,9 @@ namespace RecommendedSystemLib
             }
             else
             {
-                for (int i = 0; i < m_NamesList.Count; i++)
+                for (int i = 0; i < m_NamesCourseList.Count; i++)
                 {
-                    string Name = (m_NamesList[i]).Name.ToLower();
+                    string Name = (m_NamesCourseList[i]).Name.ToLower();
                     if (Name.IndexOf(Word.ToLower()) >= 0)
                     {
                         Count++;
@@ -49,7 +50,7 @@ namespace RecommendedSystemLib
             int Index = Courses.IndexOfKey(Value);
             while (Index >= 0)
             {
-                if (Index != RecCoursesListByName.Count - 1)
+                if (Index != Courses.Count - 1)
                 {
                     if (Courses.Keys[Index + 1] > Value - 0.00000000001)
                     {
@@ -72,7 +73,14 @@ namespace RecommendedSystemLib
             CRecommendCourse UserRequest, int CourseIndex, bool IsName = true)
         {
             double CalcName;
-            CalcName = Char.CalcSimilarityDegree(UserRequest.CourseCharacters);
+            if (Char is CName)
+            {
+                CalcName = Char.CalcSimilarityDegree(UserRequest.NameCharacters);
+            }
+            else
+            {
+                CalcName = Char.CalcSimilarityDegree(UserRequest.CourseCharacters);
+            }
             CheckKey(Courses, ref CalcName);            
             return CalcName;
         }
@@ -85,13 +93,15 @@ namespace RecommendedSystemLib
                 if(i < SelectSub.Count)
                 {
                     int Diff = System.Math.Abs(SelectSub[i] - course.SubjectValue);
-                    Sub = Diff < MinDiffSub ? SelectSub[i] : Sub; 
+                    Sub = Diff < MinDiffSub ? SelectSub[i] : Sub;
+                    MinDiffSub = System.Math.Min(Diff, MinDiffSub);
                 }
 
                 if (i < SelectTime.Count)
                 {
                     int Diff = System.Math.Abs(SelectTime[i] - course.StartTimeValue);
                     Time = Diff < MinDiffTime ? SelectTime[i] : Time;
+                    MinDiffTime = System.Math.Min(Diff, MinDiffTime);
                 }
 
                 i++;
@@ -101,9 +111,12 @@ namespace RecommendedSystemLib
         private void FindSortedCourseList(List<Course> NamesList, Course UserRequestText, 
             List<int> SelectSub, List<int> SelectTime)
         {
+            m_NamesCourseList = NamesList;
+            CWord.NamesNumber = NamesList.Count;
+            m_CountWordMap = new SortedList<string, int>();
             ToRecommendCourse(NamesList);
             RecCoursesListByName = new SortedList<double, CRecommendCourse>();
-            m_CountWordMap = new SortedList<string, int>();
+            RecCoursesListByChar = new SortedList<double, CRecommendCourse>();
             CWord.NamesNumber = NamesList.Count + 1;
             CRecommendCourse UserRequest = new CRecommendCourse(UserRequestText);
 
@@ -116,7 +129,7 @@ namespace RecommendedSystemLib
                 FindSubAndTime(m_NamesList[i], SelectSub, SelectTime, ref Sub, ref Time);
                 UserRequest.StartTimeValue = Time;
                 UserRequest.SubjectValue = Sub;
-                UserRequest.CourseCharacters.RecalcD1();
+                UserRequest.RecalcD1();
 
                 CalcName = CalcSimilarityDegree(m_NamesList[i].CourseCharacters, RecCoursesListByChar, UserRequest, i);
                 RecCoursesListByChar.Add(CalcName, m_NamesList[i]);
@@ -134,17 +147,19 @@ namespace RecommendedSystemLib
                 //Цикл по подсписку, ищем место для курса в результате
                 //Смотрим на его место в обоих списках и берем среднее
                 SortedList<double, CRecommendCourse> Res = new SortedList<double, CRecommendCourse>();
-                for (int j = ResultName[i].Count - 1; j > 0; j--)
+                for (int j = ResultName[i].Count - 1; j >= 0; j--)
                 {
-                    int Index = ResultChar[i].IndexOfValue(ResultName[i][j]);
-                    double ResVal = (double)j + Index / 2;
+                    int Index = ResultChar[i].IndexOfValue(ResultName[i].ElementAt(j).Value);
+                    double ResVal = ((double)j * 2 + Index) / 2;
                     CheckKey(Res, ref ResVal);
-                    Res.Add(ResVal, ResultName[i][j]);
+                    Res.Add(ResVal, ResultName[i].ElementAt(j).Value);
                 }
 
                 foreach(var course in Res)
                 {
                     Result.Add(course.Value);
+                    if (Result.Count >= 20)
+                        return Result;
                 }
             }
 
@@ -168,10 +183,7 @@ namespace RecommendedSystemLib
                 k++;
 
                 ResultChar.Add(RecCoursesListByChar);
-                RecCoursesListByChar.Clear();
-
                 ResultName.Add(RecCoursesListByName);
-                RecCoursesListByName.Clear();
                 
                 if (ResultName.Count >= 20) break;
             }

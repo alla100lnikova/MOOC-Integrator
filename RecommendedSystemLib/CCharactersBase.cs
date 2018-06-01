@@ -36,7 +36,7 @@ namespace RecommendedSystemLib
 
     public class CCharacters : CCharactersBase
     {
-        public List<int> CharWeight { get; }
+        public List<int> CharWeight { get; set; }
 
         public CCharacters(int subject, int startTime, bool isSertificate, bool isSchool, bool isUniversity, bool isQualification)
         {
@@ -62,8 +62,10 @@ namespace RecommendedSystemLib
             m_D1 = Math.Sqrt(SumSqr);
         }
 
-        public void RecalcD1()
+        public void RecalcD1(int newsubject, int newstartTime)
         {
+            CharWeight[0] = newsubject;
+            CharWeight[1] = newstartTime;
             CalcD1();
         }
 
