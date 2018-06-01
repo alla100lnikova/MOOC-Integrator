@@ -19,7 +19,10 @@ namespace RecommendedSystemLib
             : base(course.Name, course.URL, course.Provider, course.Subject, course.StartTime, course.University, 
                   course.IsSertificate, course.IsSchool, course.IsUniversity, course.IsQualification, course.SubjectValue, course.StartTimeValue)
         {
-            m_NameCharacters = new CName(m_Name);
+            if (m_Name == "")
+                m_NameCharacters = null;
+            else
+                m_NameCharacters = new CName(m_Name);
             m_CourseCharacters = new CCharacters(m_SubjectValue, m_StartTimeValue, m_IsSertificate, m_IsSchool, m_IsUniversity, m_IsQualification);
         }
 

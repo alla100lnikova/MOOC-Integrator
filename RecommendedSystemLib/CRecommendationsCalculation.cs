@@ -122,8 +122,12 @@ namespace RecommendedSystemLib
 
             for (int i = 0; i < m_NamesList.Count; i++)
             {
-                double CalcName = CalcSimilarityDegree(m_NamesList[i].NameCharacters, RecCoursesListByName, UserRequest, i);
-                RecCoursesListByName.Add(CalcName, m_NamesList[i]);
+                double CalcName = 0;
+                if (UserRequestText.Name != "")
+                {
+                    CalcName = CalcSimilarityDegree(m_NamesList[i].NameCharacters, RecCoursesListByName, UserRequest, i);
+                    RecCoursesListByName.Add(CalcName, m_NamesList[i]);
+                }
 
                 int Sub = 0, Time = 0;
                 FindSubAndTime(m_NamesList[i], SelectSub, SelectTime, ref Sub, ref Time);
@@ -153,6 +157,16 @@ namespace RecommendedSystemLib
                     double ResVal = ((double)j * 2 + Index) / 2;
                     CheckKey(Res, ref ResVal);
                     Res.Add(ResVal, ResultName[i].ElementAt(j).Value);
+                }
+                if(ResultName[i].Count == 0)
+                {
+                    foreach (var course in ResultChar[i])
+                    {
+                        Result.Add(course.Value);
+                        if (Result.Count >= 20)
+                            return Result;
+                    }
+                    return Result;
                 }
 
                 foreach(var course in Res)
