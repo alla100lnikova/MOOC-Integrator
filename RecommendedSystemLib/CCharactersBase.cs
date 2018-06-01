@@ -40,13 +40,15 @@ namespace RecommendedSystemLib
 
         public CCharacters(int subject, int startTime, bool isSertificate, bool isSchool, bool isUniversity, bool isQualification)
         {
+            //Чтобы нигде не появилось деление на 0, учитывая важность не самих значений, а только их разности:
+            //пусть 1 - критерий выбран, а 3 - критерий не выбран
             CharWeight = new List<int>();
             CharWeight.Add(subject);
             CharWeight.Add(startTime);
-            CharWeight.Add(isSertificate ? 1 : 0);
-            CharWeight.Add(isSchool ? 1 : 0);
-            CharWeight.Add(isUniversity ? 1 : 0);
-            CharWeight.Add(isQualification ? 1 : 0);
+            CharWeight.Add(isSertificate ? 1 : 3);
+            CharWeight.Add(isSchool ? 1 : 3);
+            CharWeight.Add(isUniversity ? 1 : 3);
+            CharWeight.Add(isQualification ? 1 : 3);
 
             CalcD1();
         }

@@ -37,11 +37,13 @@ namespace RecommendedSystemLib
 
             if (NamesNumber != 0)
             {
+                if (NamesWithThisWord == 0)
+                    NamesWithThisWord = 1;
                 double Frequency = NamesWithThisWord / Convert.ToDouble(NamesNumber);
-                double IDF = Math.Log(1 / Frequency, 2);
+                double IDF = Frequency == 1 ? 0 : Math.Log(1 / Frequency, 2);
                 double Noise = Frequency * IDF;
                 double Signal = Math.Log(NamesNumber, 2) - Noise;
-                m_Weight = Signal / Noise;
+                m_Weight = Noise == 0 ? 1 : Signal / Noise;
             }
         }
 

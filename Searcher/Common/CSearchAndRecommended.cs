@@ -350,11 +350,11 @@ namespace Searcher
                             FoundCourses.Add(CurCourse);
                         }
                         else
-                            AddRecommed(Name, IsSchool, IsUniversity, IsQualification, CurCourse, Subject, Time);
+                            AddRecommend(Name, IsSchool, IsUniversity, IsQualification, CurCourse, Subject, Time);
                     }
                     else
                     {
-                        AddRecommed(Name, IsSchool, IsUniversity, IsQualification, CurCourse, Subject, Time);
+                        AddRecommend(Name, IsSchool, IsUniversity, IsQualification, CurCourse, Subject, Time);
                     }
                 }
             }
@@ -365,7 +365,7 @@ namespace Searcher
         }
 
         //Проверяем, стоит ли отожить для рекомендации
-        private void AddRecommed(string Name, bool IsSchool, bool IsUniversity, bool IsQualification, Course CurCourse, eCourseType Subject, eCourseType Time)
+        private void AddRecommend(string Name, bool IsSchool, bool IsUniversity, bool IsQualification, Course CurCourse, eCourseType Subject, eCourseType Time)
         {
             if (Time != eCourseType.ctNotMatch
                 && Subject != eCourseType.ctNotMatch)
