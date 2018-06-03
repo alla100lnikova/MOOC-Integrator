@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Diagnostics;
 using System.Web.Mvc;
 using WebIntegrator.Models;
+using System.IO;
 
 namespace WebIntegrator.Controllers
 {
@@ -19,6 +20,10 @@ namespace WebIntegrator.Controllers
         [HttpPost]
         public ActionResult Index(SearcherViewModel model)
         {
+            Stopwatch Timer = new Stopwatch();
+            Timer.Start();
+            Searcher.Administration.ToLog("Start work: " + model.NameText);
+
             Model.IsSertificate = Request.Form["IsSertificate"] ==  "on";
             Model.IsSchool = Request.Form["IsSchool"] == "on";
             Model.IsUniversity = Request.Form["IsUniversity"] == "on";
@@ -57,7 +62,17 @@ namespace WebIntegrator.Controllers
             }
 
             Model.NameText = model.NameText;
+
+            Searcher.Administration.ToLog("Characters: SelectedSubjects count = " + Model.SelectedSubjects.Count);
+            Searcher.Administration.ToLog("Characters: SelectedStartTime count = " + Model.SelectedStartTime.Count);
+            Searcher.Administration.ToLog("Characters: SelectedUniversity count = " + Model.SelectedUniversity.Count);
+            Searcher.Administration.ToLog("Characters: SelectedProvider count = " + Model.SelectedProvider.Count);
             Model.Search();
+
+            Timer.Stop();
+            Searcher.Administration.ToLog("End work - " + Timer.ElapsedMilliseconds + " ms");
+            Searcher.Administration.ToLog("Find: " + Model.SearchingCourses.Count + " | Recommend: " + Model.RecommendedCourses.Count);
+
             return View(Model);
         }
 

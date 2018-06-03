@@ -126,6 +126,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Common\Log.txt" />
     <Content Include="DataBase\MOOC.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MOOC.edmx</DependentUpon>

@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Интегратор русскоязычных курсов";
 }
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <form method="post">
     <div class="form-inline my-1 my-lg-5">
         @Html.TextBoxFor(m => m.NameText, new { @class = "form-control mr-md-2", placeholder = "Название..." })
@@ -149,7 +150,8 @@
                 i = 0;
             }
             @if (Model.RecommendedCourses.Count != 0)
-            {
+             {
+                Searcher.Administration.ToLog("Рекомендованные курсы:");
                 foreach (var course in Model.RecommendedCourses)
                 {
                     <div class="card @(i % 2 == 0 ? "border-primary" : "border-secondary") mb-3" style="max-width: 20rem;">
@@ -166,6 +168,7 @@
                         </div>
                     </div>
                     i++;
+                    Searcher.Administration.ToLog(course.Name);
                 }
             }
             else

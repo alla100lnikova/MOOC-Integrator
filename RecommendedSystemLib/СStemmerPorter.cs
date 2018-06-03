@@ -88,13 +88,19 @@ namespace RecommendedSystemLib
 
         public List<string> NameParseStem(string Name)
         {
+            if (Name == null)
+                Name = "";
             List<string> WordList = new List<string>();
-            char[] Separators = { ' ', ',', '.', '/', ':', ';', '|', '\'', '"', '(', ')', '+', '-', '=', '*', '&' };
+            Name = Name.ToLower();
+            char[] Separators = { ' ', ',', '.', '/', ':', ';', '|', '\'', '"', '(', ')', '-', '=', '*', '&' };
             string[] Words = Name.Split(Separators);
             foreach (string word in Words)
             {
-                string Word = GetWord(word).ToLower();
-                WordList.Add(Word);
+                if (CName.StopWords.IndexOf(word) < 0 && !String.IsNullOrEmpty(word))
+                {
+                    string Word = GetWord(word);
+                    WordList.Add(Word);
+                }
             }
 
             return WordList;

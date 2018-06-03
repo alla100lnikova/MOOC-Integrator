@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using RecommendedSystemLib;
 using System.Xml;
+using System.Diagnostics;
 
 namespace Searcher
 {
@@ -16,34 +17,129 @@ namespace Searcher
         private bool IsSert;
         private List<bool> Auditory;
 
-        private Dictionary<char, char> Translate = new Dictionary<char, char>()
+        private Dictionary<string, string> Translate = new Dictionary<string, string>()
         {
-            {'a','а' },
-            {'b','б'},
-            {'c','ц'},
-            {'d','д'},
-            {'e','е'},
-            {'f','ф'},
-            {'g','г'},
-            {'h','х'},
-            {'i','и'},
-            {'j','ж'},
-            {'k','к'},
-            {'l','л'},
-            {'m','м'},
-            {'n','н'},
-            {'o','о'},
-            {'p','п'},
-            {'q','к'},
-            {'r','р'},
-            {'s','с'},
-            {'t','т'},
-            {'u','у'},
-            {'x','к'},
-            {'y','и'},
-            {'z','з'},
-            {'w','в'},
-            {'v','в'},
+            {"a","а" },
+            {"b","б"},
+            {"c","ц"},
+            {"d","д"},
+            {"e","е"},
+            {"f","ф"},
+            {"g","г"},
+            {"h","х"},
+            {"i","и"},
+            {"j","ж"},
+            {"k","к"},
+            {"l","л"},
+            {"m","м"},
+            {"n","н"},
+            {"o","о"},
+            {"p","п"},
+            {"q","к"},
+            {"r","р"},
+            {"s","с"},
+            {"t","т"},
+            {"u","у"},
+            {"x","к"},
+            {"y","и"},
+            {"z","з"},
+            {"w","в"},
+            {"v","в"},
+            {"линукс","linux"},
+            {"линух","linux"},
+            {"веб","web"},
+            {"майкрософт","microsoft"},
+            {"эксель","excel"},
+            {"ворд","word"},
+            {"вижуал","visual"},
+            {"визуал","visual"},
+            {"студио","studio"},
+            {"ит","it"},
+            {"сервер","server"},
+            {"оракл","oracle"},
+            {"питон","python"},
+            {"лисп","lisp"},
+            {"андроид","android"},
+            {"впф","wpf"},
+            {"интернет","internet"},
+            {"виндовс","windows"},
+            {"виндоус","windows"},
+            {"маткад","matcad"},
+            {"интел","intel"},
+            {"асп","asp"},
+            {"нет","net"},
+            {"юникс","unix"},
+            {"пролог","prolog"},
+            {"опенофис","openoffice"},
+            {"фотошоп","photoshop"},
+            {"яндекс","yandex"},
+            {"пхп","php"},
+            {"делфи","delphi"},
+            {"дэлфи","delphi"},
+            {"паскаль","pascal"},
+            {"компьютер","computer"},
+            {"хеш","hash"},
+            {"хэш","hash"},
+            {"дизайн","design"},
+            {"тайм","time"},
+            {"1","один"},
+            {"2","два"},
+            {"3","три"},
+            {"4","четыре"},
+            {"5","пять"},
+            {"6","шесть"},
+            {"7","семь"},
+            {"8","восемь"},
+            {"9","девять"},
+            {"10","десять"},
+            {"100","сто"},
+            {"1000","тысяча"},
+            {"linux","линукс"},
+            {"web","веб"},
+            {"microsoft","майкрософт"},
+            {"excel","эксель"},
+            {"word","ворд"},
+            {"visual","вижуал"},
+            {"studio","студио"},
+            {"it","ит"},
+            {"server","сервер"},
+            {"oracle","оракл"},
+            {"python","питон"},
+            {"lisp","лисп"},
+            {"android","андроид"},
+            {"wpf","впф"},
+            {"internet","интернет"},
+            {"windows","виндовс"},
+            {"matcad","маткад"},
+            {"intel","интел"},
+            {"asp","асп"},
+            {"net","нет"},
+            {"unix","юникс"},
+            {"prolog","пролог"},
+            {"openoffice","опенофис"},
+            {"photoshop","фотошоп"},
+            {"yandex","яндекс"},
+            {"php","пхп"},
+            {"delphi","делфи"},
+            {"pascal","паскаль"},
+            {"computer","компьютер"},
+            {"hash","хэш"},
+            {"design","дизайн"},
+            {"time","тайм"},
+            {"один","1"},
+            {"два","2"},
+            {"три","3"},
+            {"четыре","4"},
+            {"пять","5"},
+            {"шесть","6"},
+            {"семь","7"},
+            {"восемь","8"},
+            {"девять","9"},
+            {"десять","10"},
+            {"сто","100"},
+            {"тысяча","1000"},
+            {"google", "гугл" },
+            {"гугл","google" }
         };
 
         public CSearchAndRecommended() { }
@@ -62,7 +158,7 @@ namespace Searcher
         private void ReadFromXml(ref List<string> Syns)
         {
             string Name = Syns[0].ToLower();
-            char Name0 = Name[0];
+            string Name0 = Name[0].ToString();
             if(Translate.Keys.Contains(Name0))
             {
                 Name0 = Translate[Name0];
@@ -120,13 +216,19 @@ namespace Searcher
             if (Request != "")
             {
                 List<string> Names = ParseName(Request);
-                char[] Separators = { ' ', ',', '.', '/', ':', ';', '|', '\'', '"', '(', ')', '+', '-', '=', '*', '&' };
+                char[] Separators = { ' ', ',', '.', '/', ':', ';', '|', '\'', '"', '(', ')', '-', '=', '*', '&' };
                 string[] Words = CourseName.Split(Separators);
                 int i = 0;
                 CourseName = CourseName.ToLower();
                 foreach (string name in Names)
                 {
-                    MyText = CourseName.IndexOf(name) >= 0 ? MyText + 1 : MyText;
+                    if (CourseName.IndexOf(name) >= 0)
+                        MyText++;
+                    else
+                    {
+                        if (Translate.Keys.Contains(name.ToLower()) && CourseName.IndexOf(Translate[name.ToLower()]) >= 0)
+                            MyText++;
+                    }
                     i++;
                 }
                 IsCheck = MyText >= Names.Count || MyText == Words.Length;
@@ -213,6 +315,10 @@ namespace Searcher
             RecommendedCourses = new SortedList<int, List<Course>>();
             List<Course> FoundCourses = new List<Course>();
             IsSert = IsSertificate;
+            Stopwatch Timer = new Stopwatch();
+            Timer.Start();
+            Administration.ToLog("Start search courses...");
+
             CharactersToValue(Subjects, Times);
 
             using (var ctx = new MOOCEntities())
@@ -359,6 +465,8 @@ namespace Searcher
                 }
             }
 
+            Timer.Stop();
+            Administration.ToLog("End search courses - " + Timer.ElapsedMilliseconds + " ms");
             RecommendedResult = RecommendCalculation(Name);
 
             return FoundCourses;
@@ -392,7 +500,13 @@ namespace Searcher
             CRecommendationsCalculation RecSystem = new CRecommendationsCalculation(); 
             if (RecommendedCourses.Count > 0)
             {
-               return RecSystem.FindResult(RecommendedCourses, Request, SubjectsVal, TimesVal, IsSert, Auditory);
+                Stopwatch Timer = new Stopwatch();
+                Timer.Start();
+                Administration.ToLog("Start calc recommendations...");
+                List<Course> Result = RecSystem.FindResult(RecommendedCourses, Request, SubjectsVal, TimesVal, IsSert, Auditory);
+                Timer.Stop();
+                Administration.ToLog("End calc recommendations - " + Timer.ElapsedMilliseconds + " ms");
+                return Result;
             }
 
             return new List<Course>();

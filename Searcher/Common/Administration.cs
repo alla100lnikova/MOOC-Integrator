@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 
 namespace Searcher
 {
@@ -25,6 +21,13 @@ namespace Searcher
                 ctx.Описание_MOOC.Remove(course);
                 ctx.SaveChanges();
             }
+        }
+
+        public static void ToLog(string Text)
+        {
+            StreamWriter Writer = new StreamWriter("Log.txt", true, System.Text.Encoding.GetEncoding(1251));
+            Writer.WriteLine(Text);
+            Writer.Close();
         }
     }
 }

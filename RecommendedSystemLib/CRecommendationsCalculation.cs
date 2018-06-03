@@ -52,7 +52,7 @@ namespace RecommendedSystemLib
             {
                 if (Index != Courses.Count - 1)
                 {
-                    if (Courses.Keys[Index + 1] > Value - 0.00000000001)
+                    if (Courses.Keys[Index + 1] - Value >= 0.00000000001)
                     {
                         Value = (Courses.Keys[Index] + Courses.Keys[Index + 1]) / 2;
                     }
@@ -119,22 +119,25 @@ namespace RecommendedSystemLib
             RecCoursesListByChar = new SortedList<double, CRecommendCourse>();
             CWord.NamesNumber = NamesList.Count + 1;
             CRecommendCourse UserRequest = new CRecommendCourse(UserRequestText);
-
+            //Проход по очередному списку "отложенных"
             for (int i = 0; i < m_NamesList.Count; i++)
             {
                 double CalcName = 0;
+                //Если название не было задано, не расчитываем для него
                 if (UserRequestText.Name != "")
                 {
                     CalcName = CalcSimilarityDegree(m_NamesList[i].NameCharacters, RecCoursesListByName, UserRequest, i);
                     RecCoursesListByName.Add(CalcName, m_NamesList[i]);
                 }
-
+                //Может быть несколько выбранных чекбоксов, перебирать все сочетания долго
+                //Курс был отложен из-за близости к конкретному значению, поэтому ищем его 
                 int Sub = 0, Time = 0;
                 FindSubAndTime(m_NamesList[i], SelectSub, SelectTime, ref Sub, ref Time);
+                //Формируем курс, с которым нужно сравнивать характеристики
                 UserRequest.StartTimeValue = Time;
                 UserRequest.SubjectValue = Sub;
                 UserRequest.RecalcD1();
-
+                //Расчитываем степень схожести
                 CalcName = CalcSimilarityDegree(m_NamesList[i].CourseCharacters, RecCoursesListByChar, UserRequest, i);
                 RecCoursesListByChar.Add(CalcName, m_NamesList[i]);
             }
@@ -154,7 +157,8 @@ namespace RecommendedSystemLib
                 for (int j = ResultName[i].Count - 1; j >= 0; j--)
                 {
                     int Index = ResultChar[i].IndexOfValue(ResultName[i].ElementAt(j).Value);
-                    double ResVal = ((double)j * 2 + Index) / 2;
+                    //Место в списке названий важнее, чем место в списке характеристик
+                    double ResVal = ((double)j * 2 + Index) / 3;
                     CheckKey(Res, ref ResVal);
                     Res.Add(ResVal, ResultName[i].ElementAt(j).Value);
                 }
@@ -172,10 +176,10 @@ namespace RecommendedSystemLib
                 foreach(var course in Res)
                 {
                     Result.Add(course.Value);
-                    if (Result.Count >= 20)
+                    if (Result.Count >= 15)
                         return Result;
                 }
-            }
+            }          
 
             return Result;
         }
@@ -191,6 +195,7 @@ namespace RecommendedSystemLib
             int k = 0;
             foreach (var Key in Keys)
             {
+                Administration.ToLog("Synonyms count = " + Key + " Courses count = " + NamesList[Key].Count);
                 FindSortedCourseList(NamesList[Key], 
                     new Course(UserRequestText, "", "", "", "", "", IsSertificate, SelectAuditory[0], SelectAuditory[1], SelectAuditory[2]), 
                     SelectSub, SelectTime);
@@ -199,7 +204,7 @@ namespace RecommendedSystemLib
                 ResultChar.Add(RecCoursesListByChar);
                 ResultName.Add(RecCoursesListByName);
                 
-                if (ResultName.Count >= 20) break;
+                if (ResultName.Count >= 15) break;
             }
 
             return IntersectResults(ResultName, ResultChar);

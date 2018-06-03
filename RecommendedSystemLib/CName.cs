@@ -8,7 +8,7 @@ namespace RecommendedSystemLib
     {
         //Список параметров для каждого слова из названия
         public List<CWord> WordsInName;
-        static List<string> StopWords = new List<string>()
+        public static List<string> StopWords = new List<string>()
         {
                "и", "а", "но",
                "еще","него","сказать",
@@ -57,8 +57,10 @@ namespace RecommendedSystemLib
 
         private void NameParse(string Name)
         {
+            if (Name == null)
+                Name = "";
             CStemmerPorter StemmerPorterMethod = new CStemmerPorter();
-            char[] Separators = { ' ', ',', '.', '/', ':', ';', '|', '\'', '"', '(', ')', '+', '-', '=', '*', '&' };
+            char[] Separators = { ' ', ',', '.', '/', ':', ';', '|', '\'', '"', '(', ')', '-', '=', '*', '&' };
             string[] WordsTmp = Name.Split(Separators);
             List<string> Words = new List<string>();
             for(int i = WordsTmp.Length - 1; i >= 0; i--)
@@ -95,6 +97,8 @@ namespace RecommendedSystemLib
         /// <param name="NewIdCourse">id курса в БД</param>
         public CName(string Name)
         {
+            if (Name == null)
+                Name = "";
             WordsInName = new List<CWord>();
             NameParse(Name);
             CalcD1();

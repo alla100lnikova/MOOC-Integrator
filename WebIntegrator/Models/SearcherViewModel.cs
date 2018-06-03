@@ -67,7 +67,7 @@ namespace WebIntegrator.Models
                 {"Distant.msu", false},
                 {"Stepik", false},
                 {"Университет без границ", false},
-                {"Нацональная платформа", false},
+                {"Национальная платформа", false},
                 {"Arzamas Academy", false},
                 {"ПостНаука", false},
                 { "УниверТВ", false}
