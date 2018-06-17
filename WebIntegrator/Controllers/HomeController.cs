@@ -14,12 +14,13 @@ namespace WebIntegrator.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            return View(Model);
+            return View(new SearcherViewModel());
         }
 
         [HttpPost]
         public ActionResult Index(SearcherViewModel model)
         {
+            Model.IsSearching = true;
             Stopwatch Timer = new Stopwatch();
             Timer.Start();
             Searcher.Administration.ToLog("Start work: " + model.NameText);

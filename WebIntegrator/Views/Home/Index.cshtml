@@ -115,34 +115,41 @@
         </div>
 
         <div class="col-lg-6">
-            <label class="lable-title-new">Курсы, найденные по запросу: </label>
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">Название</th>
-                        <th scope="col">Предметная <br> область</th>
-                        <th scope="col">Время <br> начала</th>
-                        <th scope="col">Провайдер</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @{
-                        i = 0;
-                    }
-                    @foreach (var course in Model.SearchingCourses)
-                    {
-                        <tr class="@(i % 2 == 0 ? "table-primary" : "table-secondary")">
-                            <th scope="row">
-                                <a href="@course.URL"> @course.Name </a>
-                            </th>
-                            <td>@course.Subject</td>
-                            <td>@course.StartTime</td>
-                            <td>@course.Provider</td>
+            @if (!Model.IsSearching || Model.SearchingCourses.Count > 0)
+            {
+                <label class="lable-title-new">Курсы, найденные по запросу: </label>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Название</th>
+                            <th scope="col">Предметная <br> область</th>
+                            <th scope="col">Время <br> начала</th>
+                            <th scope="col">Провайдер</th>
                         </tr>
-                        i++;
-                    }
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @{
+                            i = 0;
+                        }
+                        @foreach (var course in Model.SearchingCourses)
+                        {
+                            <tr class="@(i % 2 == 0 ? "table-primary" : "table-secondary")">
+                                <th scope="row">
+                                    <a href="@course.URL"> @course.Name </a>
+                                </th>
+                                <td>@course.Subject</td>
+                                <td>@course.StartTime</td>
+                                <td>@course.Provider</td>
+                            </tr>
+                            i++;
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <label class="lable-title-new">По Вашему запросу ничего не найдено :( </label>
+            }
         </div>
         <div class="col-xl-3">
             <label class="lable-title-new">Может быть интересно:</label>

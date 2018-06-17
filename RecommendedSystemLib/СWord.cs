@@ -9,7 +9,6 @@ namespace RecommendedSystemLib
     //Слово + его вес
     public class CWord : IComparable
     {
-        //Количество названий всего !!! не забыть задать
         public static int NamesNumber;
         //Вес слова
         private double m_Weight;

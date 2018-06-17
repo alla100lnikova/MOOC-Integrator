@@ -25,9 +25,9 @@ namespace Searcher
 
         public static void ToLog(string Text)
         {
-            StreamWriter Writer = new StreamWriter("Log.txt", true, System.Text.Encoding.GetEncoding(1251));
-            Writer.WriteLine(Text);
-            Writer.Close();
+            //StreamWriter Writer = new StreamWriter("Log.txt", true, System.Text.Encoding.GetEncoding(1251));
+            //Writer.WriteLine(Text);
+            //Writer.Close();
         }
     }
 }

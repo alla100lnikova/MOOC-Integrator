@@ -22,6 +22,7 @@ namespace WebIntegrator.Models
         public bool IsSchool { get; set; }
         public bool IsUniversity { get; set; }
         public bool IsQulification { get; set; }
+        public bool IsSearching { get; set; }
  
         /// <summary>
         /// Найденные курсы
