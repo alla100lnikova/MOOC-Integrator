@@ -14,9 +14,8 @@ namespace WebIntegrator
         protected void Page_Load(object sender, EventArgs e)
         {
             lbAdm.Visible = false;
-            //if (IsAdmin.AdminEnter)
+            if (IsAdmin.AdminEnter)
             {
-                lbAdm.Visible = false;
                 NewTable = new DataTable();
                 DataColumn ID = new DataColumn("ID", System.Type.GetType("System.String"));
                 DataColumn URL = new DataColumn("MyURL", System.Type.GetType("System.String"));
@@ -99,12 +98,13 @@ namespace WebIntegrator
                     #endregion
                 }
             }
-            //else
-            //{
-            //    lbAdm.Visible = true;
-            //    btnExit.Visible = false;
-            //    btnNew.Visible = false;
-            //}
+            else
+            {
+                lbAdm.Visible = true;
+                btnExit.Visible = false;
+                btnNew.Visible = false;
+                btnAutoEdit.Visible = false;
+            }
         }
 
         protected void AdminTableView_SelectedIndexChanged(object sender, EventArgs e)
@@ -184,6 +184,7 @@ namespace WebIntegrator
                         Panel1.Visible = false;
                         btnNew.Visible = true;
                         btnExit.Visible = true;
+                        btnAutoEdit.Visible = true;
                         AdminTableView.Visible = true;
                         Page_Load(sender, e);
                     }
@@ -231,6 +232,7 @@ namespace WebIntegrator
             Panel1.Visible = false;
             btnNew.Visible = true;
             btnExit.Visible = true;
+            btnAutoEdit.Visible = true;
             AdminTableView.Visible = true;
             Page_Load(sender, e);
         }
@@ -245,6 +247,7 @@ namespace WebIntegrator
                 btnCancel.Text = "Отмена";
                 IsUpdate = true;
                 btnNew.Visible = false;
+                btnAutoEdit.Visible = false;
                 btnExit.Visible = false;
                 courseID = Convert.ToInt32(AdminTableView.Rows[ID].Cells[0].Text);
                 Panel1.Visible = true;
@@ -310,6 +313,7 @@ namespace WebIntegrator
             lbResult.Visible = false;
             btnNew.Visible = false;
             btnExit.Visible = false;
+            btnAutoEdit.Visible = false;
             tbName.Text = "";
             tbUniversity.Text = "";
             tbURL.Text = "";
@@ -328,7 +332,7 @@ namespace WebIntegrator
 
         protected void btnExit_Click(object sender, EventArgs e)
         {
-            //IsAdmin.AdminEnter = false;
+            IsAdmin.AdminEnter = false;
             Response.Redirect("Admin.aspx", false);
         }
 

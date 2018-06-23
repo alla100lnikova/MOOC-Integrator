@@ -67,7 +67,7 @@
     
              <asp:Panel ID="Panel1" runat="server" CssClass="jumbotron yobject-marked" Visible="false" Width="687px" >
                  <div class="form-group">
-                        <asp:Label ID="Label1" runat="server" Text="URL" Width="150px" CssClass="auto-style13"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Text="URL" Width="150px" CssClass="col-sm-2 col-form-label"></asp:Label>
                         <asp:TextBox ID="tbURL" runat="server" CssClass="form-control" ></asp:TextBox>
                  </div>
                 <div class="form-group">

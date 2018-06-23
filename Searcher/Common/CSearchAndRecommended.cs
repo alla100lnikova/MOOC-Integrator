@@ -4,6 +4,7 @@ using System.Linq;
 using RecommendedSystemLib;
 using System.Xml;
 using System.Diagnostics;
+using System.Data.SqlClient;
 
 namespace Searcher
 {
@@ -14,8 +15,19 @@ namespace Searcher
         private List<List<string>> Synonyms;
         private List<int> SubjectsVal;
         private List<int> TimesVal;
-        private bool IsSert;
         private List<bool> Auditory;
+        string UniversityQuery = "(select Аббревиатура from Институт where ПолноеНазвание=Описание_MOOC.Институт)='";
+
+        //Параметры поиска
+        string Name;
+        List<string> Subjects;
+        List<string> Times;
+        List<string> Providers;
+        List<string> Universities;
+        bool IsSertificate;
+        bool IsSchool;
+        bool IsUniversity;
+        bool IsQualification;
 
         private Dictionary<string, string> Translate = new Dictionary<string, string>()
         {
@@ -209,43 +221,6 @@ namespace Searcher
             }
         }
 
-        private bool CheckText(string CourseName, string Request)
-        {
-            int MyText = 0;
-            bool IsCheck = false;
-            if (Request != "")
-            {
-                List<string> Names = ParseName(Request);
-                char[] Separators = { ' ', ',', '.', '/', ':', ';', '|', '\'', '"', '(', ')', '-', '=', '*', '&' };
-                string[] Words = CourseName.Split(Separators);
-                int i = 0;
-                CourseName = CourseName.ToLower();
-                foreach (string name in Names)
-                {
-                    if (CourseName.IndexOf(name) >= 0)
-                        MyText++;
-                    else
-                    {
-                        if (Translate.Keys.Contains(name.ToLower()) && CourseName.IndexOf(Translate[name.ToLower()]) >= 0)
-                            MyText++;
-                    }
-                    i++;
-                }
-                IsCheck = MyText >= Names.Count || MyText == Words.Length;
-            }
-            else
-                return true;
-
-            return IsCheck;
-        }
-
-        enum eCourseType
-        {
-            ctNotMatch,
-            ctFound,
-            ctRecommended
-        }
-
         int HasSynonims(string CurName)
         {
             List<string> Name = ParseName(CurName.ToLower());
@@ -288,17 +263,213 @@ namespace Searcher
             }
         }
 
-        private string GetUniversityAbbreviation(string Name)
+        string GetJoinGroupPart(string TableName, List<string> Elements)
         {
-            using (var ctx = new MOOCEntities())
+            string Query = "inner join Группа_" + TableName
+                            + " on((select Группа from "
+                            + TableName + " where id = Описание_MOOC." + TableName + ") = Группа_" + TableName + ".id ";
+
+            for(int i = 0, icount = Elements.Count; i < icount; i++)
             {
-                foreach(var Abb in ctx.Институт)
+                if (i == 0)
+                    Query += "and (";
+                if (i > 0)
+                    Query += " or ";
+                Query += "Группа_" + TableName + ".Название='" + Elements[i] + "'";
+                if (i == icount - 1)
+                    Query += ")";
+            }
+            Query += ")";
+
+            return Query;
+        }
+
+        string GetProvidersQuery(bool IsSearch)
+        {
+            string Query = "inner join Провайдер on (Описание_MOOC.Провайдер=Провайдер.id ";
+
+            if (IsSearch)
+            {
+                for (int i = 0, icount = Providers.Count; i < icount; i++)
                 {
-                    if (Name == Abb.ПолноеНазвание) return Abb.Аббревиатура;
+                    if (i == 0)
+                        Query += "and (";
+                    if (i > 0)
+                        Query += " or ";
+                    Query += "Провайдер.Название='" + Providers[i] + "'";
+                    if (i == icount - 1)
+                        Query += ")";
+                }
+            }
+            Query += ")";
+
+            return Query;
+        }
+
+        string GetNameQuery(bool IsSearch)
+        {
+            string Query = "";
+            List<string> Words = ParseName(Name);
+            if (!IsSearch)
+            {
+                foreach (var syns in Synonyms)
+                {
+                    Words.Concat(syns);
                 }
             }
 
-            return "";
+            string Oper = IsSearch ? " and " : " or ";
+            for(int i = 0, icount = Words.Count; i < icount; i++)
+            {
+                if (i > 0)
+                    Query += Oper;
+
+                bool IsTranslate = Translate.Keys.Contains(Words[i].ToLower());
+                if (IsTranslate)
+                {
+                    Query += "(НазваниеКурса like '%" + Translate[Words[i]] + "%' or ";
+                }
+
+                Query += "НазваниеКурса like '%" + Words[i] + "%'";
+                if (IsTranslate)
+                    Query += ")";
+            }
+
+            return Query;
+        }
+
+        string GetUniversityQuery()
+        {
+            string Query = "(";
+
+            for (int i = 0, icount = Universities.Count; i < icount; i++)
+            {
+                if (i > 0)
+                    Query += " or ";
+                Query += UniversityQuery + Universities[i] + "'";
+            }
+            Query += ")";
+
+            return Query;
+        }
+
+        string GetWhereQuery(bool IsSearch)
+        {
+            if (!IsSearch && (String.IsNullOrWhiteSpace(Name) || String.IsNullOrEmpty(Name)))
+                return "";
+
+            string Query = " where ";
+            bool HasName = Name != null && Name.Length > 0;
+            if (HasName)
+                Query += GetNameQuery(IsSearch);
+            
+            if(IsSearch)
+            {
+
+                if (IsSchool)
+                {
+                    if (HasName)
+                        Query += " and ";
+                    Query += "Школа=1";
+                }
+                if (IsSertificate)
+                {
+                    if (IsSchool || HasName)
+                        Query += " and ";
+                    Query += "НаличиеСертификата=1";
+                }
+                if (IsUniversity)
+                {
+                    if (IsSchool || HasName || IsSertificate)
+                        Query += " and ";
+                    Query += "ВысшееОбразование=1";
+                }
+                if (IsQualification)
+                {
+                    if (IsSchool || HasName || IsSertificate || IsUniversity)
+                        Query += " and ";
+                    Query += "ПовышениеКвалификации=1";
+                }
+
+                if (Universities.Count > 0)
+                    Query += GetUniversityQuery();
+            }
+
+            return Query;
+        }
+
+        //Составляем запрос
+        string GetSqlQuery(bool IsSearch = true)
+        {
+            string Query = "select НазваниеКурса 'CName', URL 'Curl', НаличиеСертификата 'CSert', Школа 'CSchool', ВысшееОбразование 'CUniv', ПовышениеКвалификации 'CQual',"
+                                           + "Группа_ПредметнаяОбласть.Название 'SubName', Группа_ПредметнаяОбласть.Значение 'SubVal',"
+                                           + "Группа_ВремяНачала.Название 'TimeName', Группа_ВремяНачала.Значение 'TimeVal', Провайдер.Название 'ProvName', Институт 'UnName' from Описание_MOOC ";
+
+            Query += GetJoinGroupPart("ПредметнаяОбласть", Subjects);
+            Query += GetJoinGroupPart("ВремяНачала", Times);
+            Query += GetProvidersQuery(IsSearch);
+            Query += GetWhereQuery(IsSearch);
+
+            return Query;
+        }
+
+        //Собираем полученные из запроса курсы
+        void GetCourses(SqlCommand sCommand, ref List<Course> Courses)
+        {
+            var reader = sCommand.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    Course course = new Course();
+                    course.Name = reader["CName"].ToString();
+                    course.URL = reader["Curl"].ToString();
+                    course.University = reader["UnName"].ToString();
+                    course.Subject = reader["SubName"].ToString();
+                    course.SubjectValue = Convert.ToInt32(reader["SubVal"].ToString());
+                    course.StartTime = reader["TimeName"].ToString();
+                    course.StartTimeValue = Convert.ToInt32(reader["TimeVal"].ToString());
+                    course.Provider = reader["ProvName"].ToString();
+                    course.IsSertificate = reader["CSert"].ToString() == "1";
+                    course.IsSchool = reader["CSchool"].ToString() == "1";
+                    course.IsUniversity = reader["CUniv"].ToString() == "1";
+                    course.IsQualification = reader["CQual"].ToString() == "1";
+
+                    Courses.Add(course);
+                }
+            }
+            reader.Close();
+        }
+
+        //Ищем близкие предметные области или время начала
+        string GetTimeOrSub(string TableName, List<int> Values)
+        {
+            string Query = "select Название from Группа_" + TableName + " where ";
+            int i = 0;
+            foreach (var val in Values)
+            {
+                if (i++ > 0)
+                    Query += " or ";
+                Query += "Значение-" + val + " < 200";
+            }
+
+            return Query;
+        }
+
+        //Добавляем для запроса предметы и время, которые близки к выбранным
+        void AddTimeOrSub(SqlCommand sCommand, ref List<string> Values)
+        {
+            var reader = sCommand.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                   Values.Add(reader[0].ToString());
+                }
+            }
+            reader.Close();
         }
 
         public List<Course> SearchCourse(
@@ -314,156 +485,74 @@ namespace Searcher
         {
             RecommendedCourses = new SortedList<int, List<Course>>();
             List<Course> FoundCourses = new List<Course>();
-            IsSert = IsSertificate;
+            List<Course> PendingCourses = new List<Course>();
+            this.Name = Name;
+            this.Subjects = Subjects;
+            this.Providers = Providers;
+            this.Universities = Universities;
+            this.IsSertificate = IsSertificate;
+            this.IsSchool = IsSchool;
+            this.IsQualification = IsQualification;
+            this.IsUniversity = IsUniversity;
+            this.Times = Times;
+
             Stopwatch Timer = new Stopwatch();
             Timer.Start();
             Administration.ToLog("Start search courses...");
 
             CharactersToValue(Subjects, Times);
+            GetSynonims(Name);
 
-            using (var ctx = new MOOCEntities())
+            var sConnStr = new SqlConnectionStringBuilder
             {
-                foreach (var course in ctx.Описание_MOOC)
+                DataSource = @"ACER\SQLEXPRESS",
+                InitialCatalog = "MOOC",
+                IntegratedSecurity = true,
+                
+            }.ConnectionString;
+
+            using (var sConn = new SqlConnection(sConnStr))
+            {
+                sConn.Open();
+                var sCommand = new SqlCommand
+                {//создаем команду
+                    Connection = sConn,
+                    CommandText = GetSqlQuery()
+                };//текст, который должен выполняться 
+
+                GetCourses(sCommand, ref FoundCourses);
+                if (SubjectsVal.Count > 0)
                 {
-                    #region Условия
-                    Course CurCourse = new Course(
-                        course.НазваниеКурса,
-                        course.URL,
-                        course.Провайдер1.Название,
-                        course.ПредметнаяОбласть == null ? "" : course.ПредметнаяОбласть1.Группа_ПредметнаяОбласть.Название,
-                        course.ВремяНачала == null ? "" : course.ВремяНачала1.Название,
-                        course.Институт == null ? course.Институт : "",
-                        course.НаличиеСертификата == null ? false : (bool)course.НаличиеСертификата,
-                        course.Школа == null ? false : (bool)course.Школа,
-                        course.ВысшееОбразование == null ? false : (bool)course.ВысшееОбразование,
-                        course.ПовышениеКвалификации == null ? false : (bool)course.ПовышениеКвалификации,
-                        course.ПредметнаяОбласть != null ? (int)course.ПредметнаяОбласть1.Группа_ПредметнаяОбласть.Значение : 0,
-                        course.ВремяНачала != null ? (int)course.ВремяНачала1.Группа_ВремяНачала.Значение : 0);
-                    eCourseType Subject, IsRec, Time;
-                    Subject = IsRec = Time = eCourseType.ctNotMatch;
-                    bool Sertificate = false, School = false, Student = false, Qualification = false, University = false, Provider = false;
+                    sCommand = new SqlCommand
+                    {//создаем команду
+                        Connection = sConn,
+                        CommandText = GetTimeOrSub("ПредметнаяОбласть", SubjectsVal)
+                    };//текст, который должен выполняться 
 
-                    int i = 0;
-                    //Если предметная область не выбрана, то считаем курс подходящим
-                    if (Subjects == null || Subjects.Count == 0) Subject = eCourseType.ctFound;
-                    //иначе проверяем соответствие предметной области курса хотя бы одной из выбранных
-                    else
-                    {
-                        while (Subject != eCourseType.ctFound && i < SubjectsVal.Count)
-                        {
-                            Subject = CurCourse.SubjectValue == SubjectsVal[i] ? eCourseType.ctFound : eCourseType.ctNotMatch;
-                            IsRec = IsRec == eCourseType.ctRecommended ? eCourseType.ctRecommended
-                                : Math.Abs(CurCourse.SubjectValue - SubjectsVal[i]) < 200 ? eCourseType.ctRecommended : eCourseType.ctNotMatch;
-                            i++;
-                        }
-                        if (Subject != eCourseType.ctFound && IsRec == eCourseType.ctRecommended) Subject = eCourseType.ctRecommended; 
-                    }
-
-                    if (Subject == eCourseType.ctNotMatch)
-                        continue;
-
-                    i = 0;
-                    IsRec = eCourseType.ctNotMatch;
-                    //Аналогично, для времени начала, провайдера и института
-                    if (Times == null || Times.Count == 0) Time = eCourseType.ctFound;
-                    else
-                    {
-                        if (CurCourse.StartTime != "")
-                        {
-                            while (Time != eCourseType.ctFound && Time != eCourseType.ctFound && i < Times.Count)
-                            {
-                                Time = CurCourse.StartTimeValue == TimesVal[i] ? eCourseType.ctFound : eCourseType.ctNotMatch;
-                                IsRec = IsRec == eCourseType.ctRecommended ? eCourseType.ctRecommended
-                                 : Math.Abs(CurCourse.StartTimeValue - TimesVal[i]) < 200 ? eCourseType.ctRecommended : eCourseType.ctNotMatch;
-                                i++;
-                            }
-                            if (Time != eCourseType.ctFound && IsRec == eCourseType.ctRecommended) Time = eCourseType.ctRecommended;
-                        }
-                    }
-
-                    if (Time == eCourseType.ctNotMatch)
-                        continue;
-
-                    if (Time == eCourseType.ctFound && Subject == eCourseType.ctFound)
-                    {
-                        i = 0;
-                        if (Providers == null || Providers.Count == 0) Provider = true;
-                        else
-                        {
-                            while (!Provider && i < Providers.Count)
-                            {
-                                Provider = CurCourse.Provider == Providers[i];
-                                i++;
-                            }
-                        }
-
-                        i = 0;
-                        if (Universities == null || Universities.Count == 0) University = true;
-                        else
-                        {
-                            if (CurCourse.University != "")
-                            {
-                                string UnAbbreviation = GetUniversityAbbreviation(CurCourse.University);
-                                while (!University && i < Universities.Count)
-                                {
-                                    University = CurCourse.University == Universities[i] || UnAbbreviation == Universities[i];
-                                    i++;
-                                }
-                            }
-                        }
-
-                        //Если кнопка была выбрана - наличие сертификата должно быть = true
-                        if (IsSertificate)
-                        {
-                            if (course.НаличиеСертификата != null)
-                                Sertificate = Convert.ToBoolean(course.НаличиеСертификата);
-                        }
-                        else Sertificate = true;
-
-                        //Аналогично для целевой аудитории
-                        #region Выбор целевой аудитории
-                        if (IsSchool)
-                        {
-                            if (course.Школа != null)
-                                School = Convert.ToBoolean(course.Школа);
-                        }
-                        else School = true;
-
-                        if (IsUniversity)
-                        {
-                            if (course.ВысшееОбразование != null)
-                                Student = Convert.ToBoolean(course.ВысшееОбразование);
-                        }
-                        else Student = true;
-
-                        if (IsQualification)
-                        {
-                            if (course.ПовышениеКвалификации != null)
-                                Qualification = Convert.ToBoolean(course.ПовышениеКвалификации);
-                        }
-                        else Qualification = true;
-
-                        #endregion
-                        #endregion
-
-                        //Если курс подходит по всем условиям, то добавляем его в список результатов
-                        if (CheckText(CurCourse.Name, Name)
-                           && Sertificate && School && Student && Qualification
-                           && Provider && University
-                           && Time == eCourseType.ctFound
-                           && Subject == eCourseType.ctFound)
-                        {
-                            FoundCourses.Add(CurCourse);
-                        }
-                        else
-                            AddRecommend(Name, IsSchool, IsUniversity, IsQualification, CurCourse, Subject, Time);
-                    }
-                    else
-                    {
-                        AddRecommend(Name, IsSchool, IsUniversity, IsQualification, CurCourse, Subject, Time);
-                    }
+                    AddTimeOrSub(sCommand, ref Subjects);
                 }
+
+                if (TimesVal.Count > 0)
+                {
+                    sCommand = new SqlCommand
+                    {//создаем команду
+                        Connection = sConn,
+                        CommandText = GetTimeOrSub("ВремяНачала", TimesVal)
+                    };//текст, который должен выполняться 
+
+                    AddTimeOrSub(sCommand, ref Times);
+                }
+
+                sCommand = new SqlCommand
+                {//создаем команду
+                    Connection = sConn,
+                    CommandText = GetSqlQuery(false)
+                };//текст, который должен выполняться 
+
+                GetCourses(sCommand, ref PendingCourses);
             }
+
+            AddRecommend(PendingCourses, FoundCourses);
 
             Timer.Stop();
             Administration.ToLog("End search courses - " + Timer.ElapsedMilliseconds + " ms");
@@ -472,14 +561,15 @@ namespace Searcher
             return FoundCourses;
         }
 
-        //Проверяем, стоит ли отожить для рекомендации
-        private void AddRecommend(string Name, bool IsSchool, bool IsUniversity, bool IsQualification, Course CurCourse, eCourseType Subject, eCourseType Time)
+        //Проверяем, стоит ли отожить для рекомендации (не должен попадать в уже выбранные)
+        private void AddRecommend(List<Course> PendingCourses, List<Course> FoundCourses)
         {
-            if (Time != eCourseType.ctNotMatch
-                && Subject != eCourseType.ctNotMatch)
+            foreach (var course in PendingCourses)
             {
-                GetSynonims(Name);
-                int SynCount = HasSynonims(CurCourse.Name);
+                if (FoundCourses.FindIndex(x=>x.URL == course.URL) >= 0)
+                    continue;
+
+                int SynCount = HasSynonims(course.Name);
                 if (SynCount > 0 || String.IsNullOrWhiteSpace(Name) || String.IsNullOrEmpty(Name))
                 {
                     Auditory = new List<bool>();
@@ -488,9 +578,9 @@ namespace Searcher
                     Auditory.Add(IsQualification);
 
                     if (RecommendedCourses.ContainsKey(SynCount))
-                        RecommendedCourses[SynCount].Add(CurCourse);
+                        RecommendedCourses[SynCount].Add(course);
                     else
-                        RecommendedCourses.Add(SynCount, new List<Course> { CurCourse });
+                        RecommendedCourses.Add(SynCount, new List<Course> { course });
                 }
             }
         }
@@ -503,7 +593,7 @@ namespace Searcher
                 Stopwatch Timer = new Stopwatch();
                 Timer.Start();
                 Administration.ToLog("Start calc recommendations...");
-                List<Course> Result = RecSystem.FindResult(RecommendedCourses, Request, SubjectsVal, TimesVal, IsSert, Auditory);
+                List<Course> Result = RecSystem.FindResult(RecommendedCourses, Request, SubjectsVal, TimesVal, IsSertificate, Auditory);
                 Timer.Stop();
                 Administration.ToLog("End calc recommendations - " + Timer.ElapsedMilliseconds + " ms");
                 return Result;
