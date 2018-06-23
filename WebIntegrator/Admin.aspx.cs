@@ -12,9 +12,6 @@ namespace WebIntegrator
 
     public partial class AdminLogin : System.Web.UI.Page
     {
-        bool isLoginValid = false;
-        bool isPassValid = false;
-
         public bool IsLoginValid(string log)
         {
             Regex r = new Regex(@"^[a-zA-Z0-9а-яА-Я\s_]{2,30}$");
@@ -56,8 +53,6 @@ namespace WebIntegrator
             }
         }
 
-
-
         protected void Page_Load(object sender, EventArgs e)
         {
             btnEnter.Visible = true;
@@ -67,6 +62,8 @@ namespace WebIntegrator
 
         protected void btnEnter_Click(object sender, EventArgs e)
         {
+            btnEnterSystem.Visible = false;
+            btnRegister.Visible = false;
             lbResult.Visible = false;
             using (var ctx = new MOOCEntities())
             {

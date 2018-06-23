@@ -17,22 +17,22 @@
                 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
                     <div class="form-group">
-                        <asp:Label ID="Label7" runat="server" Text="Логин" CssClass="col-sm-2 col-form-label" style="margin-left: 41px"></asp:Label>
+                        <asp:Label ID="Label7" runat="server" Text="Логин" CssClass="col-sm-2 col-form-label"></asp:Label>
                         <asp:TextBox ID="tbLogin" runat="server" CssClass="form-control" ></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="Label8" runat="server" Text="Пароль" CssClass="col-sm-2 col-form-label" style="margin-left: 41px"></asp:Label>
-                        <asp:TextBox ID="tbPassword" runat="server" CssClass="form-control" Height="25px" Width="400px" TextMode="Password" ></asp:TextBox>
+                        <asp:Label ID="Label8" runat="server" Text="Пароль" CssClass="col-sm-2 col-form-label"></asp:Label>
+                        <asp:TextBox ID="tbPassword" runat="server" CssClass="form-control" TextMode="Password" ></asp:TextBox>
                     </div>
                     <asp:Label ID="lbResult" runat="server" Font-Bold="True" ForeColor="Red" Text="lbResult" Visible="False"></asp:Label>
                     <br />
-                    <asp:Button ID="btnEnter" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" Text="Вход" Width="538px" Height="30px" style="margin-left: 41px" OnClick="btnEnter_Click" />
+                    <asp:Button ID="btnEnter" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" Text="Вход" style="margin-left: 0px" OnClick="btnEnter_Click" Width="174px" />
                     <div class="form-group">
-                        <asp:Button ID="btnEnterSystem" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnEnterSystem_Click" style="margin-left: 41px" Text="Войти в систему" />
-                        <asp:Button ID="btnRegister" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnRegister_Click" style="margin-left: 38px" Text="Зарегистрировать нового администратора" Font-Size="10pt" />
+                        <asp:Button ID="btnEnterSystem" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnEnterSystem_Click" style="margin-left: 0px" Text="Войти в систему" />
+                        <asp:Button ID="btnRegister" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnRegister_Click" style="margin-left: 13px" Text="Зарегистрировать нового администратора" Font-Size="11pt" />
                         <br />
-                        <asp:Button ID="btnRegisterAdmin" runat="server" CssClass="btn btn-secondary my-2 my-sm-0"  OnClick="btnRegisterAdmin_Click" style="margin-left: 41px" Text="Регистрация" />
-                        <asp:Button ID="btnCansel" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnCansel_Click" style="margin-left: 45px" Text="Отмена" />
+                        <asp:Button ID="btnRegisterAdmin" runat="server" CssClass="btn btn-secondary my-2 my-sm-0"  OnClick="btnRegisterAdmin_Click" style="margin-left: 0px" Text="Регистрация" Visible="false" Width="174px" />
+                        <asp:Button ID="btnCansel" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnCansel_Click" style="margin-left: 13px" Text="Отмена" Visible="false" />
                     </div>
                     <asp:ScriptManager ID="ScriptManager1" runat="server">
                     </asp:ScriptManager>

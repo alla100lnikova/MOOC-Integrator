@@ -100,11 +100,10 @@
                         <asp:ListItem>Повышение квалификации</asp:ListItem>
                     </asp:CheckBoxList>
                 <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="lbResult" runat="server" Font-Bold="True" ForeColor="Red" Text="lbResult" Visible="False"></asp:Label>
                 <br />
-                <asp:Button ID="btnSave" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnSave_Click" Text="Сохранить" Width="100px" />
-                <asp:Button ID="btnCancel" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnCancel_Click" Text="Отмена" Width="100px" />
+                <asp:Button ID="btnSave" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnSave_Click" Text="Сохранить" Width="172px" />
+                <asp:Button ID="btnCancel" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnCancel_Click" Text="Отмена" Width="172px" />
             </asp:Panel>
     </form>
     </div>
