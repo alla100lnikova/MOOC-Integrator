@@ -22,13 +22,18 @@ namespace Searcher
         {
             List<Course> NewCourses = new List<Course>();
 
-            StreamReader sr = new StreamReader(@"C:\OpenEdu1.html");
+            string content = GetRequest(URL);
             HtmlDocument doc = new HtmlDocument();
-            doc.LoadHtml(sr.ReadToEnd());
+            doc.LoadHtml(content);
+
+            string json = content.Substring(content.IndexOf("COURSES ="), content.IndexOf("UNIVERSITIES = "));
+
             HtmlNode Node;
             HtmlNodeCollection c = doc.DocumentNode.SelectNodes("//div[@class='col-md-4 col-sm-6 col-xs-12 col']");
             if (c != null)
             {
+
+
                 foreach (HtmlNode n in c)
                 {
                     Course NewCourse = new Course();
@@ -42,11 +47,6 @@ namespace Searcher
                         docTmp.LoadHtml(Node.InnerHtml);
                         Node = docTmp.DocumentNode.SelectSingleNode("//a");
                         string u = Node.Attributes["href"].Value;
-                        int Index = IsCourseInDB(u);
-                        if (Index != -1)
-                        {
-                            continue;
-                        }
                         NewCourse.URL = u;
                         NewCourse.Name = Node.InnerText;
 
@@ -97,7 +97,7 @@ namespace Searcher
         /// <summary>
         /// Считывает HTML-код и берёт нужные составляющие со страницы
         /// </summary>
-        public void StartParse()
+        public override void StartParse()
         {
             List<Course> NewCourses = Parse(m_MainURL);
             CheckAndSave(NewCourses);

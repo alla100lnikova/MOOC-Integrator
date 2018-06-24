@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="хаос">
+    <SynonymList>
+      <string>беспорядок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="характер">
+    <SynonymList>
+      <string>нрав</string>
+      <string>нор</string>
+      <string>натур</string>
+      <string>темперамент</string>
+      <string>вид</string>
+      <string>тип</string>
+      <string>фасон</string>
+      <string>форм</string>
+      <string>покр</string>
+      <string>облик</string>
+      <string>облич</string>
+      <string>качеств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="характеризоват">
+    <SynonymList>
+      <string>описыват</string>
+      <string>определят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="характерн">
+    <SynonymList>
+      <string>отличительн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="химик">
+    <SynonymList>
+      <string>учен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="хирург">
+    <SynonymList>
+      <string>врач</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="хитр">
+    <SynonymList>
+      <string>ловк</string>
+      <string>лукавств</string>
+      <string>коварств</string>
+      <string>ухищрен</string>
+      <string>злоухищрен</string>
+      <string>вилян</string>
+      <string>криводуш</string>
+      <string>выверт</string>
+      <string>изворот</string>
+      <string>увертк</string>
+      <string>уловк</string>
+      <string>ухватк</string>
+      <string>при</string>
+      <string>обходец</string>
+      <string>маневр</string>
+      <string>махинац</string>
+      <string>тактик</string>
+      <string>лазейк</string>
+      <string>предлог</string>
+      <string>софизм</string>
+      <string>плутн</string>
+      <string>проделк</string>
+      <string>обман</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="хищник">
+    <SynonymList>
+      <string>вор</string>
+      <string>грабител</string>
+      <string>злод</string>
+      <string>преступник</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="хладнокров">
+    <SynonymList>
+      <string>равнодуш</string>
+      <string>бесстраст</string>
+      <string>сдержан</string>
+      <string>нечувствительн</string>
+      <string>спокойств</string>
+      <string>холодн</string>
+      <string>апатичн</string>
+      <string>апат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ходатайств">
+    <SynonymList>
+      <string>просьб</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="хозяин">
+    <SynonymList>
+      <string>владелец</string>
+      <string>владетел</string>
+      <string>властител</string>
+      <string>обладател</string>
+      <string>собственник</string>
+      <string>принципал</string>
+      <string>домохозяин</string>
+      <string>домовладык</string>
+      <string>большак</string>
+      <string>господин</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="хорош">
+    <SynonymList>
+      <string>добр</string>
+      <string>доброкачествен</string>
+      <string>добросовестн</string>
+      <string>годн</string>
+      <string>пригодн</string>
+      <string>благообразн</string>
+      <string>благоустроен</string>
+      <string>безупречн</string>
+      <string>удовлетворительн</string>
+      <string>достохвальн</string>
+      <string>похвальн</string>
+      <string>прекрасн</string>
+      <string>путн</string>
+      <string>славн</string>
+      <string>утешительн</string>
+      <string>красив</string>
+      <string>толст</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="хранилищ">
+    <SynonymList>
+      <string>деп</string>
+      <string>помещен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="хран">
+    <SynonymList>
+      <string>береч</string>
+      <string>приберегат</string>
+      <string>сберегат</string>
+      <string>прятат</string>
+      <string>держат</string>
+      <string>скрыват</string>
+      <string>сохранят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="художествен">
+    <SynonymList>
+      <string>красот</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="художествен">
+    <SynonymList>
+      <string>красив</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="художеств">
+    <SynonymList>
+      <string>искусств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="художник">
+    <SynonymList>
+      <string>живописец</string>
+      <string>иконописец</string>
+      <string>скульптор</string>
+      <string>ваятел</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

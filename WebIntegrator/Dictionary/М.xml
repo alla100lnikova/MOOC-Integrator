@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="маг">
+    <SynonymList>
+      <string>волшебник</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="магистральн">
+    <SynonymList>
+      <string>главн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="магнат">
+    <SynonymList>
+      <string>аристократ</string>
+      <string>вельмож</string>
+      <string>дворянин</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="магн">
+    <SynonymList>
+      <string>приманк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="маневр">
+    <SynonymList>
+      <string>действ</string>
+      <string>уловк</string>
+      <string>хитр</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="манипуляц">
+    <SynonymList>
+      <string>действ</string>
+      <string>способ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="марк">
+    <SynonymList>
+      <string>знак</string>
+      <string>качеств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="маршрут">
+    <SynonymList>
+      <string>план</string>
+      <string>пут</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мастер">
+    <SynonymList>
+      <string>виртуоз</string>
+      <string>знаток</string>
+      <string>искусн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="материал">
+    <SynonymList>
+      <string>матер</string>
+      <string>веществ</string>
+      <string>вещ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="материк">
+    <SynonymList>
+      <string>земл</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="матер">
+    <SynonymList>
+      <string>веществ</string>
+      <string>вещ</string>
+      <string>материал</string>
+      <string>содержан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="машин">
+    <SynonymList>
+      <string>инструмент</string>
+      <string>оруд</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="маэстр">
+    <SynonymList>
+      <string>виртуоз</string>
+      <string>знаток</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="медикамент">
+    <SynonymList>
+      <string>лекарств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мер">
+    <SynonymList>
+      <string>мерк</string>
+      <string>мер</string>
+      <string>масштаб</string>
+      <string>критер</string>
+      <string>мероприят</string>
+      <string>способ</string>
+      <string>средств</string>
+      <string>полумер</string>
+      <string>паллиат</string>
+      <string>границ</string>
+      <string>количеств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="метаморфоз">
+    <SynonymList>
+      <string>перем</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="метафизическ">
+    <SynonymList>
+      <string>духовн</string>
+      <string>отвлечен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="механизм">
+    <SynonymList>
+      <string>конструкц</string>
+      <string>уловк</string>
+      <string>устройств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="микроскопическ">
+    <SynonymList>
+      <string>мал</string>
+      <string>незаметн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мировоззрен">
+    <SynonymList>
+      <string>воззрен</string>
+      <string>мнен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мисс">
+    <SynonymList>
+      <string>задач</string>
+      <string>поручен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мнен">
+    <SynonymList>
+      <string>отз</string>
+      <string>отчет</string>
+      <string>сужден</string>
+      <string>взгляд</string>
+      <string>воззрен</string>
+      <string>вывод</string>
+      <string>догадк</string>
+      <string>заключен</string>
+      <string>представлен</string>
+      <string>положен</string>
+      <string>соображен</string>
+      <string>тезис</string>
+      <string>усмотрен</string>
+      <string>благоусмотрен</string>
+      <string>иде</string>
+      <string>понят</string>
+      <string>мировоззрен</string>
+      <string>миросозерцан</string>
+      <string>мысл</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мним">
+    <SynonymList>
+      <string>баснословн</string>
+      <string>воображаем</string>
+      <string>выдуман</string>
+      <string>вымышлен</string>
+      <string>кажущ</string>
+      <string>ложн</string>
+      <string>обманчив</string>
+      <string>призрачн</string>
+      <string>сказочн</string>
+      <string>сочинен</string>
+      <string>фантастическ</string>
+      <string>внешн</string>
+      <string>наружн</string>
+      <string>напускн</string>
+      <string>притворн</string>
+      <string>декоративн</string>
+      <string>формальн</string>
+      <string>дут</string>
+      <string>небывал</string>
+      <string>подставн</string>
+      <string>соломен</string>
+      <string>фиктивн</string>
+      <string>апокрифическ</string>
+      <string>легендарн</string>
+      <string>мифическ</string>
+      <string>глаголем</string>
+      <string>реком</string>
+      <string>сказывающ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="множеств">
+    <SynonymList>
+      <string>избыток</string>
+      <string>мног</string>
+      <string>обил</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="модел">
+    <SynonymList>
+      <string>образец</string>
+      <string>пример</string>
+      <string>форм</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="модификац">
+    <SynonymList>
+      <string>перем</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="модифицироват">
+    <SynonymList>
+      <string>переменят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мозаик">
+    <SynonymList>
+      <string>искусств</string>
+      <string>картин</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мот">
+    <SynonymList>
+      <string>побужден</string>
+      <string>причин</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мотивироват">
+    <SynonymList>
+      <string>доказыват</string>
+      <string>объяснят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мотивировк">
+    <SynonymList>
+      <string>объяснен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мысл">
+    <SynonymList>
+      <string>думат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мысл">
+    <SynonymList>
+      <string>помысел</string>
+      <string>дум</string>
+      <string>иде</string>
+      <string>мнен</string>
+      <string>положен</string>
+      <string>понят</string>
+      <string>тезис</string>
+      <string>парадокс</string>
+      <string>представлен</string>
+      <string>догадк</string>
+      <string>соображен</string>
+      <string>сужден</string>
+      <string>намерен</string>
+      <string>изречен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мыслящ">
+    <SynonymList>
+      <string>умн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мятеж">
+    <SynonymList>
+      <string>беспорядк</string>
+      <string>бунт</string>
+      <string>возмущен</string>
+      <string>восстан</string>
+      <string>волнен</string>
+      <string>повстан</string>
+      <string>смятен</string>
+      <string>смут</string>
+      <string>заговор</string>
+      <string>крамол</string>
+      <string>комплот</string>
+      <string>революц</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мятежлив">
+    <SynonymList>
+      <string>мятежн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="мятежник">
+    <SynonymList>
+      <string>бунтар</string>
+      <string>бунтовщик</string>
+      <string>инсургент</string>
+      <string>повстанец</string>
+      <string>революционер</string>
+      <string>заговорщик</string>
+      <string>крамольник</string>
+      <string>агитатор</string>
+      <string>смутьян</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

@@ -101,9 +101,7 @@ namespace WebIntegrator
             else
             {
                 lbAdm.Visible = true;
-                btnExit.Visible = false;
-                btnNew.Visible = false;
-                btnAutoEdit.Visible = false;
+                VisibleOptions(false);
             }
         }
 
@@ -182,9 +180,7 @@ namespace WebIntegrator
                     {
                         ctx.SaveChanges();
                         Panel1.Visible = false;
-                        btnNew.Visible = true;
-                        btnExit.Visible = true;
-                        btnAutoEdit.Visible = true;
+                        VisibleOptions(true);
                         AdminTableView.Visible = true;
                         Page_Load(sender, e);
                     }
@@ -230,11 +226,18 @@ namespace WebIntegrator
         protected void btnCancel_Click(object sender, EventArgs e)
         {
             Panel1.Visible = false;
-            btnNew.Visible = true;
-            btnExit.Visible = true;
-            btnAutoEdit.Visible = true;
+            VisibleOptions(true);
             AdminTableView.Visible = true;
             Page_Load(sender, e);
+        }
+
+        void VisibleOptions(bool IsAdminTable)
+        {
+            btnNew.Visible = IsAdminTable;
+            btnAutoEdit.Visible = IsAdminTable;
+            cmbEditProvider.Visible = IsAdminTable;
+            LblEdit.Visible = IsAdminTable;
+            btnExit.Visible = IsAdminTable;
         }
 
         protected void AdminTableView_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -246,9 +249,7 @@ namespace WebIntegrator
                 btnSave.Text = "Сохранить";
                 btnCancel.Text = "Отмена";
                 IsUpdate = true;
-                btnNew.Visible = false;
-                btnAutoEdit.Visible = false;
-                btnExit.Visible = false;
+                VisibleOptions(false);
                 courseID = Convert.ToInt32(AdminTableView.Rows[ID].Cells[0].Text);
                 Panel1.Visible = true;
                 using (var ctx = new MOOCEntities())
@@ -311,9 +312,7 @@ namespace WebIntegrator
             btnSave.Text = "Добавить";
             btnCancel.Text = "Выход";
             lbResult.Visible = false;
-            btnNew.Visible = false;
-            btnExit.Visible = false;
-            btnAutoEdit.Visible = false;
+            VisibleOptions(false);
             tbName.Text = "";
             tbUniversity.Text = "";
             tbURL.Text = "";
@@ -336,11 +335,30 @@ namespace WebIntegrator
             Response.Redirect("Admin.aspx", false);
         }
 
+        void EditAll()
+        {
+            MyParser Parser = new IntuitParser();
+            Parser.StartParse();
+            Parser = new LektoriumParser();
+            Parser.StartParse();
+            Parser = new UniversariumParser();
+            Parser.StartParse();
+            Parser = new PostNaukaParser();
+            Parser.StartParse();
+        }
+
         protected void btnAutoEdit_Click(object sender, EventArgs e)
         {
-            //AutoEditWrapper AEW = new AutoEditWrapper();
-            //AEW.Start();
-            //Parser parser
+            MyParser Parser;
+            switch(cmbEditProvider.Text)
+            {
+                case "Интуит": Parser = new IntuitParser(); break;
+                case "Лекториум": Parser = new LektoriumParser(); break;
+                case "Универсариум": Parser = new UniversariumParser(); break;
+                case "ПостНаука": Parser = new PostNaukaParser(); break;
+                default: EditAll(); return;
+            }
+            Parser.StartParse();
         }
     }
 }

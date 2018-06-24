@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="явн">
+    <SynonymList>
+      <string>видн</string>
+      <string>очевидн</string>
+      <string>видим</string>
+      <string>заметн</string>
+      <string>приметн</string>
+      <string>явствен</string>
+      <string>отчетлив</string>
+      <string>наглядн</string>
+      <string>открыт</string>
+      <string>гласн</string>
+      <string>общеизвестн</string>
+      <string>публичн</string>
+      <string>нескрываем</string>
+      <string>рельефн</string>
+      <string>резк</string>
+      <string>ярк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="яд">
+    <SynonymList>
+      <string>отрав</string>
+      <string>зел</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ядовит">
+    <SynonymList>
+      <string>зло</string>
+      <string>обидн</string>
+      <string>резк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ядр">
+    <SynonymList>
+      <string>сут</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="язык">
+    <SynonymList>
+      <string>говор</string>
+      <string>нареч</string>
+      <string>диалект</string>
+      <string>слог</string>
+      <string>стил</string>
+      <string>народ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ясн">
+    <SynonymList>
+      <string>четк</string>
+      <string>определен</string>
+      <string>отчетлив</string>
+      <string>светл</string>
+      <string>прозрачн</string>
+      <string>внятн</string>
+      <string>выразительн</string>
+      <string>экспресс</string>
+      <string>рельефн</string>
+      <string>интенсивн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ясн">
+    <SynonymList>
+      <string>светл</string>
+      <string>прозрачн</string>
+      <string>разборчив</string>
+      <string>внятн</string>
+      <string>отчетлив</string>
+      <string>понятн</string>
+      <string>общепонятн</string>
+      <string>удобопонятн</string>
+      <string>вразумительн</string>
+      <string>выразительн</string>
+      <string>выпукл</string>
+      <string>пластичн</string>
+      <string>рельефн</string>
+      <string>ярк</string>
+      <string>явствен</string>
+      <string>бесспорн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ячейк">
+    <SynonymList>
+      <string>углублен</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="юмор">
+    <SynonymList>
+      <string>насмешк</string>
+      <string>остроум</string>
+      <string>шутк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="юмористическ">
+    <SynonymList>
+      <string>смешн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="юн">
+    <SynonymList>
+      <string>детств</string>
+      <string>юношеств</string>
+      <string>отрочеств</string>
+      <string>малолетств</string>
+      <string>молод</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="юрист">
+    <SynonymList>
+      <string>адвокат</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

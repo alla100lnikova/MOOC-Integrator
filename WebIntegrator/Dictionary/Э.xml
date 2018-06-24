@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="эврик">
+    <SynonymList>
+      <string>наход</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эгоизм">
+    <SynonymList>
+      <string>самолюб</string>
+      <string>себялюб</string>
+      <string>своекорыст</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экзам">
+    <SynonymList>
+      <string>испытан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экзаменоват">
+    <SynonymList>
+      <string>испытыват</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экземпляр">
+    <SynonymList>
+      <string>единиц</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экзотическ">
+    <SynonymList>
+      <string>иностран</string>
+      <string>чуж</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экивок">
+    <SynonymList>
+      <string>намек</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экипироват">
+    <SynonymList>
+      <string>вооружат</string>
+      <string>одеват</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эконом">
+    <SynonymList>
+      <string>бережлив</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экономн">
+    <SynonymList>
+      <string>бережлив</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экскурс">
+    <SynonymList>
+      <string>путешеств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эксперимент">
+    <SynonymList>
+      <string>испытан</string>
+      <string>оп</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эксперт">
+    <SynonymList>
+      <string>знаток</string>
+      <string>критик</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экспертиз">
+    <SynonymList>
+      <string>критик</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эксплуатироват">
+    <SynonymList>
+      <string>извлекат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экспресс">
+    <SynonymList>
+      <string>ясн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экстаз">
+    <SynonymList>
+      <string>воодушевлен</string>
+      <string>горячн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экстравагантн">
+    <SynonymList>
+      <string>необыкновен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="экстракт">
+    <SynonymList>
+      <string>извлечен</string>
+      <string>сут</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эксцентричн">
+    <SynonymList>
+      <string>необыкновен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эликсир">
+    <SynonymList>
+      <string>лекарств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эмансипац">
+    <SynonymList>
+      <string>избавлен</string>
+      <string>освобожден</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эмблем">
+    <SynonymList>
+      <string>знак</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эмигрант">
+    <SynonymList>
+      <string>иностранец</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="энтузиазм">
+    <SynonymList>
+      <string>азарт</string>
+      <string>воодушевлен</string>
+      <string>восторг</string>
+      <string>горячн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эпиграмм">
+    <SynonymList>
+      <string>изречен</string>
+      <string>насмешк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эпидем">
+    <SynonymList>
+      <string>болезн</string>
+      <string>мор</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эпизод">
+    <SynonymList>
+      <string>случа</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эскиз">
+    <SynonymList>
+      <string>очерк</string>
+      <string>набросок</string>
+      <string>этюд</string>
+      <string>картин</string>
+      <string>книг</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эссенц">
+    <SynonymList>
+      <string>сут</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эстафет">
+    <SynonymList>
+      <string>извест</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эстрад">
+    <SynonymList>
+      <string>театр</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="этикет">
+    <SynonymList>
+      <string>знак</string>
+      <string>прилич</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="этюд">
+    <SynonymList>
+      <string>картин</string>
+      <string>книг</string>
+      <string>очерк</string>
+      <string>эскиз</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="эффект">
+    <SynonymList>
+      <string>действ</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

@@ -176,9 +176,16 @@ namespace Searcher
                 Name0 = Translate[Name0];
             }
 
-            string Address = @"C:\Users\User\Documents\Visual Studio 2015\Projects\WebSite\RecommendedSystemLib\Dictionary\" + Name0 + ".xml";
+            string Address = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Dictionary\" + Name0 + ".xml");
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(Address);
+            try
+            {
+                xDoc.Load(Address);
+            }
+            catch
+            {
+                return;
+            }
             // получим корневой элемент
             XmlElement xRoot = xDoc.DocumentElement;
             // обход всех узлов в корневом элементе

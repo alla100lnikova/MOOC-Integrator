@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="баз">
+    <SynonymList>
+      <string>основан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="базис">
+    <SynonymList>
+      <string>основан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="басн">
+    <SynonymList>
+      <string>побасенк</string>
+      <string>миф</string>
+      <string>аллегор</string>
+      <string>анекдот</string>
+      <string>басн</string>
+      <string>выдумк</string>
+      <string>посмешищ</string>
+      <string>сказк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="бассейн">
+    <SynonymList>
+      <string>водо</string>
+      <string>водоместилищ</string>
+      <string>вместилищ</string>
+      <string>резервуар</string>
+      <string>аквариум</string>
+      <string>помещен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="батал">
+    <SynonymList>
+      <string>битв</string>
+      <string>драк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="батальон">
+    <SynonymList>
+      <string>войск</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="беллетристик">
+    <SynonymList>
+      <string>литератур</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="бесед">
+    <SynonymList>
+      <string>обществ</string>
+      <string>разговор</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="библиотек">
+    <SynonymList>
+      <string>книгохранилищ</string>
+      <string>здан</string>
+      <string>комнат</string>
+      <string>помещен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="билет">
+    <SynonymList>
+      <string>аттестат</string>
+      <string>свидетельств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="биограф">
+    <SynonymList>
+      <string>жизнеописан</string>
+      <string>жит</string>
+      <string>автобиограф</string>
+      <string>формуляр</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="битв">
+    <SynonymList>
+      <string>бо</string>
+      <string>батал</string>
+      <string>бран</string>
+      <string>дел</string>
+      <string>перестрелк</string>
+      <string>перепалк</string>
+      <string>сражен</string>
+      <string>столкновен</string>
+      <string>стычк</string>
+      <string>схватк</string>
+      <string>сшибк</string>
+      <string>сеч</string>
+      <string>избиен</string>
+      <string>кровопролит</string>
+      <string>побоищ</string>
+      <string>резн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="близ">
+    <SynonymList>
+      <string>сходств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="блистан">
+    <SynonymList>
+      <string>сиян</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="блокад">
+    <SynonymList>
+      <string>войн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="блюд">
+    <SynonymList>
+      <string>ед</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="бо">
+    <SynonymList>
+      <string>битв</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="бок">
+    <SynonymList>
+      <string>кра</string>
+      <string>сторон</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="болезн">
+    <SynonymList>
+      <string>бол</string>
+      <string>страдан</string>
+      <string>немоч</string>
+      <string>недуг</string>
+      <string>недомоган</string>
+      <string>нездоров</string>
+      <string>немощ</string>
+      <string>расстройств</string>
+      <string>слабосил</string>
+      <string>хворан</string>
+      <string>хвор</string>
+      <string>мор</string>
+      <string>поветр</string>
+      <string>эпидем</string>
+      <string>эпизоот</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="болет">
+    <SynonymList>
+      <string>недомогат</string>
+      <string>хворат</string>
+      <string>прихварыват</string>
+      <string>страдат</string>
+      <string>сохнут</string>
+      <string>таят</string>
+      <string>хилет</string>
+      <string>чахнут</string>
+      <string>лом</string>
+      <string>мозж</string>
+      <string>ныт</string>
+      <string>забот</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="болот">
+    <SynonymList>
+      <string>топ</string>
+      <string>трясин</string>
+      <string>гряз</string>
+      <string>луж</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="болтун">
+    <SynonymList>
+      <string>болтлив</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="бол">
+    <SynonymList>
+      <string>болезн</string>
+      <string>мук</string>
+      <string>печал</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="больниц">
+    <SynonymList>
+      <string>госпитал</string>
+      <string>лазарет</string>
+      <string>лечебниц</string>
+      <string>амбулатор</string>
+      <string>клиник</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="бомбардировк">
+    <SynonymList>
+      <string>войн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="бор">
+    <SynonymList>
+      <string>ветер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="борен">
+    <SynonymList>
+      <string>борьб</string>
+      <string>войн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="брак">
+    <SynonymList>
+      <string>негодн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="брак">
+    <SynonymList>
+      <string>бракосочетан</string>
+      <string>венчан</string>
+      <string>свадьб</string>
+      <string>супружеств</string>
+      <string>парт</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="букв">
+    <SynonymList>
+      <string>знак</string>
+      <string>письм</string>
+      <string>иероглиф</string>
+      <string>каракул</string>
+      <string>рун</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="буквар">
+    <SynonymList>
+      <string>книг</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="бумаг">
+    <SynonymList>
+      <string>папирус</string>
+      <string>пергамент</string>
+      <string>документ</string>
+      <string>свидетельств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="бунт">
+    <SynonymList>
+      <string>возмущен</string>
+      <string>восстан</string>
+      <string>волнен</string>
+      <string>беспорядк</string>
+      <string>мятеж</string>
+      <string>повстан</string>
+      <string>смут</string>
+      <string>смятен</string>
+      <string>брожен</string>
+      <string>заговор</string>
+      <string>комплот</string>
+      <string>крамол</string>
+      <string>революц</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="буран">
+    <SynonymList>
+      <string>ветер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="буржуазн">
+    <SynonymList>
+      <string>низк</string>
+      <string>прост</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="был">
+    <SynonymList>
+      <string>бывальщин</string>
+      <string>былин</string>
+      <string>происшеств</string>
+      <string>факт</string>
+      <string>истин</string>
+      <string>случа</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="быт">
+    <SynonymList>
+      <string>бытн</string>
+      <string>существован</string>
+      <string>пребыван</string>
+      <string>присутств</string>
+      <string>наличн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="бытн">
+    <SynonymList>
+      <string>быт</string>
+      <string>быт</string>
+      <string>присутств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="быт">
+    <SynonymList>
+      <string>существоват</string>
+      <string>составлят</string>
+      <string>являт</string>
+      <string>фигурироват</string>
+      <string>присутствоват</string>
+      <string>наход</string>
+      <string>лежат</string>
+      <string>красоват</string>
+      <string>вод</string>
+      <string>имет</string>
+      <string>обретат</string>
+      <string>гнезд</string>
+      <string>крыт</string>
+      <string>остават</string>
+      <string>продолжат</string>
+      <string>пребыват</string>
+      <string>скрыват</string>
+      <string>попадат</string>
+      <string>та</string>
+      <string>заключат</string>
+      <string>замечат</string>
+      <string>содержат</string>
+      <string>надеват</string>
+      <string>непремен</string>
+      <string>толкат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="бюллетен">
+    <SynonymList>
+      <string>извещен</string>
+      <string>объявлен</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

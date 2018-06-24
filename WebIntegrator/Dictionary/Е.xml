@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="единиц">
+    <SynonymList>
+      <string>зерн</string>
+      <string>штук</string>
+      <string>экземпляр</string>
+      <string>пример</string>
+      <string>голов</string>
+      <string>душ</string>
+      <string>лиц</string>
+      <string>индивид</string>
+      <string>неделим</string>
+      <string>особ</string>
+      <string>особ</string>
+      <string>персон</string>
+      <string>монад</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="единичн">
+    <SynonymList>
+      <string>един</string>
+      <string>отдельн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="единоборств">
+    <SynonymList>
+      <string>борьб</string>
+      <string>драк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="естествен">
+    <SynonymList>
+      <string>врожден</string>
+      <string>природн</string>
+      <string>прирожден</string>
+      <string>родов</string>
+      <string>самородн</string>
+      <string>наследствен</string>
+      <string>натуральн</string>
+      <string>свойствен</string>
+      <string>сродн</string>
+      <string>внутрен</string>
+      <string>безыскусствен</string>
+      <string>неприкрашен</string>
+      <string>прост</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="естеств">
+    <SynonymList>
+      <string>сут</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="естествоиспытател">
+    <SynonymList>
+      <string>учен</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="идеал">
+    <SynonymList>
+      <string>совершенств</string>
+      <string>верх</string>
+      <string>образец</string>
+      <string>мечт</string>
+      <string>цел</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="идеальн">
+    <SynonymList>
+      <string>возвышен</string>
+      <string>высок</string>
+      <string>заоблачн</string>
+      <string>надзвездн</string>
+      <string>недостижим</string>
+      <string>образцов</string>
+      <string>совершен</string>
+      <string>бесподобн</string>
+      <string>духовн</string>
+      <string>лучш</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="изгиб">
+    <SynonymList>
+      <string>кривизн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="изменен">
+    <SynonymList>
+      <string>перем</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="изменническ">
+    <SynonymList>
+      <string>вероломн</string>
+      <string>клятвопреступн</string>
+      <string>предательск</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="изнанк">
+    <SynonymList>
+      <string>оборот</string>
+      <string>тыл</string>
+      <string>недостаток</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="изображат">
+    <SynonymList>
+      <string>обозначат</string>
+      <string>описыват</string>
+      <string>определят</string>
+      <string>писат</string>
+      <string>показыват</string>
+      <string>рисоват</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="изображен">
+    <SynonymList>
+      <string>вид</string>
+      <string>лик</string>
+      <string>икон</string>
+      <string>образ</string>
+      <string>картин</string>
+      <string>портрет</string>
+      <string>карточк</string>
+      <string>снимок</string>
+      <string>слепок</string>
+      <string>фигур</string>
+      <string>изваян</string>
+      <string>кумир</string>
+      <string>стату</string>
+      <string>бюст</string>
+      <string>силуэт</string>
+      <string>коп</string>
+      <string>подражан</string>
+      <string>описан</string>
+      <string>представлен</string>
+      <string>проявлен</string>
+      <string>отражен</string>
+      <string>рисунок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="изуч">
+    <SynonymList>
+      <string>выуч</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="икс">
+    <SynonymList>
+      <string>неизвестн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="иллюз">
+    <SynonymList>
+      <string>мечт</string>
+      <string>надежд</string>
+      <string>обман</string>
+      <string>призрак</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="иллюстрац">
+    <SynonymList>
+      <string>объяснен</string>
+      <string>пример</string>
+      <string>рисунок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="имет">
+    <SynonymList>
+      <string>владет</string>
+      <string>вмещат</string>
+      <string>держат</string>
+      <string>заключат</string>
+      <string>обладат</string>
+      <string>пользоват</string>
+      <string>совмещат</string>
+      <string>быт</string>
+      <string>содержат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="император">
+    <SynonymList>
+      <string>правител</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="импер">
+    <SynonymList>
+      <string>государств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="имуществ">
+    <SynonymList>
+      <string>богатств</string>
+      <string>добр</string>
+      <string>достаток</string>
+      <string>достоян</string>
+      <string>имен</string>
+      <string>капитал</string>
+      <string>наслед</string>
+      <string>наследств</string>
+      <string>отчин</string>
+      <string>сбережен</string>
+      <string>собствен</string>
+      <string>состоян</string>
+      <string>стяжан</string>
+      <string>благосостоян</string>
+      <string>средств</string>
+      <string>наличн</string>
+      <string>акт</string>
+      <string>движим</string>
+      <string>инвентар</string>
+      <string>пожитк</string>
+      <string>скарб</string>
+      <string>рухляд</string>
+      <string>хлам</string>
+      <string>багаж</string>
+      <string>обстановк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="им">
+    <SynonymList>
+      <string>назван</string>
+      <string>прозван</string>
+      <string>прозвищ</string>
+      <string>отчеств</string>
+      <string>фамил</string>
+      <string>псевдон</string>
+      <string>кличк</string>
+      <string>наименован</string>
+      <string>термин</string>
+      <string>титул</string>
+      <string>фирм</string>
+      <string>зван</string>
+      <string>эпитет</string>
+      <string>репутац</string>
+      <string>слав</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="инвентар">
+    <SynonymList>
+      <string>имуществ</string>
+      <string>обстановк</string>
+      <string>список</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="индивид">
+    <SynonymList>
+      <string>единиц</string>
+      <string>человек</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="индивидуальн">
+    <SynonymList>
+      <string>личн</string>
+      <string>отдельн</string>
+      <string>частн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="индивидуум">
+    <SynonymList>
+      <string>единиц</string>
+      <string>человек</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="инертн">
+    <SynonymList>
+      <string>вял</string>
+      <string>ленив</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="инерц">
+    <SynonymList>
+      <string>бездейств</string>
+      <string>лен</string>
+      <string>пок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="инициатив">
+    <SynonymList>
+      <string>начал</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="инициатор">
+    <SynonymList>
+      <string>виновник</string>
+      <string>зачинщик</string>
+      <string>перв</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="инкогнит">
+    <SynonymList>
+      <string>тайн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="иносказан">
+    <SynonymList>
+      <string>намек</string>
+      <string>пример</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="инсинуац">
+    <SynonymList>
+      <string>клевет</string>
+      <string>намек</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="инструкц">
+    <SynonymList>
+      <string>приказ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="инструмент">
+    <SynonymList>
+      <string>оруд</string>
+      <string>снаряд</string>
+      <string>снаст</string>
+      <string>прибор</string>
+      <string>сбру</string>
+      <string>приспособлен</string>
+      <string>орган</string>
+      <string>аппарат</string>
+      <string>машин</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="интенсивн">
+    <SynonymList>
+      <string>напряжен</string>
+      <string>тесн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="интервал">
+    <SynonymList>
+      <string>промежуток</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="интересн">
+    <SynonymList>
+      <string>занимательн</string>
+      <string>занятн</string>
+      <string>жгуч</string>
+      <string>животрепещущ</string>
+      <string>любопытн</string>
+      <string>увлекательн</string>
+      <string>забавн</string>
+      <string>курьезн</string>
+      <string>небезынтересн</string>
+      <string>привлекательн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="инцидент">
+    <SynonymList>
+      <string>случа</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ирон">
+    <SynonymList>
+      <string>насмешк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="иск">
+    <SynonymList>
+      <string>требован</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="исключат">
+    <SynonymList>
+      <string>выключат</string>
+      <string>выбрасыват</string>
+      <string>выкидыват</string>
+      <string>вымарыват</string>
+      <string>выпускат</string>
+      <string>вычеркиват</string>
+      <string>зачеркиват</string>
+      <string>зачерн</string>
+      <string>опускат</string>
+      <string>отбрасыват</string>
+      <string>перечеркиват</string>
+      <string>перечерн</string>
+      <string>хер</string>
+      <string>похер</string>
+      <string>извергат</string>
+      <string>изгонят</string>
+      <string>изъят</string>
+      <string>отчислят</string>
+      <string>увольнят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="исключен">
+    <SynonymList>
+      <string>изъят</string>
+      <string>отступлен</string>
+      <string>уклонен</string>
+      <string>особен</string>
+      <string>вольн</string>
+      <string>льгот</string>
+      <string>привилег</string>
+      <string>увольнен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="исключительн">
+    <SynonymList>
+      <string>беспримерн</string>
+      <string>необыкновен</string>
+      <string>особен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ископаем">
+    <SynonymList>
+      <string>стар</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="искусств">
+    <SynonymList>
+      <string>художеств</string>
+      <string>занят</string>
+      <string>знан</string>
+      <string>фокус</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="исполнител">
+    <SynonymList>
+      <string>деятел</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="исполнительн">
+    <SynonymList>
+      <string>повиновен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="исполнят">
+    <SynonymList>
+      <string>выполнят</string>
+      <string>осуществлят</string>
+      <string>реализироват</string>
+      <string>слушат</string>
+      <string>соблюдат</string>
+      <string>совершат</string>
+      <string>справлят</string>
+      <string>отправлят</string>
+      <string>чин</string>
+      <string>удовлетворят</string>
+      <string>делат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="испытан">
+    <SynonymList>
+      <string>искус</string>
+      <string>оп</string>
+      <string>попытк</string>
+      <string>пытк</string>
+      <string>искушен</string>
+      <string>выверк</string>
+      <string>поверк</string>
+      <string>проверк</string>
+      <string>смотр</string>
+      <string>досмотр</string>
+      <string>просмотр</string>
+      <string>рассмотрен</string>
+      <string>суд</string>
+      <string>спрос</string>
+      <string>допрос</string>
+      <string>опрос</string>
+      <string>обыск</string>
+      <string>изыскан</string>
+      <string>розыск</string>
+      <string>разыскан</string>
+      <string>следств</string>
+      <string>исследован</string>
+      <string>расследован</string>
+      <string>дознан</string>
+      <string>разбор</string>
+      <string>разбирательств</string>
+      <string>разложен</string>
+      <string>анализ</string>
+      <string>отведыван</string>
+      <string>разведк</string>
+      <string>проб</string>
+      <string>экзам</string>
+      <string>эксперимент</string>
+      <string>бед</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="истин">
+    <SynonymList>
+      <string>правд</string>
+      <string>аксиом</string>
+      <string>был</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="истин">
+    <SynonymList>
+      <string>верн</string>
+      <string>правдив</string>
+      <string>настоящ</string>
+      <string>подлин</string>
+      <string>точн</string>
+      <string>бесспорн</string>
+      <string>неоспорим</string>
+      <string>неопровержим</string>
+      <string>непреложн</string>
+      <string>непререкаем</string>
+      <string>несомнен</string>
+      <string>дознан</string>
+      <string>признан</string>
+      <string>доказан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="историк">
+    <SynonymList>
+      <string>писател</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="истор">
+    <SynonymList>
+      <string>летоп</string>
+      <string>аннал</string>
+      <string>деян</string>
+      <string>хроник</string>
+      <string>регест</string>
+      <string>предан</string>
+      <string>сказан</string>
+      <string>бесчинств</string>
+      <string>скандал</string>
+      <string>случа</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="источник">
+    <SynonymList>
+      <string>ключ</string>
+      <string>родник</string>
+      <string>начал</string>
+      <string>колыбел</string>
+      <string>причин</string>
+      <string>происхожден</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="исход">
+    <SynonymList>
+      <string>конец</string>
+      <string>освобожден</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

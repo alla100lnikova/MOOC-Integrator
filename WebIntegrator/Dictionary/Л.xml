@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="лагер">
+    <SynonymList>
+      <string>стан</string>
+      <string>становищ</string>
+      <string>табор</string>
+      <string>обществ</string>
+      <string>част</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лад">
+    <SynonymList>
+      <string>гармон</string>
+      <string>дружб</string>
+      <string>соглас</string>
+      <string>тишин</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лазейк">
+    <SynonymList>
+      <string>отверст</string>
+      <string>уловк</string>
+      <string>хитр</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лазутчик">
+    <SynonymList>
+      <string>шпион</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="легенд">
+    <SynonymList>
+      <string>сказк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="легендарн">
+    <SynonymList>
+      <string>вымышлен</string>
+      <string>мним</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="легк">
+    <SynonymList>
+      <string>легковесн</string>
+      <string>маловесн</string>
+      <string>воздушн</string>
+      <string>невесом</string>
+      <string>эфирн</string>
+      <string>удобоисполним</string>
+      <string>сподручн</string>
+      <string>ручн</string>
+      <string>удобоносим</string>
+      <string>портативн</string>
+      <string>неважн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лекарств">
+    <SynonymList>
+      <string>снадоб</string>
+      <string>средств</string>
+      <string>зел</string>
+      <string>врачевств</string>
+      <string>противояд</string>
+      <string>медикамент</string>
+      <string>спец</string>
+      <string>паллиат</string>
+      <string>панаце</string>
+      <string>бальз</string>
+      <string>капл</string>
+      <string>маз</string>
+      <string>микстур</string>
+      <string>облатк</string>
+      <string>пилюл</string>
+      <string>порошок</string>
+      <string>эликсир</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="летоп">
+    <SynonymList>
+      <string>аннал</string>
+      <string>хроник</string>
+      <string>истор</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лечебн">
+    <SynonymList>
+      <string>целебн</string>
+      <string>целительн</string>
+      <string>врачебн</string>
+      <string>лекарствен</string>
+      <string>пользительн</string>
+      <string>живительн</string>
+      <string>животворн</string>
+      <string>полезн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="леч">
+    <SynonymList>
+      <string>врачеват</string>
+      <string>цел</string>
+      <string>пользоват</string>
+      <string>помогат</string>
+      <string>вылечиват</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лжив">
+    <SynonymList>
+      <string>ложн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="либерал">
+    <SynonymList>
+      <string>вольнодумец</string>
+      <string>свободн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="либеральн">
+    <SynonymList>
+      <string>свободн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лиг">
+    <SynonymList>
+      <string>обществ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лидер">
+    <SynonymList>
+      <string>руководител</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ликвидац">
+    <SynonymList>
+      <string>конец</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ликвидироват">
+    <SynonymList>
+      <string>кончат</string>
+      <string>перестават</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лингвист">
+    <SynonymList>
+      <string>учен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лин">
+    <SynonymList>
+      <string>черт</string>
+      <string>строк</string>
+      <string>граф</string>
+      <string>ряд</string>
+      <string>судьб</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="литератор">
+    <SynonymList>
+      <string>писател</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="литератур">
+    <SynonymList>
+      <string>письмен</string>
+      <string>словесн</string>
+      <string>печат</string>
+      <string>пресс</string>
+      <string>беллетристик</string>
+      <string>журналистик</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="личн">
+    <SynonymList>
+      <string>человек</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="личн">
+    <SynonymList>
+      <string>собствен</string>
+      <string>непосредствен</string>
+      <string>индивидуальн</string>
+      <string>субъективн</string>
+      <string>домашн</string>
+      <string>частн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лишен">
+    <SynonymList>
+      <string>недостаток</string>
+      <string>нужд</string>
+      <string>отсутств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лишн">
+    <SynonymList>
+      <string>излишн</string>
+      <string>ненужн</string>
+      <string>чрезмерн</string>
+      <string>сверхкомплектн</string>
+      <string>сверхсметн</string>
+      <string>сверхштатн</string>
+      <string>бесполезн</string>
+      <string>негодн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="логичн">
+    <SynonymList>
+      <string>здрав</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ложн">
+    <SynonymList>
+      <string>неверн</string>
+      <string>неправильн</string>
+      <string>подложн</string>
+      <string>облыжн</string>
+      <string>ошибочн</string>
+      <string>превратн</string>
+      <string>мним</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лож">
+    <SynonymList>
+      <string>неправд</string>
+      <string>неточн</string>
+      <string>брехн</string>
+      <string>вран</string>
+      <string>врак</string>
+      <string>бук</string>
+      <string>вздор</string>
+      <string>лган</string>
+      <string>заблужден</string>
+      <string>обман</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лозунг">
+    <SynonymList>
+      <string>отз</string>
+      <string>парол</string>
+      <string>знак</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="локализироват">
+    <SynonymList>
+      <string>заграждат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лучш">
+    <SynonymList>
+      <string>избран</string>
+      <string>отборн</string>
+      <string>перв</string>
+      <string>первоклассн</string>
+      <string>первостатейн</string>
+      <string>выдающ</string>
+      <string>классическ</string>
+      <string>наилучш</string>
+      <string>предпочтительн</string>
+      <string>преимуществен</string>
+      <string>превосходн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="люд">
+    <SynonymList>
+      <string>человек</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

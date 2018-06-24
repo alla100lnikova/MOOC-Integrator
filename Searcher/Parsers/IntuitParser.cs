@@ -38,11 +38,7 @@ namespace Searcher
                         if (Href != null)
                         {
                             string u = m_IntuitURL + Href;
-                            int Index = IsCourseInDB(u);
-                            if (Index != -1)
-                            {
-                                continue;
-                            }
+                           
                             NewCourse.URL = u;
                             string res_cn = GetRequest(u);
                             HtmlDocument d = new HtmlDocument();
@@ -51,10 +47,17 @@ namespace Searcher
                             HtmlNode Node = d.DocumentNode.SelectSingleNode("//h1");
                             if (Node != null)
                             {
-                                NewCourse.Name = Node.ChildNodes[2].InnerText;
-                                if (NewCourse.Name == ": ")
+                                try
                                 {
-                                    NewCourse.Name = Node.ChildNodes[4].InnerText;
+                                    NewCourse.Name = Node.ChildNodes[2].InnerText;
+                                    if (NewCourse.Name == ": ")
+                                    {
+                                        NewCourse.Name = Node.ChildNodes[4].InnerText;
+                                    }
+                                }
+                                catch
+                                {
+                                    continue;
                                 }
                             }
 
@@ -128,7 +131,7 @@ namespace Searcher
         /// <summary>
         /// Считывает HTML-код и берёт нужные составляющие со страницы
         /// </summary>
-        public void StartParse()
+        public override void StartParse()
         {
             List<Course> NewCourses = Parse(m_MainURL);
             CheckAndSave(NewCourses);

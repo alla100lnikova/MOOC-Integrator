@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Net;
 using System.IO;
+using System.Data.SqlClient;
 
 namespace Searcher
 {
@@ -46,15 +47,29 @@ namespace Searcher
         public int IsCourseInDB(string URL)
         {
             int IsCourse = -1;
-            using (var ctx = new MOOCEntities())
+
+            var sConnStr = new SqlConnectionStringBuilder
             {
-                foreach (var course in ctx.Описание_MOOC)
+                DataSource = @"ACER\SQLEXPRESS",
+                InitialCatalog = "MOOC",
+                IntegratedSecurity = true,
+
+            }.ConnectionString;
+
+            using (var sConn = new SqlConnection(sConnStr))
+            {
+                sConn.Open();
+                var sCommand = new SqlCommand
+                {//создаем команду
+                    Connection = sConn,
+                    CommandText = "select id from Описание_MOOC where URL='" + URL + "'"
+                };//текст, который должен выполняться 
+
+                var reader = sCommand.ExecuteReader();
+                if (reader.HasRows)
                 {
-                    if (course.URL == URL)
-                    {
-                        IsCourse = course.id;
-                        break;
-                    }
+                    reader.Read();
+                    IsCourse = Convert.ToInt32(reader[0].ToString());
                 }
             }
             return IsCourse;
@@ -69,7 +84,7 @@ namespace Searcher
         {
             using (var ctx = new MOOCEntities())
             {
-                ctx.Описание_MOOC.Attach(course);
+                //ctx.Описание_MOOC.Attach(course);
                 course.URL = NewCourse.URL;
                 course.НазваниеКурса = NewCourse.Name;
 
@@ -92,7 +107,7 @@ namespace Searcher
                         break;
                     }
                 }
-                if(course.ПредметнаяОбласть <= 0) course.ПредметнаяОбласть = 113;
+                if(course.ПредметнаяОбласть <= 0) course.ПредметнаяОбласть = 104;
 
                 if (NewCourse.StartTime == null) course.ВремяНачала = null;
                 else
@@ -133,7 +148,6 @@ namespace Searcher
                             break;
                         }
                     }
-                    ctx.Описание_MOOC.Attach(course);
                     Save(NewCourse, course);
                     ctx.SaveChanges();
                 }
@@ -152,15 +166,18 @@ namespace Searcher
         /// <param name="CoursesForSaving">Список курсов для сохранения</param>
         protected void CheckAndSave(List<Course> CoursesForSaving)
         {
-            StreamWriter sw = new StreamWriter(@"C:\Test.txt");
             foreach (Course course in CoursesForSaving)
             {
-                SaveCourse(course, -1);
-                sw.WriteLine(course.URL + " // " + course.Name + " // " + course.Provider + " // " + course.StartTime +
-                    " // " + course.Subject + " // " + course.University + " // " + course.IsSchool + " // " + course.IsUniversity +
-                    " // " + course.IsQualification + " // " + course.IsSertificate);
+                SaveCourse(course, IsCourseInDB(course.URL));
             }
-           sw.Close();
+        }
+
+
+        /// <summary>
+        /// Считывает HTML-код и берёт нужные составляющие со страницы
+        /// </summary>
+        virtual public void StartParse()
+        {
         }
     }
 }

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="гармоническ">
+    <SynonymList>
+      <string>правильн</string>
+      <string>согласн</string>
+      <string>стройн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гармон">
+    <SynonymList>
+      <string>созвуч</string>
+      <string>соглас</string>
+      <string>симфон</string>
+      <string>лад</string>
+      <string>соответств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="генеральн">
+    <SynonymList>
+      <string>главн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гениальн">
+    <SynonymList>
+      <string>способн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ген">
+    <SynonymList>
+      <string>способн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="герб">
+    <SynonymList>
+      <string>знак</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гибк">
+    <SynonymList>
+      <string>упруг</string>
+      <string>эластичн</string>
+      <string>ловк</string>
+      <string>податлив</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гигантск">
+    <SynonymList>
+      <string>больш</string>
+      <string>громадн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гильд">
+    <SynonymList>
+      <string>сослов</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гимн">
+    <SynonymList>
+      <string>песн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гипербол">
+    <SynonymList>
+      <string>преувеличен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гипноз">
+    <SynonymList>
+      <string>обморок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гипотез">
+    <SynonymList>
+      <string>догадк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="глав">
+    <SynonymList>
+      <string>голов</string>
+      <string>главар</string>
+      <string>главнокоманд</string>
+      <string>главноуправляющ</string>
+      <string>вожак</string>
+      <string>вожд</string>
+      <string>коновод</string>
+      <string>начальник</string>
+      <string>предводител</string>
+      <string>председател</string>
+      <string>председательств</string>
+      <string>первоприсутств</string>
+      <string>президент</string>
+      <string>шеф</string>
+      <string>кориф</string>
+      <string>атаман</string>
+      <string>вершин</string>
+      <string>властител</string>
+      <string>господин</string>
+      <string>правител</string>
+      <string>част</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="главенств">
+    <SynonymList>
+      <string>верховенств</string>
+      <string>первенств</string>
+      <string>предводительств</string>
+      <string>старшинств</string>
+      <string>владычеств</string>
+      <string>господств</string>
+      <string>превосходств</string>
+      <string>начальств</string>
+      <string>начальствован</string>
+      <string>гегемон</string>
+      <string>команд</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="главенствоват">
+    <SynonymList>
+      <string>первенствоват</string>
+      <string>господствоват</string>
+      <string>владычествоват</string>
+      <string>доминироват</string>
+      <string>властвоват</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="главн">
+    <SynonymList>
+      <string>сут</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="главнокоманд">
+    <SynonymList>
+      <string>вожд</string>
+      <string>глав</string>
+      <string>начальник</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="главноуправляющ">
+    <SynonymList>
+      <string>глав</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="главн">
+    <SynonymList>
+      <string>перв</string>
+      <string>первенств</string>
+      <string>первостатейн</string>
+      <string>первостепен</string>
+      <string>перворазрядн</string>
+      <string>передов</string>
+      <string>важн</string>
+      <string>выдающ</string>
+      <string>преимуществен</string>
+      <string>преобладающ</string>
+      <string>доминир</string>
+      <string>капитальн</string>
+      <string>краеугольн</string>
+      <string>кардинальн</string>
+      <string>магистральн</string>
+      <string>основн</string>
+      <string>существен</string>
+      <string>верховн</string>
+      <string>генеральн</string>
+      <string>шишк</string>
+      <string>туз</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гомеопатическ">
+    <SynonymList>
+      <string>мал</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гонен">
+    <SynonymList>
+      <string>преследован</string>
+      <string>притеснен</string>
+      <string>стеснен</string>
+      <string>угнетен</string>
+      <string>ограничен</string>
+      <string>мук</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="город">
+    <SynonymList>
+      <string>столиц</string>
+      <string>креп</string>
+      <string>жител</string>
+      <string>мест</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="господств">
+    <SynonymList>
+      <string>владычеств</string>
+      <string>власт</string>
+      <string>верховенств</string>
+      <string>главенств</string>
+      <string>начальств</string>
+      <string>предводительств</string>
+      <string>первенств</string>
+      <string>превосходств</string>
+      <string>преобладан</string>
+      <string>гегемон</string>
+      <string>управлен</string>
+      <string>обладан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="градус">
+    <SynonymList>
+      <string>высот</string>
+      <string>степен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гражданин">
+    <SynonymList>
+      <string>мещанин</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="грамот">
+    <SynonymList>
+      <string>документ</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

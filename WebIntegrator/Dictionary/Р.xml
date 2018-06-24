@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="работ">
+    <SynonymList>
+      <string>дел</string>
+      <string>делан</string>
+      <string>занят</string>
+      <string>труд</string>
+      <string>страд</string>
+      <string>подвиг</string>
+      <string>упражнен</string>
+      <string>издел</string>
+      <string>поделк</string>
+      <string>произведен</string>
+      <string>создан</string>
+      <string>творен</string>
+      <string>продукт</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="работат">
+    <SynonymList>
+      <string>делат</string>
+      <string>труд</string>
+      <string>занимат</string>
+      <string>подвизат</string>
+      <string>сидет</string>
+      <string>корпет</string>
+      <string>коптет</string>
+      <string>муч</string>
+      <string>трудолюбив</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="работоспособн">
+    <SynonymList>
+      <string>способн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="работоспособн">
+    <SynonymList>
+      <string>здоров</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рабств">
+    <SynonymList>
+      <string>невол</string>
+      <string>кабал</string>
+      <string>зависим</string>
+      <string>подвластн</string>
+      <string>подчинен</string>
+      <string>плен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="равенств">
+    <SynonymList>
+      <string>сходств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="равномерн">
+    <SynonymList>
+      <string>соглас</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="равн">
+    <SynonymList>
+      <string>одинаков</string>
+      <string>подобн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="равнят">
+    <SynonymList>
+      <string>сравниват</string>
+      <string>верстат</string>
+      <string>мерят</string>
+      <string>тягат</string>
+      <string>различат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разбирательств">
+    <SynonymList>
+      <string>испытан</string>
+      <string>суд</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разбират">
+    <SynonymList>
+      <string>разлагат</string>
+      <string>разнимат</string>
+      <string>классифицироват</string>
+      <string>сортироват</string>
+      <string>рассмотрет</string>
+      <string>расследоват</string>
+      <string>исследоват</string>
+      <string>анализироват</string>
+      <string>анатомироват</string>
+      <string>выбират</string>
+      <string>критиковат</string>
+      <string>определят</string>
+      <string>понимат</string>
+      <string>рассчитыват</string>
+      <string>суд</string>
+      <string>читат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разб">
+    <SynonymList>
+      <string>грабеж</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разбор">
+    <SynonymList>
+      <string>испытан</string>
+      <string>критик</string>
+      <string>разделен</string>
+      <string>разряд</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разведк">
+    <SynonymList>
+      <string>испытан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разведчик">
+    <SynonymList>
+      <string>шпион</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="развиват">
+    <SynonymList>
+      <string>воспитыват</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="развиват">
+    <SynonymList>
+      <string>развертыват</string>
+      <string>разгорат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="развит">
+    <SynonymList>
+      <string>образован</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="развязк">
+    <SynonymList>
+      <string>конец</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разгадыват">
+    <SynonymList>
+      <string>гадат</string>
+      <string>догадыват</string>
+      <string>обнаруживат</string>
+      <string>решат</string>
+      <string>узнават</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разговор">
+    <SynonymList>
+      <string>бесед</string>
+      <string>диалог</string>
+      <string>совещан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разговор">
+    <SynonymList>
+      <string>беседоват</string>
+      <string>разговариват</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разгр">
+    <SynonymList>
+      <string>беспорядок</string>
+      <string>поражен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="раздвоен">
+    <SynonymList>
+      <string>делен</string>
+      <string>разделен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="раздел">
+    <SynonymList>
+      <string>делен</string>
+      <string>част</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разделен">
+    <SynonymList>
+      <string>делен</string>
+      <string>дроблен</string>
+      <string>раздвоен</string>
+      <string>разграничен</string>
+      <string>разложен</string>
+      <string>разобщен</string>
+      <string>разъединен</string>
+      <string>расщеплен</string>
+      <string>расчленен</string>
+      <string>расторжен</string>
+      <string>разбор</string>
+      <string>сортировк</string>
+      <string>рассортировк</string>
+      <string>дифференциац</string>
+      <string>классификац</string>
+      <string>периодизац</string>
+      <string>специализац</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="раздельн">
+    <SynonymList>
+      <string>отдельн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разделят">
+    <SynonymList>
+      <string>дел</string>
+      <string>дроб</string>
+      <string>раздроблят</string>
+      <string>разбиват</string>
+      <string>разобщат</string>
+      <string>разлагат</string>
+      <string>разрозниват</string>
+      <string>раздваиват</string>
+      <string>разъединят</string>
+      <string>развод</string>
+      <string>разлучат</string>
+      <string>разнимат</string>
+      <string>размежеват</string>
+      <string>раздират</string>
+      <string>разрубат</string>
+      <string>разрезат</string>
+      <string>рассекат</string>
+      <string>раскалыват</string>
+      <string>распиливат</string>
+      <string>распылят</string>
+      <string>расщеплят</string>
+      <string>разбрасыват</string>
+      <string>раздвигат</string>
+      <string>разрыват</string>
+      <string>распарыват</string>
+      <string>разверстат</string>
+      <string>рассеят</string>
+      <string>рассортироват</string>
+      <string>вмест</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разл">
+    <SynonymList>
+      <string>наводнен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="размещен">
+    <SynonymList>
+      <string>делен</string>
+      <string>положен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="размножат">
+    <SynonymList>
+      <string>плод</string>
+      <string>распложат</string>
+      <string>развод</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="размножат">
+    <SynonymList>
+      <string>плод</string>
+      <string>распложат</string>
+      <string>увеличиват</string>
+      <string>накоплят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="размножен">
+    <SynonymList>
+      <string>умножен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="размышлят">
+    <SynonymList>
+      <string>думат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разнимат">
+    <SynonymList>
+      <string>разбират</string>
+      <string>разделят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разниц">
+    <SynonymList>
+      <string>различ</string>
+      <string>разн</string>
+      <string>отлич</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разновидн">
+    <SynonymList>
+      <string>видоизменен</string>
+      <string>вариант</string>
+      <string>вариац</string>
+      <string>разночтен</string>
+      <string>верс</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разноглас">
+    <SynonymList>
+      <string>несоглас</string>
+      <string>разномысл</string>
+      <string>разнореч</string>
+      <string>разноголосиц</string>
+      <string>диссонанс</string>
+      <string>какофон</string>
+      <string>беспорядок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разнообразн">
+    <SynonymList>
+      <string>разн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разнореч">
+    <SynonymList>
+      <string>несоглас</string>
+      <string>разноглас</string>
+      <string>спор</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разнос">
+    <SynonymList>
+      <string>критик</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разн">
+    <SynonymList>
+      <string>различн</string>
+      <string>разнообразн</string>
+      <string>разнородн</string>
+      <string>разноцветн</string>
+      <string>разношерстн</string>
+      <string>разнокалиберн</string>
+      <string>многообразн</string>
+      <string>пестр</string>
+      <string>видоизменен</string>
+      <string>несходн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разобщат">
+    <SynonymList>
+      <string>дел</string>
+      <string>разделят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разобщен">
+    <SynonymList>
+      <string>делен</string>
+      <string>разделен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разобщен">
+    <SynonymList>
+      <string>отдельн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разов">
+    <SynonymList>
+      <string>един</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разработк">
+    <SynonymList>
+      <string>программирован</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разрабатыват">
+    <SynonymList>
+      <string>занимат</string>
+      <string>упражнят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разрушат">
+    <SynonymList>
+      <string>губ</string>
+      <string>разорят</string>
+      <string>уничтожат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разр">
+    <SynonymList>
+      <string>отверст</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разряд">
+    <SynonymList>
+      <string>ряд</string>
+      <string>сло</string>
+      <string>род</string>
+      <string>пород</string>
+      <string>вид</string>
+      <string>подвид</string>
+      <string>делен</string>
+      <string>порядок</string>
+      <string>разбор</string>
+      <string>семейств</string>
+      <string>групп</string>
+      <string>сорт</string>
+      <string>категор</string>
+      <string>сер</string>
+      <string>класс</string>
+      <string>тип</string>
+      <string>жанр</string>
+      <string>парт</string>
+      <string>орд</string>
+      <string>сект</string>
+      <string>секц</string>
+      <string>школ</string>
+      <string>сослов</string>
+      <string>степен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разум">
+    <SynonymList>
+      <string>значен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разумн">
+    <SynonymList>
+      <string>благоразумн</string>
+      <string>рассудительн</string>
+      <string>мудр</string>
+      <string>здрав</string>
+      <string>здравомыслящ</string>
+      <string>осмыслен</string>
+      <string>трезв</string>
+      <string>целесообразн</string>
+      <string>рациональн</string>
+      <string>резон</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разучиват">
+    <SynonymList>
+      <string>уч</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разуч">
+    <SynonymList>
+      <string>забыват</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разъединен">
+    <SynonymList>
+      <string>делен</string>
+      <string>разделен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="разъединят">
+    <SynonymList>
+      <string>дел</string>
+      <string>разделят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ран">
+    <SynonymList>
+      <string>контуз</string>
+      <string>язв</string>
+      <string>царапин</string>
+      <string>рубец</string>
+      <string>ссадин</string>
+      <string>увеч</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ранг">
+    <SynonymList>
+      <string>степен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рапорт">
+    <SynonymList>
+      <string>извест</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рапсод">
+    <SynonymList>
+      <string>песн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="раритет">
+    <SynonymList>
+      <string>редк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рас">
+    <SynonymList>
+      <string>народ</string>
+      <string>плем</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="раскассирован">
+    <SynonymList>
+      <string>делен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="раскассироват">
+    <SynonymList>
+      <string>разделят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="раскол">
+    <SynonymList>
+      <string>несоглас</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="распознават">
+    <SynonymList>
+      <string>различат</string>
+      <string>узнават</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="располагат">
+    <SynonymList>
+      <string>владет</string>
+      <string>прав</string>
+      <string>склонят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="расположен">
+    <SynonymList>
+      <string>положен</string>
+      <string>порядок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="распределен">
+    <SynonymList>
+      <string>делен</string>
+      <string>план</string>
+      <string>порядок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="распределят">
+    <SynonymList>
+      <string>назначат</string>
+      <string>планироват</string>
+      <string>определят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="распространят">
+    <SynonymList>
+      <string>расширят</string>
+      <string>раздвигат</string>
+      <string>растягиват</string>
+      <string>популяризироват</string>
+      <string>пропагандироват</string>
+      <string>рекламироват</string>
+      <string>увеличиват</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рассказыват">
+    <SynonymList>
+      <string>повествоват</string>
+      <string>передават</string>
+      <string>разглашат</string>
+      <string>оглашат</string>
+      <string>бубен</string>
+      <string>бубн</string>
+      <string>выболтат</string>
+      <string>выбухат</string>
+      <string>вызвезд</string>
+      <string>разбарабан</string>
+      <string>разблаговест</string>
+      <string>расслав</string>
+      <string>трезвон</string>
+      <string>поверят</string>
+      <string>извещат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="расследован">
+    <SynonymList>
+      <string>испытан</string>
+      <string>разбират</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рассматриват">
+    <SynonymList>
+      <string>испытыват</string>
+      <string>осматриват</string>
+      <string>смотрет</string>
+      <string>суд</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рассмотрен">
+    <SynonymList>
+      <string>испытан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="расстоян">
+    <SynonymList>
+      <string>промежуток</string>
+      <string>отдален</string>
+      <string>дистанц</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="расстройств">
+    <SynonymList>
+      <string>беспорядок</string>
+      <string>болезн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рассуждат">
+    <SynonymList>
+      <string>беседоват</string>
+      <string>говор</string>
+      <string>думат</string>
+      <string>суд</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рассужден">
+    <SynonymList>
+      <string>суд</string>
+      <string>сужден</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рассчитыват">
+    <SynonymList>
+      <string>разбират</string>
+      <string>соображат</string>
+      <string>смекат</string>
+      <string>надеят</string>
+      <string>намереват</string>
+      <string>предполагат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="расход">
+    <SynonymList>
+      <string>издержк</string>
+      <string>трат</string>
+      <string>затрат</string>
+      <string>жертв</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="расчет">
+    <SynonymList>
+      <string>воздаян</string>
+      <string>догадк</string>
+      <string>намерен</string>
+      <string>плат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="расчетлив">
+    <SynonymList>
+      <string>бережлив</string>
+      <string>благоразумн</string>
+      <string>дальновидн</string>
+      <string>догадлив</string>
+      <string>осторожн</string>
+      <string>рассудительн</string>
+      <string>скуп</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реакц">
+    <SynonymList>
+      <string>воздейств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реализац">
+    <SynonymList>
+      <string>действ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реализироват">
+    <SynonymList>
+      <string>исполнят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реальн">
+    <SynonymList>
+      <string>настоящ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="революц">
+    <SynonymList>
+      <string>бунт</string>
+      <string>мятеж</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="регент">
+    <SynonymList>
+      <string>вожд</string>
+      <string>правител</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="регламент">
+    <SynonymList>
+      <string>порядок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="регулярн">
+    <SynonymList>
+      <string>точн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="регулярн">
+    <SynonymList>
+      <string>правильн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="редакц">
+    <SynonymList>
+      <string>вид</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реестр">
+    <SynonymList>
+      <string>список</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реж">
+    <SynonymList>
+      <string>порядок</string>
+      <string>стро</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="резерв">
+    <SynonymList>
+      <string>запас</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="резервуар">
+    <SynonymList>
+      <string>бассейн</string>
+      <string>помещен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рейхстаг">
+    <SynonymList>
+      <string>парламент</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реквизит">
+    <SynonymList>
+      <string>обстановк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реклам">
+    <SynonymList>
+      <string>объявлен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рекомендац">
+    <SynonymList>
+      <string>внушен</string>
+      <string>совет</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рекреац">
+    <SynonymList>
+      <string>отд</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ректор">
+    <SynonymList>
+      <string>начальник</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="религ">
+    <SynonymList>
+      <string>вер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рельефн">
+    <SynonymList>
+      <string>ясн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ремарк">
+    <SynonymList>
+      <string>замечан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ремесленник">
+    <SynonymList>
+      <string>мастеров</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ремесл">
+    <SynonymList>
+      <string>дел</string>
+      <string>занят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ремонт">
+    <SynonymList>
+      <string>исправлен</string>
+      <string>улучшен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реорганизац">
+    <SynonymList>
+      <string>перем</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реорганизоват">
+    <SynonymList>
+      <string>переменят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="репертуар">
+    <SynonymList>
+      <string>запас</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="репетиц">
+    <SynonymList>
+      <string>повторен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="репутац">
+    <SynonymList>
+      <string>им</string>
+      <string>слав</string>
+      <string>популярн</string>
+      <string>престиж</string>
+      <string>реном</string>
+      <string>считат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реставрироват">
+    <SynonymList>
+      <string>исправлят</string>
+      <string>оживлят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ресурс">
+    <SynonymList>
+      <string>доход</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реформ">
+    <SynonymList>
+      <string>исправлен</string>
+      <string>перем</string>
+      <string>улучшен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рецензент">
+    <SynonymList>
+      <string>критик</string>
+      <string>писател</string>
+      <string>ценител</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рецензироват">
+    <SynonymList>
+      <string>критиковат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реценз">
+    <SynonymList>
+      <string>критик</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рецид">
+    <SynonymList>
+      <string>повторен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="реч">
+    <SynonymList>
+      <string>слов</string>
+      <string>предложен</string>
+      <string>фраз</string>
+      <string>спич</string>
+      <string>тост</string>
+      <string>здравиц</string>
+      <string>аллокуц</string>
+      <string>диатриб</string>
+      <string>раце</string>
+      <string>тирад</string>
+      <string>филиппик</string>
+      <string>изложен</string>
+      <string>слог</string>
+      <string>стил</string>
+      <string>пер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="решен">
+    <SynonymList>
+      <string>приговор</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="решим">
+    <SynonymList>
+      <string>смел</string>
+      <string>храбр</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ритмическ">
+    <SynonymList>
+      <string>правильн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ритор">
+    <SynonymList>
+      <string>болтлив</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="риторик">
+    <SynonymList>
+      <string>болтовн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="родин">
+    <SynonymList>
+      <string>отечеств</string>
+      <string>отчизн</string>
+      <string>колыбел</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="родник">
+    <SynonymList>
+      <string>источник</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="родн">
+    <SynonymList>
+      <string>родствен</string>
+      <string>родственник</string>
+      <string>ближн</string>
+      <string>близк</string>
+      <string>кровн</string>
+      <string>домашн</string>
+      <string>туземн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="родн">
+    <SynonymList>
+      <string>родственник</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="родствен">
+    <SynonymList>
+      <string>близк</string>
+      <string>родн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="розыск">
+    <SynonymList>
+      <string>испытан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="роман">
+    <SynonymList>
+      <string>книг</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="роскош">
+    <SynonymList>
+      <string>изяществ</string>
+      <string>нарядн</string>
+      <string>пышн</string>
+      <string>великолеп</string>
+      <string>баловств</string>
+      <string>богатств</string>
+      <string>шик</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рубеж">
+    <SynonymList>
+      <string>границ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="руководител">
+    <SynonymList>
+      <string>вожд</string>
+      <string>вожак</string>
+      <string>коновод</string>
+      <string>лидер</string>
+      <string>ворот</string>
+      <string>правител</string>
+      <string>учител</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ряд">
+    <SynonymList>
+      <string>стро</string>
+      <string>лин</string>
+      <string>гряд</string>
+      <string>полос</string>
+      <string>колон</string>
+      <string>фаланг</string>
+      <string>цеп</string>
+      <string>шеренг</string>
+      <string>шпалер</string>
+      <string>лавк</string>
+      <string>мног</string>
+      <string>разряд</string>
+      <string>степен</string>
+      <string>черт</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="рядов">
+    <SynonymList>
+      <string>обыкновен</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="целебн">
+    <SynonymList>
+      <string>лечебн</string>
+      <string>целительн</string>
+      <string>врачебн</string>
+      <string>лекарствен</string>
+      <string>пользительн</string>
+      <string>живительн</string>
+      <string>животворн</string>
+      <string>полезн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="целесообразн">
+    <SynonymList>
+      <string>подходящ</string>
+      <string>разумн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="целесоответствен">
+    <SynonymList>
+      <string>подходящ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="целительн">
+    <SynonymList>
+      <string>лечебн</string>
+      <string>полезн</string>
+      <string>целебн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="цел">
+    <SynonymList>
+      <string>вылечиват</string>
+      <string>леч</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="цел">
+    <SynonymList>
+      <string>цельн</string>
+      <string>целостн</string>
+      <string>неиспорчен</string>
+      <string>неповрежден</string>
+      <string>неурезан</string>
+      <string>ве</string>
+      <string>полн</string>
+      <string>непочат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="цел">
+    <SynonymList>
+      <string>мет</string>
+      <string>мишен</string>
+      <string>вид</string>
+      <string>намерен</string>
+      <string>конец</string>
+      <string>мечт</string>
+      <string>идеал</string>
+      <string>стремлен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="цен">
+    <SynonymList>
+      <string>цен</string>
+      <string>стоим</string>
+      <string>достоинств</string>
+      <string>плат</string>
+      <string>валют</string>
+      <string>курс</string>
+      <string>такс</string>
+      <string>тариф</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ценз">
+    <SynonymList>
+      <string>качеств</string>
+      <string>степен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ценител">
+    <SynonymList>
+      <string>оценщик</string>
+      <string>суд</string>
+      <string>критик</string>
+      <string>рецензент</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="цен">
+    <SynonymList>
+      <string>оцениват</string>
+      <string>расцениват</string>
+      <string>низк</string>
+      <string>признават</string>
+      <string>почитат</string>
+      <string>уважат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="цен">
+    <SynonymList>
+      <string>важн</string>
+      <string>достоинств</string>
+      <string>значен</string>
+      <string>цен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="центр">
+    <SynonymList>
+      <string>средоточ</string>
+      <string>очаг</string>
+      <string>фокус</string>
+      <string>сут</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="центростремительн">
+    <SynonymList>
+      <string>соединен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="церемон">
+    <SynonymList>
+      <string>обряд</string>
+      <string>чин</string>
+      <string>порядок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="цех">
+    <SynonymList>
+      <string>обществ</string>
+      <string>сослов</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="цивилизац">
+    <SynonymList>
+      <string>образован</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="циклон">
+    <SynonymList>
+      <string>ветер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="циничн">
+    <SynonymList>
+      <string>циническ</string>
+      <string>груб</string>
+      <string>грязн</string>
+      <string>срамн</string>
+      <string>скоромн</string>
+      <string>порнографическ</string>
+      <string>сальн</string>
+      <string>скабрезн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="циркуляр">
+    <SynonymList>
+      <string>извест</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="цитадел">
+    <SynonymList>
+      <string>креп</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="цитироват">
+    <SynonymList>
+      <string>цитоват</string>
+      <string>привод</string>
+      <string>ссылат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="цифр">
+    <SynonymList>
+      <string>знак</string>
+      <string>количеств</string>
+      <string>числ</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

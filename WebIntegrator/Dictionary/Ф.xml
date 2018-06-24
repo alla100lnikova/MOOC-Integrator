@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="фабрикат">
+    <SynonymList>
+      <string>издел</string>
+      <string>произведен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фабрикац">
+    <SynonymList>
+      <string>образован</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фабриковат">
+    <SynonymList>
+      <string>выделыват</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фабул">
+    <SynonymList>
+      <string>содержан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фавор">
+    <SynonymList>
+      <string>любимец</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фазис">
+    <SynonymList>
+      <string>степен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="факт">
+    <SynonymList>
+      <string>был</string>
+      <string>случа</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фактическ">
+    <SynonymList>
+      <string>действительн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фактор">
+    <SynonymList>
+      <string>причин</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фактор">
+    <SynonymList>
+      <string>посредник</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="факультативн">
+    <SynonymList>
+      <string>вольн</string>
+      <string>добровольн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фаланг">
+    <SynonymList>
+      <string>ряд</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фальш">
+    <SynonymList>
+      <string>обман</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фамил">
+    <SynonymList>
+      <string>им</string>
+      <string>род</string>
+      <string>семейств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фантаз">
+    <SynonymList>
+      <string>воображен</string>
+      <string>выдумк</string>
+      <string>мечт</string>
+      <string>мысл</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фантасмагор">
+    <SynonymList>
+      <string>призрак</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фантастическ">
+    <SynonymList>
+      <string>вымышлен</string>
+      <string>мним</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фант">
+    <SynonymList>
+      <string>кукл</string>
+      <string>призрак</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фарс">
+    <SynonymList>
+      <string>зрелищ</string>
+      <string>шутк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фасон">
+    <SynonymList>
+      <string>вид</string>
+      <string>форм</string>
+      <string>характер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фатальн">
+    <SynonymList>
+      <string>неизбежн</string>
+      <string>роков</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="федерац">
+    <SynonymList>
+      <string>обществ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фельдшер">
+    <SynonymList>
+      <string>врач</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фельетон">
+    <SynonymList>
+      <string>сочинен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фельетонист">
+    <SynonymList>
+      <string>писател</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="феноменальн">
+    <SynonymList>
+      <string>необыкновен</string>
+      <string>оригинальн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фигур">
+    <SynonymList>
+      <string>вид</string>
+      <string>изображен</string>
+      <string>пример</string>
+      <string>рисунок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фигурант">
+    <SynonymList>
+      <string>актер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фикц">
+    <SynonymList>
+      <string>выдумк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="филигран">
+    <SynonymList>
+      <string>искусн</string>
+      <string>тонк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="филолог">
+    <SynonymList>
+      <string>учен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фильтроват">
+    <SynonymList>
+      <string>чист</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="финал">
+    <SynonymList>
+      <string>конец</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="финанс">
+    <SynonymList>
+      <string>деньг</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="флаг">
+    <SynonymList>
+      <string>знам</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фланг">
+    <SynonymList>
+      <string>сторон</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фокус">
+    <SynonymList>
+      <string>штук</string>
+      <string>искусств</string>
+      <string>кунштюк</string>
+      <string>фокуспокус</string>
+      <string>средоточ</string>
+      <string>центр</string>
+      <string>сут</string>
+      <string>уловк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="форм">
+    <SynonymList>
+      <string>вид</string>
+      <string>выкройк</string>
+      <string>фасон</string>
+      <string>модел</string>
+      <string>плат</string>
+      <string>характер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="формат">
+    <SynonymList>
+      <string>величин</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="формирован">
+    <SynonymList>
+      <string>образован</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="формировк">
+    <SynonymList>
+      <string>образован</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="формул">
+    <SynonymList>
+      <string>изречен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="формулироват">
+    <SynonymList>
+      <string>определят</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="форт">
+    <SynonymList>
+      <string>креп</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фрагмент">
+    <SynonymList>
+      <string>кусок</string>
+      <string>част</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фраз">
+    <SynonymList>
+      <string>выдумк</string>
+      <string>предложен</string>
+      <string>реч</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фракц">
+    <SynonymList>
+      <string>част</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фундамент">
+    <SynonymList>
+      <string>основан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="фундаментальн">
+    <SynonymList>
+      <string>надежн</string>
+      <string>основательн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="функц">
+    <SynonymList>
+      <string>занят</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

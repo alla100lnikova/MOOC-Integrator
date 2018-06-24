@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="табел">
+    <SynonymList>
+      <string>ден</string>
+      <string>праздник</string>
+      <string>список</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="таблиц">
+    <SynonymList>
+      <string>список</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="талант">
+    <SynonymList>
+      <string>дарован</string>
+      <string>способн</string>
+      <string>судьб</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="танцовщик">
+    <SynonymList>
+      <string>танцор</string>
+      <string>плясун</string>
+      <string>прыгун</string>
+      <string>попрыгун</string>
+      <string>вертун</string>
+      <string>балетчик</string>
+      <string>балетмейстер</string>
+      <string>танцмейстер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="театр">
+    <SynonymList>
+      <string>подмостк</string>
+      <string>сцен</string>
+      <string>эстрад</string>
+      <string>балаган</string>
+      <string>здан</string>
+      <string>мест</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="тезис">
+    <SynonymList>
+      <string>мнен</string>
+      <string>мысл</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="телеграмм">
+    <SynonymList>
+      <string>извест</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="тем">
+    <SynonymList>
+      <string>содержан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="темперамент">
+    <SynonymList>
+      <string>характер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="теорем">
+    <SynonymList>
+      <string>задач</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="теоретик">
+    <SynonymList>
+      <string>доктринер</string>
+      <string>идеалист</string>
+      <string>мечтател</string>
+      <string>донкихот</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="теоретическ">
+    <SynonymList>
+      <string>духовн</string>
+      <string>отвлечен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="теор">
+    <SynonymList>
+      <string>учен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="термин">
+    <SynonymList>
+      <string>им</string>
+      <string>слов</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="терминолог">
+    <SynonymList>
+      <string>им</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="терпен">
+    <SynonymList>
+      <string>терпелив</string>
+      <string>терпим</string>
+      <string>снисхожден</string>
+      <string>мук</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="терпим">
+    <SynonymList>
+      <string>потворств</string>
+      <string>терпен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="территор">
+    <SynonymList>
+      <string>мест</string>
+      <string>област</string>
+      <string>стран</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="терроризироват">
+    <SynonymList>
+      <string>угрожат</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="тип">
+    <SynonymList>
+      <string>вид</string>
+      <string>образец</string>
+      <string>разряд</string>
+      <string>характер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="тиран">
+    <SynonymList>
+      <string>безжалостн</string>
+      <string>жесток</string>
+      <string>мучител</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="тиран">
+    <SynonymList>
+      <string>муч</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="тиран">
+    <SynonymList>
+      <string>насил</string>
+      <string>самовольств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="титул">
+    <SynonymList>
+      <string>им</string>
+      <string>надп</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="тождеств">
+    <SynonymList>
+      <string>сходств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="толк">
+    <SynonymList>
+      <string>обществ</string>
+      <string>польз</string>
+      <string>способн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="том">
+    <SynonymList>
+      <string>книг</string>
+      <string>част</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="тон">
+    <SynonymList>
+      <string>звук</string>
+      <string>шум</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="торжеств">
+    <SynonymList>
+      <string>пир</string>
+      <string>побед</string>
+      <string>праздник</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="тормоз">
+    <SynonymList>
+      <string>препятств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="точк">
+    <SynonymList>
+      <string>пятнышк</string>
+      <string>крапинк</string>
+      <string>конец</string>
+      <string>остановк</string>
+      <string>степен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="трагед">
+    <SynonymList>
+      <string>зрелищ</string>
+      <string>случа</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="трактат">
+    <SynonymList>
+      <string>договор</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="требован">
+    <SynonymList>
+      <string>иск</string>
+      <string>спрос</string>
+      <string>домогательств</string>
+      <string>притязан</string>
+      <string>претенз</string>
+      <string>приз</string>
+      <string>приглашен</string>
+      <string>выз</string>
+      <string>зов</string>
+      <string>клич</string>
+      <string>вол</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="требовательн">
+    <SynonymList>
+      <string>взыскательн</string>
+      <string>придирчив</string>
+      <string>строг</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="трек">
+    <SynonymList>
+      <string>ар</string>
+      <string>мест</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="трогательн">
+    <SynonymList>
+      <string>умилительн</string>
+      <string>нежн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="труд">
+    <SynonymList>
+      <string>дел</string>
+      <string>книг</string>
+      <string>работ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="труд">
+    <SynonymList>
+      <string>занимат</string>
+      <string>работат</string>
+      <string>старат</string>
+      <string>упражнят</string>
+      <string>усердствоват</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="трудн">
+    <SynonymList>
+      <string>многотрудн</string>
+      <string>тяжк</string>
+      <string>тяжел</string>
+      <string>тягостн</string>
+      <string>непосильн</string>
+      <string>каторжн</string>
+      <string>томительн</string>
+      <string>сложн</string>
+      <string>замысловат</string>
+      <string>головоломн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="трудолюб">
+    <SynonymList>
+      <string>старан</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="тюрьм">
+    <SynonymList>
+      <string>темниц</string>
+      <string>острог</string>
+      <string>каземат</string>
+      <string>арестантск</string>
+      <string>холодн</string>
+      <string>кутузк</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

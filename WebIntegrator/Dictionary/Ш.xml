@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="шаблон">
+    <SynonymList>
+      <string>обыча</string>
+      <string>привычк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="шаблон">
+    <SynonymList>
+      <string>обыкновен</string>
+      <string>пошл</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="шедевр">
+    <SynonymList>
+      <string>издел</string>
+      <string>лучш</string>
+      <string>произведен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="шеренг">
+    <SynonymList>
+      <string>ряд</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="шеф">
+    <SynonymList>
+      <string>глав</string>
+      <string>начальник</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="широк">
+    <SynonymList>
+      <string>просторн</string>
+      <string>безбрежн</string>
+      <string>безграничн</string>
+      <string>беспредельн</string>
+      <string>поместительн</string>
+      <string>уместительн</string>
+      <string>укладист</string>
+      <string>объемист</string>
+      <string>всеобъемлющ</string>
+      <string>обширн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="школ">
+    <SynonymList>
+      <string>училищ</string>
+      <string>питомник</string>
+      <string>рассадник</string>
+      <string>здан</string>
+      <string>обществ</string>
+      <string>разряд</string>
+      <string>стил</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="шпион">
+    <SynonymList>
+      <string>соглядата</string>
+      <string>лазутчик</string>
+      <string>разведчик</string>
+      <string>переносчик</string>
+      <string>язык</string>
+      <string>сыщик</string>
+      <string>филер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="штандарт">
+    <SynonymList>
+      <string>знам</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="штурм">
+    <SynonymList>
+      <string>набег</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="шум">
+    <SynonymList>
+      <string>голос</string>
+      <string>гам</string>
+      <string>гул</string>
+      <string>говор</string>
+      <string>гомон</string>
+      <string>крик</string>
+      <string>гук</string>
+      <string>гвалт</string>
+      <string>грохот</string>
+      <string>рокот</string>
+      <string>стукотн</string>
+      <string>трескотн</string>
+      <string>шелест</string>
+      <string>шепот</string>
+      <string>шорох</string>
+      <string>базар</string>
+      <string>сод</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="шутк">
+    <SynonymList>
+      <string>забав</string>
+      <string>потех</string>
+      <string>дурачеств</string>
+      <string>ребячеств</string>
+      <string>юмор</string>
+      <string>фарс</string>
+      <string>водевил</string>
+      <string>безделиц</string>
+      <string>игр</string>
+      <string>насмешк</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

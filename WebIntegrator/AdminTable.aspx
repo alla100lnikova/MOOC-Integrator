@@ -7,16 +7,40 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            display: block;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #5a5a5a;
+            background-clip: padding-box;
+            border-radius: 0.4rem;
+            -webkit-transition: none;
+            transition: none;
+            border: 1px solid #ced4da;
+            background-color: #fff;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
             <br />
         <form runat="server">
-            <asp:Button ID="btnNew" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnNew_Click" Text="Добавить новый курс"  />
-            <asp:Button ID="btnExit" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnExit_Click" Text="Выйти из системы" />
+            <div class="text-left">
+                <div class="form-inline"> 
+                <asp:Label ID="LblEdit" runat="server" Text="Обновление базы для провайдеров:" CssClass="col-sm-2 col-form-label"></asp:Label>
+                <asp:DropDownList ID="cmbEditProvider" runat="server" CssClass ="auto-style1" Width="527px">
+                    <asp:ListItem>Интуит</asp:ListItem>
+                    <asp:ListItem>Лекториум</asp:ListItem>
+                    <asp:ListItem>Универсариум</asp:ListItem>
+                    <asp:ListItem>ПостНаука</asp:ListItem>
+                    <asp:ListItem>Обновить всё</asp:ListItem>
+                </asp:DropDownList>
+                <asp:Button ID="btnAutoEdit" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnAutoEdit_Click" Text="Обновить" style="margin-left: 14px" />
+                <asp:Button ID="btnNew" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnNew_Click" Text="Добавить новый курс" style="margin-left: 14px"  />
+                <asp:Button ID="btnExit" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnExit_Click" Text="Выйти из системы" style="margin-left: 14px"/>
+            </div>
             <asp:Label ID="lbAdm" runat="server" Font-Size="16pt" Text="Чтобы получить доступ к данной странице, нужно обладать правами администратора" Visible="False"></asp:Label>
-            &nbsp;<asp:Button ID="btnAutoEdit" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnAutoEdit_Click" Text="AutoEdit" />
-            <br />
             <br />
             <asp:GridView ID="AdminTableView" CssClass="table table-hover" runat="server" AllowPaging="True" AutoGenerateColumns="False" Font-Size="9pt" OnPageIndexChanging="AdminTableView_PageIndexChanging" OnRowCommand="AdminTableView_RowCommand" PageSize="40" OnSelectedIndexChanged="AdminTableView_SelectedIndexChanged">
                 <Columns>
@@ -105,6 +129,7 @@
                 <asp:Button ID="btnSave" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnSave_Click" Text="Сохранить" Width="172px" />
                 <asp:Button ID="btnCancel" runat="server" CssClass="btn btn-secondary my-2 my-sm-0" OnClick="btnCancel_Click" Text="Отмена" Width="172px" />
             </asp:Panel>
+            </div>
     </form>
     </div>
     <script src="Scripts/jquery-3.3.1.min.js"></script>

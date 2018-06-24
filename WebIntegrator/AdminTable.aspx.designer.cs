@@ -13,6 +13,33 @@ namespace WebIntegrator {
     public partial class AdminTable {
         
         /// <summary>
+        /// LblEdit элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblEdit;
+        
+        /// <summary>
+        /// cmbEditProvider элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList cmbEditProvider;
+        
+        /// <summary>
+        /// btnAutoEdit элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAutoEdit;
+        
+        /// <summary>
         /// btnNew элемент управления.
         /// </summary>
         /// <remarks>
@@ -38,15 +65,6 @@ namespace WebIntegrator {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbAdm;
-        
-        /// <summary>
-        /// btnAutoEdit элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAutoEdit;
         
         /// <summary>
         /// AdminTableView элемент управления.

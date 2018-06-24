@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfSynonims xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Synonims Name="частн">
+    <SynonymList>
+      <string>подробн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="частн">
+    <SynonymList>
+      <string>особ</string>
+      <string>сво</string>
+      <string>личн</string>
+      <string>домашн</string>
+      <string>индивидуальн</string>
+      <string>приватн</string>
+      <string>частичн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="част">
+    <SynonymList>
+      <string>дол</string>
+      <string>делен</string>
+      <string>делянк</string>
+      <string>дроб</string>
+      <string>кусок</string>
+      <string>па</string>
+      <string>пакет</string>
+      <string>доз</string>
+      <string>порц</string>
+      <string>порцион</string>
+      <string>при</string>
+      <string>рацион</string>
+      <string>клок</string>
+      <string>клочок</string>
+      <string>обломок</string>
+      <string>обрубок</string>
+      <string>отрезок</string>
+      <string>отруб</string>
+      <string>черепок</string>
+      <string>верешок</string>
+      <string>отрывок</string>
+      <string>фрагмент</string>
+      <string>купон</string>
+      <string>остатк</string>
+      <string>опилк</string>
+      <string>осколк</string>
+      <string>отруб</string>
+      <string>отдел</string>
+      <string>раздел</string>
+      <string>отделен</string>
+      <string>том</string>
+      <string>выпуск</string>
+      <string>номер</string>
+      <string>глав</string>
+      <string>стат</string>
+      <string>пункт</string>
+      <string>рубрик</string>
+      <string>параграф</string>
+      <string>абзац</string>
+      <string>участок</string>
+      <string>надел</string>
+      <string>удел</string>
+      <string>парт</string>
+      <string>лагер</string>
+      <string>секц</string>
+      <string>фракц</string>
+      <string>член</string>
+      <string>знан</string>
+      <string>круг</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="человек">
+    <SynonymList>
+      <string>лиц</string>
+      <string>личн</string>
+      <string>муж</string>
+      <string>особ</string>
+      <string>персон</string>
+      <string>индивид</string>
+      <string>индивидуальн</string>
+      <string>смертн</string>
+      <string>прислуг</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="черт">
+    <SynonymList>
+      <string>лин</string>
+      <string>царапин</string>
+      <string>строк</string>
+      <string>ряд</string>
+      <string>граф</string>
+      <string>границ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="чертеж">
+    <SynonymList>
+      <string>рисунок</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="честн">
+    <SynonymList>
+      <string>добросовестн</string>
+      <string>прямодуш</string>
+      <string>неподкупн</string>
+      <string>беспорочн</string>
+      <string>правдив</string>
+      <string>благородств</string>
+      <string>верн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="четк">
+    <SynonymList>
+      <string>ясн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="чин">
+    <SynonymList>
+      <string>устав</string>
+      <string>обряд</string>
+      <string>порядок</string>
+      <string>достоинств</string>
+      <string>зван</string>
+      <string>сан</string>
+      <string>план</string>
+      <string>степен</string>
+      <string>церемон</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="чиновник">
+    <SynonymList>
+      <string>служащ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="числен">
+    <SynonymList>
+      <string>числ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="числ">
+    <SynonymList>
+      <string>количеств</string>
+      <string>наличн</string>
+      <string>состав</string>
+      <string>числен</string>
+      <string>контингент</string>
+      <string>сумм</string>
+      <string>цифр</string>
+      <string>ден</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="чист">
+    <SynonymList>
+      <string>бел</string>
+      <string>белотел</string>
+      <string>белов</string>
+      <string>опрятн</string>
+      <string>чистоплотн</string>
+      <string>прозрачн</string>
+      <string>беспримесн</string>
+      <string>бессорн</string>
+      <string>как</string>
+      <string>настоящ</string>
+      <string>невин</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="читател">
+    <SynonymList>
+      <string>чтец</string>
+      <string>лектор</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="читат">
+    <SynonymList>
+      <string>произнос</string>
+      <string>декламироват</string>
+      <string>скандоват</string>
+      <string>пробегат</string>
+      <string>заглядыват</string>
+      <string>разбират</string>
+      <string>дешифрироват</string>
+      <string>выразительн</string>
+      <string>уч</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="член">
+    <SynonymList>
+      <string>участник</string>
+      <string>част</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="чувствительн">
+    <SynonymList>
+      <string>чутк</string>
+      <string>восприимчив</string>
+      <string>впечатлительн</string>
+      <string>отзывчив</string>
+      <string>тонк</string>
+      <string>щепетильн</string>
+      <string>осязательн</string>
+      <string>ощутительн</string>
+      <string>значительн</string>
+      <string>обидчив</string>
+      <string>благодарн</string>
+      <string>больш</string>
+      <string>добр</string>
+      <string>милосерд</string>
+      <string>порядочн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="чувств">
+    <SynonymList>
+      <string>чувствован</string>
+      <string>ощущен</string>
+      <string>впечатлен</string>
+      <string>вкус</string>
+      <string>смак</string>
+    </SynonymList>
+  </Synonims>
+</ArrayOfSynonims>

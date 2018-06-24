@@ -54,11 +54,6 @@ namespace Searcher
                         if (Node != null)
                         {
                             string u = m_LektoriumURL + Node.Attributes["href"].Value;
-                            int Index = IsCourseInDB(u);
-                            if (Index != -1)
-                            {
-                                continue;
-                            }
                             NewCourse.URL = u;
                             string res_cn = GetRequest(u);
                             HtmlDocument d = new HtmlDocument();
@@ -128,7 +123,7 @@ namespace Searcher
         /// <summary>
         /// Считывает HTML-код и берёт нужные составляющие со страницы
         /// </summary>
-        public void StartParse()
+        public override void StartParse()
         {
             List<Course> NewCourses = Parse(m_MainURL);
             CheckAndSave(NewCourses);
