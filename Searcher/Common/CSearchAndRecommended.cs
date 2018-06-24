@@ -399,7 +399,12 @@ namespace Searcher
                 }
 
                 if (Universities.Count > 0)
+                {
+                    if (IsSchool || HasName || IsSertificate || IsUniversity || IsQualification)
+                        Query += " and ";
+                    GetFullUniversityName();
                     Query += GetUniversityQuery();
+                }
             }
 
             return Query;
@@ -464,6 +469,52 @@ namespace Searcher
             return Query;
         }
 
+        string GetFullNameQuery()
+        {
+            string Query = "select ПолноеНазвание from Институт where ";
+
+            int i = 0;
+            foreach (var un in Universities)
+            {
+                if (i++ > 0)
+                    Query += " or ";
+                Query += "Аббревиатура='" + un + "'";
+            }
+
+            return Query;
+        }
+
+        //Добавим полные названия институтов
+        void GetFullUniversityName()
+        {
+            var sConnStr = new SqlConnectionStringBuilder
+            {
+                DataSource = @"ACER\SQLEXPRESS",
+                InitialCatalog = "MOOC",
+                IntegratedSecurity = true,
+
+            }.ConnectionString;
+
+            using (var sConn = new SqlConnection(sConnStr))
+            {
+                sConn.Open();
+                var sCommand = new SqlCommand
+                {//создаем команду
+                    Connection = sConn,
+                    CommandText = GetFullNameQuery()
+                };//текст, который должен выполняться 
+
+                var reader = sCommand.ExecuteReader();
+                if(reader.HasRows)
+                {
+                    while(reader.Read())
+                    {
+                        Universities.Add(reader[0].ToString());
+                    }
+                }
+            }
+        }
+        
         //Добавляем для запроса предметы и время, которые близки к выбранным
         void AddTimeOrSub(SqlCommand sCommand, ref List<string> Values)
         {
