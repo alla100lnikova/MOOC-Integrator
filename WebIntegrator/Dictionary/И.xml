@@ -358,6 +358,8 @@
       <string>занят</string>
       <string>знан</string>
       <string>фокус</string>
+      <string>исскусств</string>
+      <string>исскуств</string>
     </SynonymList>
   </Synonims>
   <Synonims Name="исполнител">
@@ -481,6 +483,55 @@
     <SynonymList>
       <string>конец</string>
       <string>освобожден</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="исскусств">
+    <SynonymList>
+      <string>искусств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="исскуств">
+    <SynonymList>
+      <string>искусств</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="intel">
+    <SynonymList>
+      <string>интел</string>
+      <string>интел</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="интел">
+    <SynonymList>
+      <string>intel</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="it">
+    <SynonymList>
+      <string>ит</string>
+      <string>ит</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ит">
+    <SynonymList>
+      <string>it</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="internet">
+    <SynonymList>
+      <string>интернет</string>
+      <string>интернет</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="интернет">
+    <SynonymList>
+      <string>internet</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="yandex">
+    <SynonymList>
+      <string>яндекс</string>
+      <string>яндекс</string>
     </SynonymList>
   </Synonims>
 </ArrayOfSynonims>

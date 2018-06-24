@@ -569,4 +569,9 @@
       <string>предложен</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="нет">
+    <SynonymList>
+      <string>net</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

@@ -369,6 +369,8 @@
   <Synonims Name="разработк">
     <SynonymList>
       <string>программирован</string>
+      <string>програмирован</string>
+      <string>прогромирован</string>
     </SynonymList>
   </Synonims>
   <Synonims Name="разрабатыват">
@@ -999,6 +1001,11 @@
   <Synonims Name="рядов">
     <SynonymList>
       <string>обыкновен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="руск">
+    <SynonymList>
+      <string>русск</string>
     </SynonymList>
   </Synonims>
 </ArrayOfSynonims>

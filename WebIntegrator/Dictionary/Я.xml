@@ -46,6 +46,7 @@
       <string>слог</string>
       <string>стил</string>
       <string>народ</string>
+      <string>€зик</string>
     </SynonymList>
   </Synonims>
   <Synonims Name="€сн">
@@ -85,6 +86,16 @@
   <Synonims Name="€чейк">
     <SynonymList>
       <string>углублен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="€зик">
+    <SynonymList>
+      <string>€зык</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="€ндекс">
+    <SynonymList>
+      <string>yandex</string>
     </SynonymList>
   </Synonims>
 </ArrayOfSynonims>

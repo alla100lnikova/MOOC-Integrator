@@ -603,4 +603,35 @@
       <string>стил</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="дескретн">
+    <SynonymList>
+      <string>дискретн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="деференциальн">
+    <SynonymList>
+      <string>дифференциальн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="дефференциальн">
+    <SynonymList>
+      <string>дифференциальн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="design">
+    <SynonymList>
+      <string>дизайн</string>
+      <string>дизайн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="дизайн">
+    <SynonymList>
+      <string>design</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="делф">
+    <SynonymList>
+      <string>delphi</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

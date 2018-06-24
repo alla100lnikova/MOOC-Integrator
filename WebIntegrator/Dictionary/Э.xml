@@ -197,4 +197,9 @@
       <string>действ</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="эксел">
+    <SynonymList>
+      <string>excel</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

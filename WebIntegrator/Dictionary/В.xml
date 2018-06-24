@@ -1075,4 +1075,43 @@
       <string>слов</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="visual">
+    <SynonymList>
+      <string>вижуал</string>
+      <string>визуал</string>
+      <string>визуал</string>
+      <string>вижуал</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="визуал">
+    <SynonymList>
+      <string>visual</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="вижуал">
+    <SynonymList>
+      <string>visual</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="wpf">
+    <SynonymList>
+      <string>впф</string>
+      <string>впф</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="впф">
+    <SynonymList>
+      <string>wpf</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="виндовс">
+    <SynonymList>
+      <string>windows</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ворд">
+    <SynonymList>
+      <string>word</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

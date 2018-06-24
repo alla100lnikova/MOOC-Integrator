@@ -285,4 +285,9 @@
       <string>занят</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="фотошоп">
+    <SynonymList>
+      <string>photoshop</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

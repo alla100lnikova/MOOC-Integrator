@@ -306,4 +306,19 @@
       <string>смутьян</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="матиматическ">
+    <SynonymList>
+      <string>математическ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="маткад">
+    <SynonymList>
+      <string>matcad</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="майкрософт">
+    <SynonymList>
+      <string>microsoft</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

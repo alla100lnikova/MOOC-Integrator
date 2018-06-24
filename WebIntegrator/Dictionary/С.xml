@@ -1349,4 +1349,15 @@
       <string>содержан</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="server">
+    <SynonymList>
+      <string>сервер</string>
+      <string>сервер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="сервер">
+    <SynonymList>
+      <string>server</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

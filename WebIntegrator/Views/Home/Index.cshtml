@@ -13,23 +13,23 @@
         <div class="col-xl-3">
             <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-primary btn-lg btn-block @(Model.IsSertificate ? "active" : "")">
-                        <input type="checkbox" autocomplete="@(Model.IsSertificate ? "on" : "off")" name="IsSertificate" id="IsSertificate"> С сертификатом
+                    <label class="btn btn-primary btn-lg btn-block">
+                        <input type="checkbox" autocomplete="off" name="IsSertificate" id="IsSertificate"> С сертификатом
                     </label>
                 </div>
             </div>
             <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-primary @(Model.IsSchool ? "active" : "")">
-                        <input type="checkbox" autocomplete="@(Model.IsSchool ? "on" : "off")" name="IsSchool" id="IsSchool"> Школа
+                    <label class="btn btn-primary">
+                        <input type="checkbox" autocomplete="off" name="IsSchool" id="IsSchool"> Школа
                     </label>
-                    <label class="btn btn-primary @(Model.IsUniversity ? "active" : "")">
-                        <input type="checkbox" autocomplete="@(Model.IsUniversity ? "on" : "off")" name="IsUniversity" id="IsUniversity">
+                    <label class="btn btn-primary">
+                        <input type="checkbox" autocomplete="off" name="IsUniversity" id="IsUniversity">
                         Высшее <br>
                         образование
                     </label>
-                    <label class="btn btn-primary @(Model.IsQulification ? "active" : "")">
-                        <input type="checkbox" autocomplete="@(Model.IsQulification ? "on" : "off")" name="IsQulification" id="IsQulification">
+                    <label class="btn btn-primary )">
+                        <input type="checkbox" autocomplete="off" name="IsQulification" id="IsQulification">
                         Повышение <br>
                         квалиф-ции
                     </label>
@@ -47,8 +47,8 @@
                         if (sub.Key != "Другое")
                         {
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-outline-primary btn-lg btn-block @(sub.Value ? "active" : "")">
-                                    <input type="checkbox" autocomplete="@(sub.Value ? "on" : "off")" name="@sub.Key" id="@sub.Key">
+                                <label class="btn btn-outline-primary btn-lg btn-block">
+                                    <input type="checkbox" autocomplete="off" name="@sub.Key" id="@sub.Key">
                                           @sub.Key
                                 </label>
                             </div>
@@ -56,8 +56,8 @@
                         i++;
                     }
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-primary btn-lg btn-block @(Model.Subjects["Другое"] ? "active" : "")">
-                            <input type="checkbox" autocomplete="@(Model.Subjects["Другое"] ? "on" : "off")" name="Другое" id="Другое">
+                        <label class="btn btn-outline-primary btn-lg btn-block">
+                            <input type="checkbox" autocomplete="off" name="Другое" id="Другое">
                             Другое
                         </label>
                     </div>
@@ -71,8 +71,8 @@
                         @foreach (var univer in Model.University)
                         {
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-outline-secondary btn-lg btn-block @(univer.Value ? "active" : "")">
-                                    <input type="checkbox" autocomplete="@(univer.Value ? "on" : "off")" name="@univer.Key" id="@univer.Key">
+                                <label class="btn btn-outline-secondary btn-lg btn-block">
+                                    <input type="checkbox" autocomplete="off" name="@univer.Key" id="@univer.Key">
                                         @univer.Key
                                 </label>
                             </div>
@@ -87,8 +87,8 @@
                         @foreach (var prov in Model.Provider)
                         {
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-outline-primary btn-lg btn-block @(prov.Value ? "active" : "")">
-                                    <input type="checkbox" name="@prov.Key" id="@prov.Key" autocomplete="@(prov.Value ? "on" : "off")"> @prov.Key
+                                <label class="btn btn-outline-primary btn-lg btn-block">
+                                    <input type="checkbox" name="@prov.Key" id="@prov.Key" autocomplete="off"> @prov.Key
                                 </label>
                             </div>
                         }
@@ -103,8 +103,8 @@
                         @foreach (var time in Model.StartTime)
                         {
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-outline-secondary btn-lg btn-block @(time.Value ? "active" : "")">
-                                    <input type="checkbox" name="@time.Key" id="@time.Key" autocomplete="@(time.Value ? "on" : "off")"> @time.Key
+                                <label class="btn btn-outline-secondary btn-lg btn-block">
+                                    <input type="checkbox" name="@time.Key" id="@time.Key" autocomplete="off"> @time.Key
                                 </label>
                             </div>
                             i++;

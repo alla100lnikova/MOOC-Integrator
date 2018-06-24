@@ -176,4 +176,9 @@
       <string>числ</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="computer">
+    <SynonymList>
+      <string>компьютер</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

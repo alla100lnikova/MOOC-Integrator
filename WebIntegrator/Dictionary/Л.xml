@@ -266,4 +266,26 @@
       <string>человек</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="linux">
+    <SynonymList>
+      <string>линукс</string>
+      <string>линукс</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="линукс">
+    <SynonymList>
+      <string>linux</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="lisp">
+    <SynonymList>
+      <string>лисп</string>
+      <string>лисп</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="лисп">
+    <SynonymList>
+      <string>lisp</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

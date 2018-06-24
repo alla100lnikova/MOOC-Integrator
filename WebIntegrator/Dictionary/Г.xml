@@ -221,4 +221,14 @@
       <string>документ</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="гиометр">
+    <SynonymList>
+      <string>геометр</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="гугл">
+    <SynonymList>
+      <string>google</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

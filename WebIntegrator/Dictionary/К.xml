@@ -210,6 +210,7 @@
     <SynonymList>
       <string>лучш</string>
       <string>образцов</string>
+      <string>класическ</string>
     </SynonymList>
   </Synonims>
   <Synonims Name="классн">
@@ -816,6 +817,17 @@
   <Synonims Name="кучк">
     <SynonymList>
       <string>обществ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="класическ">
+    <SynonymList>
+      <string>классическ</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="компьютер">
+    <SynonymList>
+      <string>computer</string>
+      <string>computer</string>
     </SynonymList>
   </Synonims>
 </ArrayOfSynonims>

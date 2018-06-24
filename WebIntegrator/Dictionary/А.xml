@@ -398,4 +398,51 @@
       <string>мысл</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="апридилен">
+    <SynonymList>
+      <string>определен</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ашипк">
+    <SynonymList>
+      <string>ошибк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="асемблер">
+    <SynonymList>
+      <string>ассемблер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="асэмблер">
+    <SynonymList>
+      <string>ассемблер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="ассэмблер">
+    <SynonymList>
+      <string>ассемблер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="android">
+    <SynonymList>
+      <string>андроид</string>
+      <string>андроид</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="андроид">
+    <SynonymList>
+      <string>android</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="asp">
+    <SynonymList>
+      <string>асп</string>
+      <string>асп</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="асп">
+    <SynonymList>
+      <string>asp</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

@@ -876,6 +876,7 @@
   <Synonims Name="определен">
     <SynonymList>
       <string>приговор</string>
+      <string>апридилен</string>
     </SynonymList>
   </Synonims>
   <Synonims Name="определен">
@@ -1826,12 +1827,18 @@
       <string>просмотр</string>
       <string>просчет</string>
       <string>неправильн</string>
+      <string>ашипк</string>
     </SynonymList>
   </Synonims>
   <Synonims Name="ошибочн">
     <SynonymList>
       <string>ложн</string>
       <string>неправильн</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="oracle">
+    <SynonymList>
+      <string>оракл</string>
     </SynonymList>
   </Synonims>
 </ArrayOfSynonims>

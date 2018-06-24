@@ -332,4 +332,14 @@
       <string>объявлен</string>
     </SynonymList>
   </Synonims>
+  <Synonims Name="бугалтер">
+    <SynonymList>
+      <string>бухгалтер</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="буголтер">
+    <SynonymList>
+      <string>бухгалтер</string>
+    </SynonymList>
+  </Synonims>
 </ArrayOfSynonims>

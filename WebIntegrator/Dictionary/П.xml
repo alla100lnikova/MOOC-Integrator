@@ -2469,6 +2469,8 @@
   <Synonims Name="программирован">
     <SynonymList>
       <string>разработк</string>
+      <string>програмирован</string>
+      <string>прогромирован</string>
     </SynonymList>
   </Synonims>
   <Synonims Name="прогресс">
@@ -2885,6 +2887,45 @@
     <SynonymList>
       <string>испытан</string>
       <string>мук</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="програмирован">
+    <SynonymList>
+      <string>разработк</string>
+      <string>программирован</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="прогромирован">
+    <SynonymList>
+      <string>программирован</string>
+      <string>разработк</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="python">
+    <SynonymList>
+      <string>питон</string>
+      <string>питон</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="питон">
+    <SynonymList>
+      <string>python</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="пхп">
+    <SynonymList>
+      <string>php</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="pascal">
+    <SynonymList>
+      <string>паскал</string>
+      <string>паскал</string>
+    </SynonymList>
+  </Synonims>
+  <Synonims Name="паскал">
+    <SynonymList>
+      <string>pascal</string>
     </SynonymList>
   </Synonims>
 </ArrayOfSynonims>
